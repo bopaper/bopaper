@@ -134,15 +134,18 @@
 
 \author{Charles A Darwin\correspondingauthor$^{1,2}$%
        \email{Charles A Darwin\correspondingauthor - charles@londonzoo.co.uk}%
-      \and
-         Jane E Doe\correspondingauthor$^2$%
-         \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
       \and 
          Egon L Willighagen$^3$%
          \email{Egon L Willighagen - egon.willighagen@ki.se}
      \and 
-         Rajarshi Guh$^4$%
+         Rajarshi Guha$^4$%
          \email{Rajarshi Guha - guhar@mail.nih.gov}
+     \and 
+         Noel M O'Boyle$^5$%
+         \email{Noel M O'Boyle - n.oboyle@ucc.ie}
+      \and
+         Jane E Doe\correspondingauthor$^2$%
+         \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
       }
       
 
@@ -158,6 +161,7 @@
     \iid(2)Department of Zoology, Cambridge, Waterloo Road, London, UK\\
     \iid(3)Division of Molecular Toxicology, Institute of Environmental Medicine, %
         Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden
+    \iid(5)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland
 }%
 
 \maketitle
@@ -227,9 +231,19 @@
 %% Background %%
 %%
 \section*{Background}
- Text for this section.\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
+The Blue Obelisk group was established in 200X at the 2XXth National Meeting of the American Chemistry Society as a response to the lack of open data, open standards and open source (ODOSOS) in chemistry. While other scientific disciplines such as physics, biology and astronomy (to name a few) were embracing new ways of doing science and reaping the benefits of community efforts, there was little if any innovation in the field of chemistry and scientific progress was actively hampered by the lack of access to data and tools.
+
+The goals of the Blue Obelisk group were described in Guha et al.\cite{guha2006}. but are briefly summarised here...
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Main section %%
+%%
+\section*{Open Source}
+  \subsection*{Progress}
+Progress to date...
+  \subsection*{Remaining challenges}
+What's left to do?
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Results and Discussion %%
@@ -257,30 +271,16 @@
   Text for this section \ldots
 
 
-  
-%%%%%%%%%%%%%%%%%%
-\section*{Methods}
-  \subsection*{Methods sub-heading for this section}
-    Text for this sub-section \ldots
-
-  \subsection*{Another methods sub-heading for this section}
-    Text for this sub-section \ldots
-
-  \subsection*{Yet another sub-heading for this section}
-    Text for this sub-section \ldots
-
-
-    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Authors contributions}
-    Text for this section \ldots
+   Charles Darwin did all the work. The others stole the glory. 
 
     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgements}
   \ifthenelse{\boolean{publ}}{\small}{}
-  Text for this section \ldots
+  Thanks to everyone.
 
 
  
@@ -301,7 +301,7 @@
 
 {\ifthenelse{\boolean{publ}}{\footnotesize}{\small}
  \bibliographystyle{bmc_article}  % Style BST file
-  \bibliography{bmc_article} }     % Bibliography file (usually '*.bib' ) 
+  \bibliography{paper} }     % Bibliography file (usually '*.bib' ) 
 
 %%%%%%%%%%%
 
