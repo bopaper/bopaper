@@ -231,7 +231,15 @@
 %% Background %%
 %%
 \section*{Background}
-The Blue Obelisk group was established in 200X at the 2XXth National Meeting of the American Chemistry Society as a response to the lack of open data, open standards and open source (ODOSOS) in chemistry. While other scientific disciplines such as physics, biology and astronomy (to name a few) were embracing new ways of doing science and reaping the benefits of community efforts, there was little if any innovation in the field of chemistry and scientific progress was actively hampered by the lack of access to data and tools.
+The Blue Obelisk group was established in 2005 at the
+229\textsuperscript{th} National Meeting of the American Chemistry
+Society as a response to the lack of open data, open standards and
+open source (ODOSOS) in chemistry. While other scientific disciplines
+such as physics, biology and astronomy (to name a few) were embracing
+new ways of doing science and reaping the benefits of community
+efforts, there was little if any innovation in the field of chemistry
+and scientific progress was actively hampered by the lack of access to
+data and tools.
 
 The goals of the Blue Obelisk group were described in Guha et al.\cite{guha2006}. but are briefly summarised here...
 
@@ -265,11 +273,37 @@ InChI
 
 CML?
 
+Pistoia Alliance (and others?) should be mentioned at this point
+
   \subsection*{Remaining challenges}
 
 OpenSMARTS.
 
-Structure Normalisation
+A core requirement for chemical structure databases and chemical
+registration systems in general is the notion of structure
+standardization.  That is,  for a given input structure, multiple
+representations should be converted to one canonical form. 
+Structure canonicalization routines partially address this aspect,
+converting multiple alternative topologies to a single canonical
+form. However, the problem of standardization is broader than just
+topological canonicalization. Features that must be considered include
+\begin{itemize}
+\item topological canonicalization
+\item handling of charges
+\item tautomer enumeration and canonicalization
+\item normalization of functional groups
+\end{itemize}
+Currently, most of the individual components of a ``standardization
+pipeline'' can be implemented using BO tools. The larger problem is
+that there is no agreed upon list of steps for a standardization
+process. While some specifications have been published (e.g., Pubchem)
+and some standardization services and tools are available (Pubchem
+provides an online service to standaridize molecules and the NCGC
+provides a stand alone tool) each group has their own set of rules. A
+common reference specification for standardization would be of immense
+value in interoperability between structure repositories as well as
+between toolkits (though the latter is still confounded by differences
+in lower level cheminformatic features such as aromaticity models).
 
 \section*{Open Data}
   \subsection*{Progress}
