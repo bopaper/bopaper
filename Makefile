@@ -1,5 +1,9 @@
 all: paper.pdf
 
+paper.bib:
+	@echo "" > paper.bib
+	@wget -O - http://www.citeulike.org/bibtex/group/14824 >> paper.bib
+
 paper.pdf: paper.tex paper.bib
 	pdflatex paper
 	bibtex   paper
