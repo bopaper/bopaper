@@ -250,11 +250,56 @@ The goals of the Blue Obelisk group were described in Guha et al.\cite{guha2006}
 \section*{Open Source}
   \subsection*{Progress}
 
-...something about toolkits...
+Open Source toolkits for cheminformatics have now existed for nearly
+ten years. During this period, some toolkits were developed form
+scratch, whereas others were made Open Source by releasing in-house
+codebases under liberal licenses. The primary toolkits currently in
+active development are the Chemistry Development Kit, OpenBabel and
+RDKit. These projects support a variety of languages natively (Java,
+C++, Python), but by virtue of language wrappers, they can easily be
+used from languages that they were not originally developed in. For
+example, the CDK can be accessed from Python and OpenBabel can be
+accesed from Java via SWIG wrappers. One important aspect of the
+toolkits noted here is that they originated for the support of desktop
+and server-side applications. 
 
-Although feature-rich and robust cheminformatics toolkits are useful in and of themselves, they can also be seen as providing a base layer on which tools and applications can be built. Now that these toolkits have reached an acceptable level of stability and functionality, an increasing amount of software is being developed using these toolkits. As an example of the interaction between the commercial and open source worlds, Silicos (a Belgian company that provides services in the area of cheminformatics XXXX rephrase), has released several command line applications based on Open Babel; Pharao for pharmacophore generation (Sept 2010?), Sieve for filtering by molecular property, ..... 
+More recently, a number of workers have developed light-weight
+toolkits that are targeted towards web applications. One example of
+this form is the Chemdoodle library from XXX. The focus of these
+toolkits is to support client-side cheminformatics functionality,
+allowing for rich, chemically-aware browser-based applications.
 
-It is worth noting that Pharao is the first Open Source pharmacophore program (\emph{Is this a reasonable statement?}) (although pharmacophore-related functionality has been available in the CDK and RDKit for some time).
+In terms of functionality, most Open Source libraries support commonly
+ued cheminformatics features. At the same time, individual toolkits
+have their own strenghts. For example, the CDK has an extensive set of
+molecular descriptors useful for QSAR modeling applictions, but lacks
+support for 3D structure generation. In contrast OpenBabel, supports
+3D structure generation and optimization using a variety of
+forcefields, but lacks a built in set of molecular descriptors. RDKit
+on the other hand supports both features and in general is the most
+comprehensive Open Source toolkit in terms of functionality. Table XXX
+summarizes the features of these three toolkits.
+
+Although feature-rich and robust cheminformatics toolkits are useful
+in and of themselves, they can also be seen as providing a base layer
+on which tools and applications can be built. Now that these toolkits
+have reached an acceptable level of stability and functionality, an
+increasing amount of software is being developed using these
+toolkits. A number of Open Source applications including Bioclipse,
+XXX have been developed.
+
+More interestingly, commercial groups have released Open Source tools
+based on these toolkits. An recent example of such an interaction 
+is Silicos (a Belgian company that provides services
+in the area of cheminformatics XXXX rephrase), has released several
+command line applications based on Open Babel. For example, the Pharao
+tool released by them is a comprehensive solution for pharmacophore
+searching that provides extensive support for a variety of
+pharmacophore searches. Other tools released by them include Seive for
+fitering by molecular property and XXX. Another example of Open Source
+tools originating from commercial groups is the ChemCraft tool from
+Molecular Networks GmBH, that does XXX.
+
 
   \subsubsection*{Collaboration and interoperability}
 
