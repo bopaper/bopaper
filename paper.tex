@@ -256,6 +256,18 @@ Although feature-rich and robust cheminformatics toolkits are useful in and of t
 
 It is worth noting that Pharao is the first Open Source pharmacophore program (\emph{Is this a reasonable statement?}) (although pharmacophore-related functionality has been available in the CDK and RDKit for some time).
 
+  \subsubsection*{Collaboration and interoperability}
+
+One of the effects of the Blue Obelisk has been to bring developers together from different Open Source chemistry projects so that they look for opportunities to collaborate rather than compete, and to leverage work done by other projects to avoid duplication of effort.
+
+As an example of this, when in March 2008 the Jmol development team were looking to add support for energy minimisation, rather than implement a forcefield from scratch they ported the UFF forcefield implementation from Open Babel to Jmol. This code has allowed Jmol to support 2D to 3D conversion of structures (through energy minimisation).
+
+In the area of cheminformatics tookits, two of the existing toolkits Open Babel and RDKit are planning to work together on a common underlying framework called MolCore. This project is still in the planning stage, but if it is a success it will mean that the the two libraries will be interoperable (while retaining their existing focus) but also that the cost of maintaining the code will be shared among more developers, freeing time for the development of new features.
+
+One of the goals of the Blue Obelisk is to promote interoperability in chemical informatics. When barriers exist to moving chemical data between different software, the community becomes fragmented and there is the danger of vendor lock-in (where users are constrained to using a particular software, a situation which puts them at a disadvantage). 
+
+...cinfony...
+
   \subsection*{Remaining challenges}
 
 Accuracy. Very often software work at the 95\% to 98\% level. The variety of chemical structures is such that with a large enough dataset, 'unusual' structures are always found which may be mishandled by software. Given that much of the development of open source software is unfunded, and relies heavily on developer motivation, it is understandable that working on the final N\% of problem structures (which may require substantial work) is not the most exciting of tasks. Putting a bounty system in place may be useful for these situations where a researcher needs a problem to be fixed because it affects a particular dataset of interest.
