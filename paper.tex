@@ -280,26 +280,36 @@ on the other hand supports both features and in general is the most
 comprehensive Open Source toolkit in terms of functionality. Table XXX
 summarizes the features of these three toolkits.
 
+\subsubsection*{Second-generation tools}
+
 Although feature-rich and robust cheminformatics toolkits are useful
 in and of themselves, they can also be seen as providing a base layer
-on which tools and applications can be built. Now that these toolkits
-have reached an acceptable level of stability and functionality, an
-increasing amount of software is being developed using these
-toolkits. A number of Open Source applications including Bioclipse,
-XXX have been developed.
+on which additional tools and applications can be built. This is one of the reasons that cheminformatics toolkits are so important to the open source `ecosystem'; their availability lowers the barrier for the development of a `second generation' of chemistry software that no longer needs to concern itself with the low-level details of manipulating chemical structures, and can focus on providing additional functionality and ease-of-use.
 
-More interestingly, commercial groups have released Open Source tools
-based on these toolkits. An recent example of such an interaction 
-is Silicos (a Belgian company that provides services
-in the area of cheminformatics XXXX rephrase), has released several
-command line applications based on Open Babel. For example, the Pharao
+Bioclipse (v1.0 released in Aug 2006 - ????within the scope of the paper???) and Open Babel (v1.0 in Oct 2009) are two examples of such software, based on the CDK and Open Babel, respectively. Bioclipse is an award-winning `molecular workbench' for life sciences that ..., while Avogadro is a 3D molecular editor and viewer aimed at preparing and analysis computational chemistry calculations. An interesting aspect of both of these projects is that they share some developers with the underlying toolkit and this has driven the development of new features in the CDK and Open Babel (??? is this true for the CDK too? ???).
+
+Some other recent projects that build on Blue Obelisk software include AMBIT (a GUI that facilitates registration of chemicals for the REACH EU directive on toxicity, based on the CDK), etc.
+
+\subsubsection*{The business end}
+
+Developing a business model based on open source software generally relies on providing support, customisation and services around the software. 
+
+(Insert about eMolecules and Open Babel SMILES code...)
+
+A recent example of such an interaction 
+is Silicos, a Belgian company that provides services
+in the area of cheminformatics, which has released several
+command line applications based on Open Babel as well as donating code to the project. For example, the Pharao
 tool released by them is a comprehensive solution for pharmacophore
 searching that provides extensive support for a variety of
 pharmacophore searches. Other tools released by them include Seive for
-fitering by molecular property and XXX. Another example of Open Source
+fitering by molecular property and XXX.
+
+Another example of Open Source
 tools originating from commercial groups is the ChemCraft tool from
 Molecular Networks GmBH, that does XXX.
 
+Rather than releasing new tools, an alternative approach to provide an interface to existing tools. hBar Solutions has developed an online portal, hBar Lab, for managing and performing computational chemistry calculations in the cloud. To do so it leverages two Blue Obelisk projects, Jmol and Open Babel, as well as the open source quantum mechanics packages MPQC.
 
   \subsubsection*{Collaboration and interoperability}
 
