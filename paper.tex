@@ -309,9 +309,16 @@ Rather than releasing new tools, an alternative approach to provide an interface
 
   \subsubsection*{Collaboration and interoperability}
 
-One of the effects of the Blue Obelisk has been to bring developers together from different Open Source chemistry projects so that they look for opportunities to collaborate rather than compete, and to leverage work done by other projects to avoid duplication of effort.
+One of the effects of the Blue Obelisk has been to bring developers together from different Open Source chemistry projects so that they look for opportunities to collaborate rather than compete, and to leverage work done by other projects to avoid duplication of effort. As an example of this, when in March 2008 the Jmol development team were looking to add support for energy minimisation, rather than implement a forcefield from scratch they ported the UFF forcefield implementation from Open Babel to Jmol. This code has allowed Jmol to support 2D to 3D conversion of structures (through energy minimisation).
 
-As an example of this, when in March 2008 the Jmol development team were looking to add support for energy minimisation, rather than implement a forcefield from scratch they ported the UFF forcefield implementation from Open Babel to Jmol. This code has allowed Jmol to support 2D to 3D conversion of structures (through energy minimisation).
+Another collaborative initiative between Blue Obelisk projects was the establishment in May 2008 of
+the ChemiSQL project. This brought together the developers of several
+open source chemistry database cartridges (PgChem, MyChem, OrChem and
+more recently Bingo) with a view to making their database APIs more
+similar and collaborating on benchmark datasets for assessing
+performance. For two of these projects, PgChem and MyChem, which are both based on
+Open Babel, there is the additional possibility of working together on a shared
+codebase.
 
 In the area of cheminformatics tookits, two of the existing toolkits Open Babel and RDKit are planning to work together on a common underlying framework called MolCore. This project is still in the planning stage, but if it is a success it will mean that the the two libraries will be interoperable (while retaining their existing focus) but also that the cost of maintaining the code will be shared among more developers, freeing time for the development of new features.
 
