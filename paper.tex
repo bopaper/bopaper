@@ -322,9 +322,18 @@ codebase.
 
 In the area of cheminformatics tookits, two of the existing toolkits Open Babel and RDKit are planning to work together on a common underlying framework called MolCore. This project is still in the planning stage, but if it is a success it will mean that the the two libraries will be interoperable (while retaining their existing focus) but also that the cost of maintaining the code will be shared among more developers, freeing time for the development of new features.
 
-One of the goals of the Blue Obelisk is to promote interoperability in chemical informatics. When barriers exist to moving chemical data between different software, the community becomes fragmented and there is the danger of vendor lock-in (where users are constrained to using a particular software, a situation which puts them at a disadvantage). 
-
-...cinfony...
+One of the goals of the Blue Obelisk is to promote interoperability in chemical
+informatics. When barriers exist to moving chemical data between
+different software, the community becomes fragmented and there is
+the danger of vendor lock-in (where users are constrained to using
+a particular software, a situation which puts them at a
+disadvantage). This applies as much to Open Source software as to
+proprietary software. Cinfony is a project (first release May 2008)
+whose goal is to tackle this problem in the area of cheminformatics toolkits.
+It is a Python library that enables Open Babel, the CDK, and RDKit to
+be used using the same API; this makes it easy, for example, to read a
+molecule using Open Babel, calculate descriptors using the CDK and
+create a depiction using RDKit.
 
   \subsection*{Remaining challenges}
 
