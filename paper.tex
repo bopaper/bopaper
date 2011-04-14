@@ -252,7 +252,8 @@ share one or more of the goals of the group:
 \item Open Data. One can obtain all data in the public domain when wanted and reuse it for whatever purpose.
 \end{itemize}
 
-The Blue Obelisk was first described in Guha et al.\cite{guha2006}. This
+The Blue Obelisk was first described in Guha et al.\cite{Guha2006} in
+2006. This
 contribution looks back on the past 5 years and surveys progress and
 remaining challenges in the areas of Open Source, Open Data and Open
 Standards in chemistry.
@@ -299,13 +300,14 @@ Although feature-rich and robust cheminformatics toolkits are useful
 in and of themselves, they can also be seen as providing a base layer
 on which additional tools and applications can be built. This is one of the reasons that cheminformatics toolkits are so important to the open source `ecosystem'; their availability lowers the barrier for the development of a `second generation' of chemistry software that no longer needs to concern itself with the low-level details of manipulating chemical structures, and can focus on providing additional functionality and ease-of-use.
 
-Bioclipse (v1.0 released in Aug 2006 - ????within the scope of the paper???) and Open Babel (v1.0 in Oct 2009) are two examples of such software, based on the CDK and Open Babel, respectively. Bioclipse is an award-winning `molecular workbench' for life sciences that ..., while Avogadro is a 3D molecular editor and viewer aimed at preparing and analysis computational chemistry calculations. An interesting aspect of both of these projects is that they share some developers with the underlying toolkit and this has driven the development of new features in the CDK and Open Babel (??? is this true for the CDK too? ???).
+Bioclipse \cite{Bioclipse2} (v1.0 released in Aug 2006) and Avogadro
+\cite{WebAvogadro} (v1.0 in Oct 2009) are two examples of such software, based on the CDK and Open Babel, respectively. Bioclipse is an award-winning `molecular workbench' for life sciences that ..., while Avogadro is a 3D molecular editor and viewer aimed at preparing and analysis computational chemistry calculations. An interesting aspect of both of these projects is that they share some developers with the underlying toolkit and this has driven the development of new features in the CDK and Open Babel (??? is this true for the CDK too? ???).
 
 Some other recent projects that build on Blue Obelisk software include AMBIT (a GUI that facilitates registration of chemicals for the REACH EU directive on toxicity, based on the CDK), etc.
 
 \subsubsection*{The business end}
 
-Although the software developed by the Blue Obelisk is Open Source on principle, this does not rule out the establishment of a business based on open source chemistry software. Rather than supporting itself through sales, such a business generally relies on providing support, customisation and services around the software. The interaction between an open source project and a company is important, and works best where there is some form of ``giving back" to the project (such as developer time, code contributions, or finanical assistance with server costs).
+Although the software developed by the Blue Obelisk is Open Source on principle, this does not rule out the establishment of a business based on open source chemistry software. Rather than supporting itself through sales, such a business generally relies on providing support, customisation and services around the software. The interaction between an open source project and a company is important, and works best where there is some form of `giving back' to the project (such as developer time, code contributions, or finanical assistance with server costs).
 
 An example of such an interaction was the donation by eMolecules, Inc. to Open Babel of code for the canonicalisation of molecules and fragments (Nov 2006). eMolecules is an online vendor of chemicals that uses Open Babel under-the-hood to manage its compound collections. Another more recent example occurred in July 2010 when Silicos, a Belgian company that provides services
 in the area of cheminformatics, released several command line applications based on Open Babel as well as donating code to the project. For example, the Pharao
@@ -341,8 +343,9 @@ different software, the community becomes fragmented and there is
 the danger of vendor lock-in (where users are constrained to using
 a particular software, a situation which puts them at a
 disadvantage). This applies as much to Open Source software as to
-proprietary software. Cinfony is a project (first release May 2008)
-whose goal is to tackle this problem in the area of cheminformatics toolkits.
+proprietary software. Cinfony is a project (first release in May 2008)
+whose goal is to tackle this problem in the area of cheminformatics
+toolkits \cite{OBoyleCinfony2008}.
 It is a Python library that enables Open Babel, the CDK, and RDKit to
 be used using the same API; this makes it easy, for example, to read a
 molecule using Open Babel, calculate descriptors using the CDK and
@@ -404,8 +407,8 @@ topological canonicalization. Features that must be considered include
 \item tautomer enumeration and canonicalization
 \item normalization of functional groups
 \end{itemize}
-Currently, most of the individual components of a ``standardization
-pipeline'' can be implemented using BO tools. The larger problem is
+Currently, most of the individual components of a `standardization
+pipeline' can be implemented using BO tools. The larger problem is
 that there is no agreed upon list of steps for a standardization
 process. While some specifications have been published (e.g., Pubchem)
 and some standardization services and tools are available (Pubchem
@@ -424,11 +427,11 @@ We have already discussed the development of an Open SMILES standard. While much
 A considerable stumbling block in advocating the release of scientific
 data as Open Data has been how exactly to define Open. A major step
 forward was the launch in 2010 of the Panton Principles for Open Data
-in Science. This formalises the idea that Open Data maximises the
+in Science \cite{WebPanton}. This formalises the idea that Open Data maximises the
 possibility of reuse and repurposing, the fundamental basis
 of how science works. These principles recommend that published data
-be licensed explicitly, and preferably under CC0 (Creative Commons "No
-Rights Reserved"). This license allows others to use the data for any
+be licensed explicitly, and preferably under CC0 (Creative Commons `No
+Rights Reserved') \cite{WebCC0}. This license allows others to use the data for any
 purpose whatsoever without any barriers.
 
   \subsection*{Remaining challenges}
@@ -496,7 +499,7 @@ investigate related projects or read our blogs.
 
 {\ifthenelse{\boolean{publ}}{\footnotesize}{\small}
  \bibliographystyle{bmc_article}  % Style BST file
-  \bibliography{paper} }     % Bibliography file (usually '*.bib' ) 
+  \bibliography{websites,paper} }     % Bibliography file (usually '*.bib' ) 
 
 %%%%%%%%%%%
 
