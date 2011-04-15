@@ -247,9 +247,15 @@ model. Rather it is a grassroots organisation, catalysed by an initial
 core of interested scientists, but with membership open to all who
 share one or more of the goals of the group:
 \begin{itemize}
-\item Open Source. One can use other people's code without further permission, including changing it for one's own use and distributing it again.
-\item Open Standards. One can find visible community mechanisms for protocols and communicating information. The mechanisms for creating and maintaining these standards cover a wide spectrum of human organizations, including various degrees of consent.
-\item Open Data. One can obtain all data in the public domain when wanted and reuse it for whatever purpose.
+\item Open Source. One can use other people's code without further
+permission, including changing it for one's own use and distributing
+it again.
+\item Open Standards. One can find visible community mechanisms for
+protocols and communicating information. The mechanisms for creating
+and maintaining these standards cover a wide spectrum of human
+organizations, including various degrees of consent.
+\item Open Data. One can obtain all data in the public domain when
+wanted and reuse it for whatever purpose.
 \end{itemize}
 
 The Blue Obelisk was first described in Guha et al.\cite{Guha2006} in
@@ -303,19 +309,48 @@ allowing for rich, chemically-aware browser-based applications.
 
 Although feature-rich and robust cheminformatics toolkits are useful
 in and of themselves, they can also be seen as providing a base layer
-on which additional tools and applications can be built. This is one of the reasons that cheminformatics toolkits are so important to the open source `ecosystem'; their availability lowers the barrier for the development of a `second generation' of chemistry software that no longer needs to concern itself with the low-level details of manipulating chemical structures, and can focus on providing additional functionality and ease-of-use.
+on which additional tools and applications can be built. This is one
+of the reasons that cheminformatics toolkits are so important to the
+open source `ecosystem'; their availability lowers the barrier for the
+development of a `second generation' of chemistry software that no
+longer needs to concern itself with the low-level details of
+manipulating chemical structures, and can focus on providing
+additional functionality and ease-of-use.
 
 Bioclipse \cite{Bioclipse2} (v1.0 released in Aug 2006) and Avogadro
-\cite{WebAvogadro} (v1.0 in Oct 2009) are two examples of such software, based on the CDK and Open Babel, respectively. Bioclipse is an award-winning `molecular workbench' for life sciences that ..., while Avogadro is a 3D molecular editor and viewer aimed at preparing and analysis computational chemistry calculations. An interesting aspect of both of these projects is that they share some developers with the underlying toolkit and this has driven the development of new features in the CDK and Open Babel (??? is this true for the CDK too? ???).
+\cite{WebAvogadro} (v1.0 in Oct 2009) are two examples of such
+software, based on the CDK and Open Babel, respectively. Bioclipse is
+an award-winning `molecular workbench' for life sciences that ...,
+while Avogadro is a 3D molecular editor and viewer aimed at preparing
+and analysing computational chemistry calculations. An interesting
+aspect of both of these projects is that they share some developers
+with the underlying toolkit and this has driven the development of new
+features in the CDK and Open Babel.
 
-Some other recent projects that build on Blue Obelisk software include AMBIT (a GUI that facilitates registration of chemicals for the REACH EU directive on toxicity, based on the CDK), etc.
+Some other recent projects that build on Blue Obelisk software include
+AMBIT (a GUI that facilitates registration of chemicals for the REACH
+EU directive on toxicity, based on the CDK), etc.
 
 \subsubsection*{The business end}
 
-Although the software developed by the Blue Obelisk is Open Source on principle, this does not rule out the establishment of a business based on open source chemistry software. Rather than supporting itself through sales, such a business generally relies on providing support, customisation and services around the software. The interaction between an open source project and a company is important, and works best where there is some form of `giving back' to the project (such as developer time, code contributions, or finanical assistance with server costs).
+Although the software developed by the Blue Obelisk is Open Source on
+principle, this does not rule out the establishment of a business
+based on open source chemistry software. Rather than supporting itself
+through sales, such a business generally relies on providing support,
+customisation and services around the software. The interaction
+between an open source project and a company is important, and works
+best where there is some form of `giving back' to the project (such as
+developer time, code contributions, or financial assistance with server costs).
 
-An example of such an interaction was the donation by eMolecules, Inc. to Open Babel of code for the canonicalisation of molecules and fragments (Nov 2006). eMolecules is an online vendor of chemicals that uses Open Babel under-the-hood to manage its compound collections. Another more recent example occurred in July 2010 when Silicos, a Belgian company that provides services
-in the area of cheminformatics, released several command line applications based on Open Babel as well as donating code to the project. For example, the Pharao
+An example of such an interaction was the donation by eMolecules, Inc.
+to Open Babel of code for the canonicalisation of molecules and
+fragments (Nov 2006). eMolecules is an online vendor of chemicals that
+uses Open Babel under-the-hood to manage its compound collections.
+Another more recent example occurred in July 2010 when Silicos, a
+Belgian company that provides services
+in the area of cheminformatics, released several command line
+applications based on Open Babel as well as donating code to the
+project. For example, the Pharao
 tool released by them is a comprehensive solution for pharmacophore
 searching that provides extensive support for a variety of
 pharmacophore searches. Other tools released by them include Sieve for
@@ -325,11 +360,25 @@ Another example of Open Source
 tools originating from commercial groups is the ChemCraft tool from
 Molecular Networks GmBH, that does XXX.
 
-Rather than releasing new tools, an alternative approach to provide an interface to existing tools. hBar Solutions has developed an online portal, hBar Lab, for managing and performing computational chemistry calculations in the cloud. To do so it leverages two Blue Obelisk projects, Jmol and Open Babel, as well as the open source quantum mechanics packages MPQC.
+Rather than releasing new tools, an alternative approach to provide an
+interface to existing tools. hBar Solutions has developed an online
+portal, hBar Lab, for managing and performing computational chemistry
+calculations in the cloud. To do so it leverages two Blue Obelisk
+projects, Jmol and Open Babel, as well as the open source quantum
+mechanics packages MPQC.
 
   \subsubsection*{Collaboration and interoperability}
 
-One of the effects of the Blue Obelisk has been to bring developers together from different Open Source chemistry projects so that they look for opportunities to collaborate rather than compete, and to leverage work done by other projects to avoid duplication of effort. As an example of this, when in March 2008 the Jmol development team were looking to add support for energy minimisation, rather than implement a forcefield from scratch they ported the UFF forcefield implementation from Open Babel to Jmol. This code has allowed Jmol to support 2D to 3D conversion of structures (through energy minimisation).
+One of the effects of the Blue Obelisk has been to bring developers
+together from different Open Source chemistry projects so that they
+look for opportunities to collaborate rather than compete, and to
+leverage work done by other projects to avoid duplication of effort.
+As an example of this, when in March 2008 the Jmol development team
+were looking to add support for energy minimisation, rather than
+implement a forcefield from scratch they ported the UFF forcefield
+implementation from Open Babel to Jmol. This code has allowed Jmol to
+support 2D to 3D conversion of structures (through energy
+minimisation).
 
 Another collaborative initiative between Blue Obelisk projects was the establishment in May 2008 of
 the ChemiSQL project. This brought together the developers of several
@@ -340,7 +389,13 @@ performance. For two of these projects, PgChem and MyChem, which are both based 
 Open Babel, there is the additional possibility of working together on a shared
 codebase.
 
-In the area of cheminformatics tookits, two of the existing toolkits Open Babel and RDKit are planning to work together on a common underlying framework called MolCore. This project is still in the planning stage, but if it is a success it will mean that the the two libraries will be interoperable (while retaining their existing focus) but also that the cost of maintaining the code will be shared among more developers, freeing time for the development of new features.
+In the area of cheminformatics tookits, two of the existing toolkits
+Open Babel and RDKit are planning to work together on a common
+underlying framework called MolCore. This project is still in the
+planning stage, but if it is a success it will mean that the the two
+libraries will be interoperable (while retaining their existing focus)
+but also that the cost of maintaining the code will be shared among
+more developers, freeing time for the development of new features.
 
 One of the goals of the Blue Obelisk is to promote interoperability in chemical
 informatics. When barriers exist to moving chemical data between
@@ -358,16 +413,36 @@ create a depiction using RDKit.
 
   \subsection*{Remaining challenges}
 
-Accuracy. Very often software work at the 95\% to 98\% level. The variety of chemical structures is such that with a large enough dataset, 'unusual' structures are always found which may be mishandled by software. Given that much of the development of open source software is unfunded, and relies heavily on developer motivation, it is understandable that working on the final N\% of problem structures (which may require substantial work) is not the most exciting of tasks. Putting a bounty system in place may be useful for these situations where a researcher needs a problem to be fixed because it affects a particular dataset of interest.
+Accuracy. Very often software work at the 95\% to 98\% level. The
+variety of chemical structures is such that with a large enough
+dataset, 'unusual' structures are always found which may be mishandled
+by software. Given that much of the development of open source
+software is unfunded, and relies heavily on developer motivation, it
+is understandable that working on the final N\% of problem structures
+(which may require substantial work) is not the most exciting of
+tasks. Putting a bounty system in place may be useful for these
+situations where a researcher needs a problem to be fixed because it
+affects a particular dataset of interest.
 
-Performance. There is a famous quote by Knuth that "Premature optimization is root of all evil (or something)". Given that compute time is cheap, ....
+Performance. There is a famous quote by Knuth that "Premature
+optimization is root of all evil (or something)". Given that compute
+time is cheap, ....
 
 Databases?
 
 \section*{Open Standards}
   \subsection*{Progress}
 
-The IUPAC InChI identifier is a non-proprietary and unique identifier for chemical substances designed to enable linking of diverse data compilations. Although its development predates the Blue Obelisk, software such as Open Babel has included InChI support since 2005. Since the official InChI implementation is in C, it is difficult to access from the other widely used language for cheminformatics toolkits, Java. The Blue Obelisk project JNI-InChI has been set up to solve this problem by using the Java Native Interface to link the InChI binary to Java. In this way, it promotes the wider adoption of this standard identifier by the chemistry community.
+The IUPAC InChI identifier is a non-proprietary and unique identifier
+for chemical substances designed to enable linking of diverse data
+compilations. Although its development predates the Blue Obelisk,
+software such as Open Babel has included InChI support since 2005.
+Since the official InChI implementation is in C, it is difficult to
+access from the other widely used language for cheminformatics
+toolkits, Java. The Blue Obelisk project JNI-InChI has been set up to
+solve this problem by using the Java Native Interface to link the
+InChI binary to Java. In this way, it promotes the wider adoption of
+this standard identifier by the chemistry community.
 
     \subsubsection*{OpenSMILES}
 
@@ -424,7 +499,12 @@ value in interoperability between structure repositories as well as
 between toolkits (though the latter is still confounded by differences
 in lower level cheminformatic features such as aromaticity models).
 
-We have already discussed the development of an Open SMILES standard. While much progress has been made towards a complete specification, more remains to be done before this can be considered finished. After that point, the next logical step would be to start work on a standard for the SMARTS language, the extension to SMILES that specifies patterns that match chemical substructures.
+We have already discussed the development of an Open SMILES standard.
+While much progress has been made towards a complete specification,
+more remains to be done before this can be considered finished. After
+that point, the next logical step would be to start work on a standard
+for the SMARTS language, the extension to SMILES that specifies
+patterns that match chemical substructures.
 
 \section*{Open Data}
   \subsection*{Progress}
