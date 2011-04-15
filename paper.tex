@@ -264,35 +264,40 @@ Standards in chemistry.
 \section*{Open Source}
   \subsection*{Progress}
 
-Open Source toolkits for cheminformatics have now existed for nearly
-ten years. During this period, some toolkits were developed form
-scratch, whereas others were made Open Source by releasing in-house
-codebases under liberal licenses. The primary toolkits currently in
-active development are the Chemistry Development Kit \cite{Steinbeck2003, Steinbeck2006}, Open Babel \cite{WebOpenBabel} and
-RDKit \cite{WebRDKit}. These projects support a variety of languages natively (Java,
-C++, Python), but by virtue of language wrappers, they can easily be
-used from languages that they were not originally developed in. For
-example, the CDK can be accessed from Python and Open Babel can be
-accessed from Java via SWIG wrappers. One important aspect of the
-toolkits noted here is that they originated for the support of desktop
-and server-side applications. 
+\subsection*{Cheminformatics toolkits}
 
-More recently, a number of workers have developed light-weight
+Open Source toolkits for cheminformatics have now existed for nearly
+ten years. During this period, some toolkits were developed from
+scratch in academia, whereas others were made Open Source by releasing in-house
+codebases under liberal licenses. When the Blue Obelisk was
+established five years ago, the primary toolkits under active development
+were the Chemistry Development Kit (CDK)
+\cite{Steinbeck2003, Steinbeck2006}, Open Babel \cite{WebOpenBabel},
+and JOELib \cite{WebJOELib}. Of these, both the CDK and Open Babel
+continue to be actively developed. [Insert main focus of work on CDK
+in last 5 years] Since 2006, major new features of Open Babel include 3D structure
+generation and 2D structure-diagram generation, UFF and MMFF94
+forcefields, and significantly expanded support for computational
+chemistry calculations. In addition, a major focus of Open Babel development
+has been to fix problems in the areas of stereochemistry, kekulisation
+and canonicalisation.
+
+Two new Open Source cheminformatics toolkits have appeared since the
+original paper. In 2006 Rational Discovery, a cheminformatics service
+company (since closed down), released RDKit \cite{WebRDKit} under the
+BSD License. RDKit continues to be actively developed and includes
+code donated by Novartis. More recently, GGA Software Services (a
+contract programming company) released the Indigo toolkit
+\cite{WebIndigo} and associated software in 2009 under the GPL. [More
+text on Indigo here]
+
+One important aspect of the above
+toolkits is that they originated for the support of desktop
+and server-side applications. More recently, a number of workers have developed light-weight
 toolkits that are targeted towards web applications. One example of
 this form is the ChemDoodle library from iChemLabs. The focus of these
 toolkits is to support client-side cheminformatics functionality,
 allowing for rich, chemically-aware browser-based applications.
-
-In terms of functionality, most Open Source libraries support commonly
-used cheminformatics features. At the same time, individual toolkits
-have their own strengths. For example, the CDK has an extensive set of
-molecular descriptors useful for QSAR modeling applications, but lacks
-support for 3D structure generation. In contrast, Open Babel supports
-3D structure generation and optimization using a variety of
-forcefields, but lacks a built in set of molecular descriptors. RDKit
-on the other hand supports both features and in general is the most
-comprehensive Open Source toolkit in terms of functionality. Table XXX
-summarizes the features of these three toolkits.
 
 \subsubsection*{Second-generation tools}
 
