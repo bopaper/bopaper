@@ -152,6 +152,9 @@
       \and
          Jane E Doe\correspondingauthor$^2$%
          \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
+      \and
+         Dmitry Pavlov$^8$%
+         \email{Dmitry Pavlov - dpavlov@ggasoftware.com}
       }
       
 
@@ -170,6 +173,7 @@
     \iid(5)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland\\
     \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK
     \iid(7)Unilever Centre for Molecular Science Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK
+    \iid(8)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia
 }%
 
 \maketitle
@@ -270,10 +274,19 @@ small molecules and their interactions and reactions in biological systems
 has been realised. In fact, one of the first free and open databases and ontologies 
 of small molecules was created as a resource about chemical structure and nomenclature
 by biologists \cite{DeMatos:2009p3839}.
-Open workflow systems such as Taverna \cite{Hull:2006p60} have opened the door for 
-an easy and seamless integration of free and open software (FOS) components into executable workflows 
+Open workflow systems such as Taverna \cite{Hull:2006p60} and KNIME\cite{WebKNIME}
+have opened the door for 
+an easy and seamless integration of FOS components into executable workflows 
 or data pipelines. A combination of the Chemistry Development Kit and Taverna, for instance, was
 reported in 2010 \cite{Kuhn:2010p4001}. 
+
+KNIME currently has a built-in collection of CDK-based and
+OpenBabel-based nodes\cite{WebKNIMEExtensions} for implementing
+chemistry workflows. Another collection of chemistry nodes---based on
+the RDKit and its Java wrapper---appeared in 2010 and is available to
+KNIME users from the KNIME's official ``Community Updates'' site.
+Indigo nodes for KNIME are in preparation and will appear nearby the
+RDKit nodes by May 2011.
 
 The formation of the Blue Obelisk group is somewhat unusual in that it
 is not a funded network, nor does it follow the industry consortium
@@ -327,10 +340,22 @@ Two new Open Source cheminformatics toolkits have appeared since the
 original paper. In 2006 Rational Discovery, a cheminformatics service
 company (since closed down), released RDKit \cite{WebRDKit} under the
 BSD License. RDKit continues to be actively developed and includes
-code donated by Novartis. More recently, GGA Software Services (a
-contract programming company) released the Indigo toolkit
-\cite{WebIndigo} and associated software in 2009 under the GPL. [More
-text on Indigo here]
+code donated by Novartis.
+
+More recently, GGA Software Services (a contract programming company)
+released the Indigo toolkit \cite{WebIndigo} and associated software
+in 2009 under the GPL. Indigo is written from scratch in C++ and has
+high-level wrappers for using it in C, Java, Python, or .NET
+environment. Like other toolkits, Indigo provides support for
+tetrahedral ans cis-trans stereochemistry, 2D coordinate generation,
+exact/substructure/SMARTS matching, fingerprint generation (all these
+both for molecules and reactions), and canonical SMILES computation.
+It also provides some less common functionality, like matching
+tautomers ans resonance substructures, enumeration of subgraps,
+finding maximum common substructure of $N$ input structures, and
+enumerating reaction products. Indigo also has its rendering plugin,
+which is used in a lot of commercial and open-sourse projects as the
+main 2D chemical rendering engine.
 
 One important aspect of the above
 toolkits is that they originated for the support of desktop
@@ -493,6 +518,12 @@ solve this problem by using the Java Native Interface to link the
 InChI binary to Java. In this way, it promotes the wider adoption of
 this standard identifier by the chemistry community.
 
+Also, Indigo is going to provide its own plugin with an interface to
+the InChI implementation in May 2011. This will enable developers to
+calculate InChI and InChIKey-s within Python and .NET projects (not to
+mention Java), eliminating the trouble of compiling and using binary
+modules directly.
+
     \subsubsection*{OpenSMILES}
 
 One of the most widely used ways to store chemical structures is the
@@ -515,6 +546,13 @@ developed through a community process. The specification is largely
 complete and contains guidelines on reading SMILES, a formal
 grammar, recommendations on standard forms when writing SMILES, as
 well as proposed extensions.
+
+Recently proposed CurlySMILES\cite{CurlySMILES} is an extension of the
+SMILES notation, which allows to define crystals structures, polymers,
+electron delocalization charges, molecule interations, and many other
+features absent in the initial SMILES specification. There has been
+discussions about including parts of the CurlySMILES notation into
+OpenSMILES, especially polymers.
 
 CML?
 
