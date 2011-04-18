@@ -149,6 +149,9 @@
      \and 
          Peter Murray-Rust$^7$%
          \email{Peter Murray-Rust - pm286@cam.ac.uk}
+     \and
+         Robert Hanson$^8$%
+         \email{Robert Hanson - hansonr@stolaf.edu}
       \and
          Jane E Doe\correspondingauthor$^2$%
          \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
@@ -335,6 +338,31 @@ forcefields, and significantly expanded support for computational
 chemistry calculations. In addition, a major focus of Open Babel development
 has been to fix problems in the areas of stereochemistry, kekulisation
 and canonicalisation.
+
+Some project have also been adopted by other fields, including biology
+and crystallography. A good example
+here is Jmol, which has, in the past five years, gone through two major revisions
+as part of an accelerated development focus. Starting with Jmol 10.2, released in
+April of 2006, Jmol 11.0 added over 100 new features and was released in March of
+2007. Three years later, Jmol 12.0 followed with over 700 new features.
+Based on the outstanding work of Michael (Miguel) Howard and others, this development
+path took Jmol from a "Rasmol/Chime replacement" to a fully fledged molecular
+visualization package, including full support for crystallography~\cite{Hanson2010},
+efficient delivery of surface data using fast solvent-excluded surface
+generation and the highly compressed JVXL format [http://chemapps.stolaf.edu/jmol/docs/misc/JVXL-format.pdf],
+ display of molecular orbitals from standard basis set/coefficient data,
+the inclusion of dynamic minimization using the UFF force field, and
+a full implementation of Daylight SMILES and SMART, with extensions to
+conformational and biomolecular substructure searching in the form of Jmol
+BioSMARTS.[http://jmol.svn.sourceforge.net/viewvc/jmol/trunk/Jmol/src/org/jmol/smiles/package.html]
+Behind the scenes, Jmol has been essentially completely rewritten. A full
+mathematical expression evaluator was added, and the scripting language
+was folded into a versatile JavaScript-like command language, including a
+complete set of program flow commands, several new data types, and
+user-defined variables and functions. An exciting non-chemical application
+of Jmol has been its incorporation into the open source Sage
+Mathematics Project [http://www.sagemath.org/], where Jmol is being used
+to deliver three-dimensional depiction of mathematical functions. 
 
 Two new Open Source cheminformatics toolkits have appeared since the
 original paper. In 2006 Rational Discovery, a cheminformatics service
