@@ -259,7 +259,6 @@ new ways of doing science and reaping the benefits of community
 efforts, there was little if any innovation in the field of chemistry
 and scientific progress was actively hampered by the lack of access to
 data and tools.
-
 Since 2005 it has become evident that a good amount of development in open 
 chemical information and information is driven by the demands of neighbouring
 scientific fields. In many areas in biology, for example, the importance of 
@@ -267,8 +266,8 @@ small molecules and their interactions and reactions in biological systems
 has been realised. In fact, one of the first free and open databases and ontologies 
 of small molecules was created as a resource about chemical structure and nomenclature
 by biologists \cite{DeMatos:2009p3839}.
-Open workflow systems such as Taverna (XXX add citation) have opened the door for 
-an easy and seamless integration of FOS components into executable workflows 
+Open workflow systems such as Taverna \cite{Hull:2006p60} have opened the door for 
+an easy and seamless integration of free and open software (FOS) components into executable workflows 
 or data pipelines. A combination of the Chemistry Development Kit and Taverna, for instance, was
 reported in 2010 \cite{Kuhn:2010p4001}. 
 
@@ -357,6 +356,12 @@ and analysing computational chemistry calculations. An interesting
 aspect of both of these projects is that they share some developers
 with the underlying toolkit and this has driven the development of new
 features in the CDK and Open Babel.
+
+CDK-Taverna \cite{Kuhn:2010p4001} as an open-source cheminformatics workflow solution.
+Commonly used in this context are workflow engines for cheminformatics, where numerous recurring tasks can be automated, including tasks for chemical data filtering, transformation, curation and migration workflows, chemical documentation and information retrieval related workflows (structures, reactions, pharma- cophores, object relational data etc.) or data analysis workflows (statistics and clustering/ machine learning for QSAR, diversity analysis etc. 
+CDK-Taverna has matured to become a freely available and increasingly powerful tool for the biosciences. It was recently ported to 
+Taverna version 2.x.
+The combination of CDK-Taverna workers with the multitude of workers already published on myexperiment.org by the large and active user community of Taverna enables scientists to quickly build workflows to process a diverse set of data as typically found in today's systems biology scenarios.
 
 Some other recent projects that build on Blue Obelisk software include
 AMBIT (a GUI that facilitates registration of chemicals for the REACH
@@ -459,7 +464,15 @@ Performance. There is a famous quote by Knuth that "Premature
 optimization is root of all evil (or something)". Given that compute
 time is cheap, ....
 
-Databases?
+\section*{Chemical Structure Registration Systems, Databases}
+Databases? (XXX CS: A couple of database-related paragraphs could go here XXX)
+
+XXX the paragraph below on OrChem needs some work
+Registration, indexing and searching of chemical structures in relational databases is one of the core areas of cheminformatics. 
+A number of structure registration systems have been published in the last five years, exploiting the fact that 
+free cheminformatics toolkits such as OpenBabel and the CDK were available. 
+OrChem, for example, is an extension for the Oracle 11G database that adds registration and indexing of chemical structures to support fast substructure and similarity searching. The cheminformatics functionality is provided by the Chemistry Development Kit. OrChem provides similarity searching with response times in the order of seconds for databases with millions of compounds, depending on a given similarity cut-off. For substructure searching, it can make use of multiple processor cores on today's powerful database servers to provide fast response times in equally large data sets.
+OrChem is free software and can be redistributed and/or modified under the terms of the GNU Lesser General Public License as published by the Free Software Foundation. All software is available via http://orchem.sourceforge.net.
 
 \section*{Open Standards}
   \subsection*{Progress}
@@ -661,14 +674,23 @@ investigate related projects or read our blogs.
         %% \hline \multicolumn{3}{|c|}{My Table}\\ \hline
         \hline Name & Website & Description? or Lead Developer? \\ \hline
         \multicolumn{3}{|c|}{Cheminformatics toolkits} \\ \hline
-        Chemistry Development Kit & http://cdk.sf.net & XXXX  \\ \hline
+        Chemistry Development Kit (CDK) \cite{Steinbeck2003, Steinbeck2006} & http://cdk.sf.net & XXXX  \\ \hline
         Cinfony & http://cinfony.googlecode.com & Noel O'Boyle, Python interface to toolkits \\ \hline
         Indigo & http://ggasoftware.com/opensource/indigo & GGA Software \\ \hline
         Open Babel & http://openbabel.org & Geoffrey Hutchison et al \\ \hline
         RDKit & http://rdkit.org & Greg Landrum \\ \hline
+        \multicolumn{3}{|c|}{Integration} \\ \hline
+        CDK-Taverna \cite{Kuhn:2010p4001} & http://cdk-taverna.blah.XXX & Christoph Steinbeck, Workflow \\ \hline
+        A3 & ..  & .  \\ \hline
         \multicolumn{3}{|c|}{Interconversion} \\ \hline
         OSRA & http://osra.sf.net & Igor Filippov, Image to structure \\ \hline
         A3 & ..  & .  \\ \hline
+        \multicolumn{3}{|c|}{Structure Databases} \\ \hline
+        OrChem \cite{RijnbeekS10} & http://orchem.sourceforge.net & Christoph Steinbeck, Oracle-based Chemical Database Engine \\ \hline
+        MyChem  & http://XXX.sourceforge.net & Jerome Pansanel, MySQL-based Chemical Database Engine \\ \hline
+        PGChem  & http://XXX.sourceforge.net & Ernst-Georg Schmid, PostgreSQL-based Chemical Database Engine \\ \hline
+        Bingo  & http://XXX.XXX.XXX & Dmitry Pavlov, Oracle-based Chemical Database Engine \\ \hline
+
       \end{tabular}
       }
   \subsection*{Table 2 - Sample table title}
