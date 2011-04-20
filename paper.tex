@@ -155,6 +155,9 @@
      \and 
          Peter Murray-Rust$^7$%
          \email{Peter Murray-Rust - pm286@cam.ac.uk}
+     \and 
+         Daniel M Lowe$^7$%
+         \email{Daniel Lowe - dl387@cam.ac.uk}
      \and
          Robert Hanson$^8$%
          \email{Robert Hanson - hansonr@stolaf.edu}
@@ -602,6 +605,11 @@ OpenSMILES, especially polymers.
 \subsubsection*{CML}
 ?
 
+    \subsubsection*{IUPAC Nomenclature Conversion}
+The oldest form of communication used to describe chemicals, predating even the knowledge of the atomic structure of compounds, is the chemical name. Even now chemical names are abundant in the scientific literature and encode valuable structural information. The IUPAC have through successive books of recommendations~\cite{iupac_nomenclature_1979, iupac_guide_1993} aimed to codify and to an extent standardise naming practices. The latest provisional recommendations are freely available through the IUPAC's website~\cite{iupac_draft_2004}.
+
+The Blue Obelisk project OPSIN (Open Parser for Systematic IUPAC Nomenclature)~\cite{lowe_chemical_2011} aims to make this abundance of chemical names machine readable by translating them to SMILES, CML or InChI. The program is based around the use of a regular grammar to guide tokenisation and parsing of chemical names, followed by step-wise application of nomenclature rules. OPSIN is able to offer fast and precise conversions for the majority of names using IUPAC organic nomenclature. OPSIN is available as a web service, Java library and standalone application for maximum interoperability.
+
 \subsubsection*{QSAR-ML}
 The field of QSAR has long been hampered by the lack of open standards, which makes it difficult to share and reproduce descriptor calculations and analyses. QSAR-ML was recently proposed as an open standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset in QSAR-ML includes the chemical structures (preferable described in CML) with InChI to protect integrity, chemical descriptors by linking to the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values, units, and versioned descriptor implementations to allow for integrating several descriptor software in the same calculation. Hence, a dataset described in QSAR-ML is completely reproducible. To allow for easy setup of QSAR-ML compliant datasets, a plugin for Bioclipse was created with graphical interfaces that can be used to set up QSAR datasets and perform calculations. Descriptor implementations were initially available from CDK and JoeLIB, as well as via remote web services such as XMPP~\cite{Wagener:2009uq}.
 
@@ -779,6 +787,7 @@ investigate related projects or read our blogs.
         A3 & ..  & .  \\ \hline
         \multicolumn{3}{|c|}{Interconversion} \\ \hline
         OSRA & http://osra.sf.net & Igor Filippov, Image to structure \\ \hline
+        OPSIN & http://opsin.ch.cam.ac.uk & Daniel Lowe, Name to structure \\ \hline
         A3 & ..  & .  \\ \hline
         \multicolumn{3}{|c|}{Structure Databases} \\ \hline
         OrChem \cite{RijnbeekS10} & http://orchem.sourceforge.net & Christoph Steinbeck, Oracle-based Chemical Database Engine \\ \hline
