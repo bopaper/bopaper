@@ -147,6 +147,9 @@
          Noel M O'Boyle$^5$%
          \email{Noel M O'Boyle - n.oboyle@ucc.ie}
      \and 
+         Ola Spjuth$^9$%
+         \email{Noel M O'Boyle - n.oboyle@ucc.ie}
+     \and 
          Peter Murray-Rust$^7$%
          \email{Peter Murray-Rust - pm286@cam.ac.uk}
      \and
@@ -174,9 +177,10 @@
     \iid(3)Division of Molecular Toxicology, Institute of Environmental Medicine, %
         Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden\\
     \iid(5)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland\\
-    \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK
-    \iid(7)Unilever Centre for Molecular Science Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK
-    \iid(8)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia
+    \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK\\
+    \iid(7)Unilever Centre for Molecular Science Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK\\
+    \iid(8)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia\\
+    \iid(9)Department of Pharmaceutical Biosciences, Uppsala University, Box 591, 751 24 Uppsala, Sweden 
 }%
 
 \maketitle
@@ -405,11 +409,12 @@ longer needs to concern itself with the low-level details of
 manipulating chemical structures, and can focus on providing
 additional functionality and ease-of-use.
 
-Bioclipse \cite{Bioclipse2} (v1.0 released in Aug 2006) and Avogadro
+Bioclipse~\cite{Spjuth:2007fk} (v2.4 released in Aug 2010) and Avogadro
 \cite{WebAvogadro} (v1.0 in Oct 2009) are two examples of such
 software, based on the CDK and Open Babel, respectively. Bioclipse is
-an award-winning `molecular workbench' for life sciences that ...,
-while Avogadro is a 3D molecular editor and viewer aimed at preparing
+an award-winning `molecular workbench' for life sciences with a dynamic plugin architectur, and which wraps cheminformatics functionality behind user-friendly interfaces and graphical editors. All functionality in Bioclipse is completely scriptable using an integrated high-level language called Bioclipse Scripting Language (BSL), which can be used for invoking functionality or to automate complex tasks~\cite{Bioclipse2}.
+
+Avogadro is a 3D molecular editor and viewer aimed at preparing
 and analysing computational chemistry calculations. An interesting
 aspect of both of these projects is that they share some developers
 with the underlying toolkit and this has driven the development of new
@@ -583,7 +588,14 @@ features absent in the initial SMILES specification. There has been
 discussions about including parts of the CurlySMILES notation into
 OpenSMILES, especially polymers.
 
-CML?
+\subsubsection*{CML}
+?
+
+\subsubsection*{QSAR-ML}
+The field of QSAR has long been hampered by the lack of open standards, which makes it difficult to share and reproduce descriptor calculations and analyses. QSAR-ML was recently proposed as an open standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset in QSAR-ML includes the chemical structures (preferable described in CML) with InChI to protect integrity, chemical descriptors by linking to the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values, units, and versioned descriptor implementations to allow for integrating several descriptor software in the same calculation. Hence, a dataset described in QSAR-ML is completely reproducible. To allow for easy setup of QSAR-ML compliant datasets, a plugin for Bioclipse was created with graphical interfaces that can be used to set up QSAR datasets and perform calculations. Descriptor implementations were initially available from CDK and JoeLIB, as well as via remote web services such as XMPP~\cite{Wagener:2009uq}.
+
+
+\subsubsection*{Others...?}
 
 Pistoia Alliance (and others?) should be mentioned at this point
 
@@ -638,7 +650,7 @@ purpose whatsoever without any barriers.
   \subsection*{Remaining challenges}
 
 \section*{Other areas of activity}
-Web services? (NIH, CDK and Chemspider)
+Web services? XMPP services? (NIH, CDK and Chemspider)
 
 Books (Angel, Egon, OB)
 
