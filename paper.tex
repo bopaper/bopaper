@@ -162,11 +162,14 @@
          Robert Hanson$^8$%
          \email{Robert Hanson - hansonr@stolaf.edu}
       \and
-         Jane E Doe\correspondingauthor$^2$%
-         \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
-      \and
          Dmitry Pavlov$^8$%
          \email{Dmitry Pavlov - dpavlov@ggasoftware.com}
+      \and
+         Igor V Filippov\correspondingauthor$^{10}$%
+         \email{Igor V Filippov\correspondingauthor - igorf@helix.nih.gov}
+      \and
+         Jane E Doe\correspondingauthor$^2$%
+         \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
       }
       
 
@@ -186,7 +189,8 @@
     \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK\\
     \iid(7)Unilever Centre for Molecular Science Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK\\
     \iid(8)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia\\
-    \iid(9)Department of Pharmaceutical Biosciences, Uppsala University, Box 591, 751 24 Uppsala, Sweden 
+    \iid(9)Department of Pharmaceutical Biosciences, Uppsala University, Box 591, 751 24 Uppsala, Sweden \\
+    \iid(10)NIH, Somewhere in the US, USA
 }%
 
 \maketitle
@@ -475,6 +479,49 @@ calculations in the cloud. To do so it leverages two Blue Obelisk
 projects, Jmol and Open Babel, as well as the open source quantum
 mechanics packages MPQC.
 
+\subsubsection*{Converting chemical names and images to structures}
+
+The majority of chemical information is not stored in machine-readable
+formats, but rather as chemical names or depictions. The OSRA and OPSIN
+projects focus on extracting chemical information from these sources.
+Such software plays a particularly important role for datamining the
+chemical literature, including patents and theses.
+
+Optical Structure Recognition Application (OSRA) \cite{WebOSRA} was started
+in early 2007 with the goal to create first free and open source
+tool for extraction and conversion of molecular images into SMILES and
+SD files. From the very beginning the underlying philosophy was to integrate
+existing open source libraries and to avoid ``reinventing the wheel''
+wherever possible. OSRA relies on a variety of open source components:
+Open Babel for chemical format
+conversion and molecular property calculations, GraphicsMagick for image
+manipulation, Potrace for vectorization, GOCR and OCRAD for optical
+character recognition. The growing importance of image
+recognition technology can be seen in the fact that 
+only a few years ago there was only one widely available software
+package for chemical structure recognition -  CLiDE (commercially
+developed at Keymodule, Ltd), but today there are as many as seven
+available programs.
+
+The Blue Obelisk project OPSIN (Open Parser for Systematic IUPAC
+Nomenclature)~\cite{lowe_chemical_2011} focuses instead on interpreting chemical names.
+The chemical name is the oldest form of communication used to
+describe chemicals, predating
+even the knowledge of the atomic structure of compounds.
+Chemical names are abundant in the scientific
+literature and encode valuable structural information.
+Through successive books of
+recommendations~\cite{iupac_nomenclature_1979, iupac_guide_1993},
+IUPAC have tried to codify and to an extent standardise naming practices.
+OPSIN aims to make this abundance of
+chemical names machine readable by translating them to SMILES, CML or
+InChI. The program is based around the use of a regular grammar to
+guide tokenisation and parsing of chemical names, followed by
+step-wise application of nomenclature rules. OPSIN is able to offer
+fast and precise conversions for the majority of names using IUPAC
+organic nomenclature, and is available as a web service, Java
+library and standalone application for maximum interoperability.
+
   \subsubsection*{Collaboration and interoperability}
 
 One of the effects of the Blue Obelisk has been to bring developers
@@ -600,10 +647,6 @@ OpenSMILES, especially polymers.
 \subsubsection*{CML}
 ?
 
-    \subsubsection*{IUPAC Nomenclature Conversion}
-The oldest form of communication used to describe chemicals, predating even the knowledge of the atomic structure of compounds, is the chemical name. Even now chemical names are abundant in the scientific literature and encode valuable structural information. The IUPAC have through successive books of recommendations~\cite{iupac_nomenclature_1979, iupac_guide_1993} aimed to codify and to an extent standardise naming practices. The latest provisional recommendations are freely available through the IUPAC's website~\cite{iupac_draft_2004}.
-
-The Blue Obelisk project OPSIN (Open Parser for Systematic IUPAC Nomenclature)~\cite{lowe_chemical_2011} aims to make this abundance of chemical names machine readable by translating them to SMILES, CML or InChI. The program is based around the use of a regular grammar to guide tokenisation and parsing of chemical names, followed by step-wise application of nomenclature rules. OPSIN is able to offer fast and precise conversions for the majority of names using IUPAC organic nomenclature. OPSIN is available as a web service, Java library and standalone application for maximum interoperability.
 
 \subsubsection*{QSAR-ML}
 The field of QSAR has long been hampered by the lack of open standards, which makes it difficult to share and reproduce descriptor calculations and analyses. QSAR-ML was recently proposed as an open standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset in QSAR-ML includes the chemical structures (preferable described in CML) with InChI to protect integrity, chemical descriptors by linking to the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values, units, and versioned descriptor implementations to allow for integrating several descriptor software in the same calculation. Hence, a dataset described in QSAR-ML is completely reproducible. To allow for easy setup of QSAR-ML compliant datasets, a plugin for Bioclipse was created with graphical interfaces that can be used to set up QSAR datasets and perform calculations. Descriptor implementations were initially available from CDK and JOELib, as well as via remote web services such as XMPP~\cite{Wagener:2009uq}.
