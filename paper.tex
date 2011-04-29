@@ -258,6 +258,12 @@ organizations, including various degrees of consent.
 wanted and reuse it for whatever purpose.
 \end{itemize}
 
+Note that while some may advocate also for Open Access to
+publications, the goals focus more on the availability of code (to
+reproduce results), standards (to exchange data), and the scientific
+data itself. All three of these goals stem from the basics of the
+scientific method for data sharing and reproducibilty.
+
 The Blue Obelisk was first described in Guha et al.\cite{Guha2006} in
 2006. This
 contribution looks back on the past 5 years and surveys progress and
@@ -346,6 +352,7 @@ An example of such an interaction was the donation by eMolecules, Inc.
 to Open Babel of code for the canonicalisation of molecules and
 fragments (Nov 2006). eMolecules is an online vendor of chemicals that
 uses Open Babel under-the-hood to manage its compound collections.
+
 Another more recent example occurred in July 2010 when Silicos, a
 Belgian company that provides services
 in the area of cheminformatics, released several command line
@@ -353,8 +360,10 @@ applications based on Open Babel as well as donating code to the
 project. For example, the Pharao
 tool released by them is a comprehensive solution for pharmacophore
 searching that provides extensive support for a variety of
-pharmacophore searches. Other tools released by them include Sieve for
-filtering by molecular property and XXX.
+pharmacophore searches. Other tools released by Silicos include Sieve for
+filtering by molecular property, Stripper for removing core scaffold
+structures from a molecule set, and Piramid for molecular alignment
+using shape determined by the Gaussian volumes as a descriptor.
 
 Another example of Open Source
 tools originating from commercial groups is the ChemCraft tool from
@@ -391,7 +400,7 @@ codebase.
 
 In the area of cheminformatics tookits, two of the existing toolkits
 Open Babel and RDKit are planning to work together on a common
-underlying framework called MolCore. This project is still in the
+underlying framework called MolCore.\cite{WebMolCore} This project is still in the
 planning stage, but if it is a success it will mean that the the two
 libraries will be interoperable (while retaining their existing focus)
 but also that the cost of maintaining the code will be shared among
