@@ -2,7 +2,7 @@ all: paper.pdf
 
 paper.bib:
 	@echo "" > paper.bib
-	@wget -O - http://www.citeulike.org/bibtex/tag/bopaper >> paper.bib
+	# @wget -O - http://www.citeulike.org/bibtex/tag/bopaper >> paper.bib
 
 paper.pdf: paper.tex paper.bib
 	pdflatex paper
