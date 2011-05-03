@@ -1,0 +1,64 @@
+digraph g {
+  /* license colors:
+
+    ... to be done ...
+
+  */
+
+  /* Project labels */
+
+  ambit [label="AMBIT"] ;
+  avogadro [label="Avodagro"] ;
+  bioclipse [label="Bioclipse"] ;
+  bodo [label="BODO",shape=diamond] ;
+  bodr [label="BODR",shape=box] ;
+  cdk [label="CDK"] ;
+  cinfony [label="Cinfony"] ;
+  cml [label="CML",shape=diamond] ;
+  cmlxom [label="CMLXOM"] ;
+  jchempaint [label="JChemPaint"] ;
+  jmol [label="Jmol"] ;
+  jniinchi [label="JNI-InChI"] ;
+  jumbo [label="Jumbo"] ;
+  ob [label="OpenBabel"] ;
+  joelib [label="JOELib"] ;
+  opensmiles [label="OpenSmiles",shape=diamond] ;
+  opsin [label="OPSIN"] ;
+  qsarml [label="QSAR-ML",shape=diamond] ;
+  rdkit [label="RDKit"] ;
+
+  /* Uses */
+
+  cdk -> jniinchi ;
+  cdk -> bodr ;
+  cdk -> bodo ;
+  ob -> bodr ;
+  ob -> opensmiles ;
+  ob -> cml ;
+  avogadro -> ob ;
+  bioclipse -> cdk ;
+  bioclipse -> jmol ;
+  bioclipse -> opsin ;
+  bioclipse -> joelib ;
+  cdk -> cmlxom ;
+  jumbo -> cdk ;
+  jumbo -> cmlxom ;
+  cmlxom -> cml ;
+  jchempaint -> cdk ;
+  cinfony -> cdk ;
+  cinfony -> ob ;
+  cinfony -> rdkit ;
+  ambit -> cdk ;
+  jmol -> cml ;
+  joelib -> bodo ;
+  bioclipse -> qsarml ;
+  qsarml -> cml ;
+  qsarml -> bodo ;
+  opsin -> cmlxom ;
+  opsin -> jniinchi ;
+
+  /* Inherited code */
+
+  /* ... who wants to have a go ? ... */
+
+}
