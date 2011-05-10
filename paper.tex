@@ -21,7 +21,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                 %%	
+%%                                                                 %%
 %% For instructions on how to fill out this Tex template           %%
 %% document please refer to Readme.pdf and the instructions for    %%
 %% authors page on the biomed central website                      %%
@@ -41,35 +41,35 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\documentclass[10pt]{bmc_article}    
+\documentclass[10pt]{bmc_article}
 
 
 
 % Load packages
 \usepackage{cite} % Make references as [1-4], not [1,2,3,4]
-\usepackage{url}  % Formatting web addresses  
-\usepackage{ifthen}  % Conditional 
+\usepackage{url}  % Formatting web addresses
+\usepackage{ifthen}  % Conditional
 \usepackage{multicol}   %Columns
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
 \urlstyle{rm}
- 
- 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
 %%  If you wish to display your graphics for   %%
 %%  your own use using includegraphic or       %%
 %%  includegraphics, then comment out the      %%
-%%  following two lines of code.               %%   
+%%  following two lines of code.               %%
 %%  NB: These line *must* be included when     %%
-%%  submitting to BMC.                         %% 
+%%  submitting to BMC.                         %%
 %%  All figure files must be submitted as      %%
 %%  separate graphics through the BMC          %%
-%%  submission process, not included in the    %% 
-%%  submitted article.                         %% 
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
 %%                                             %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \def\includegraphic{}
@@ -79,7 +79,7 @@
 
 \setlength{\topmargin}{0.0cm}
 \setlength{\textheight}{21.5cm}
-\setlength{\oddsidemargin}{0cm} 
+\setlength{\oddsidemargin}{0cm}
 \setlength{\textwidth}{16.5cm}
 \setlength{\columnsep}{0.6cm}
 
@@ -95,7 +95,7 @@
 %% returned to the Review style setting.        %%
 %%                                              %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
+
 
 %Review style settings
 \newenvironment{bmcformat}{\begin{raggedright}\baselineskip20pt\sloppy\setboolean{publ}{false}}{\end{raggedright}\baselineskip20pt\sloppy}
@@ -117,7 +117,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Open Data, Open Source and Open Standards in chemistry - The Blue Obelisk five years on}
- 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
 %% Enter the authors here                   %%
@@ -126,55 +126,50 @@
 %% the last two authors. This will be       %%
 %% replaced by a comma in the final article %%
 %%                                          %%
-%% Ensure there are no trailing spaces at   %% 
-%% the ends of the lines                    %%     	
+%% Ensure there are no trailing spaces at   %%
+%% the ends of the lines                    %%
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\author{Charles A Darwin\correspondingauthor$^{1,2}$%
-       \email{Charles A Darwin\correspondingauthor - charles@londonzoo.co.uk}%
-      \and 
-         Egon L Willighagen$^3$%
-         \email{Egon L Willighagen - egon.willighagen@ki.se}
-     \and 
-         Rajarshi Guha$^4$%
-         \email{Rajarshi Guha - guhar@mail.nih.gov}
-	 \and 
-	     Christoph Steinbeck$^6$%
-	         \email{Christoph Steinbeck - steinbeck@ebi.ac.uk}
-     \and 
-         Noel M O'Boyle$^5$%
-         \email{Noel M O'Boyle - n.oboyle@ucc.ie}
-     \and
-         Geoffrey R Hutchison$^6$%
-         \email{Geoffrey R Hutchison - geoffh@pitt.edu}
-     \and 
-         Ola Spjuth$^9$%
-         \email{ola.spjuth@farmbio.uu.se}
-     \and 
-         Jonathan Alvarsson$^9$%
-         \email{Jonathan Alvarsson - jonathan.alvarsson@farmbio.uu.se}
-     \and 
-         Peter Murray-Rust$^7$%
-         \email{Peter Murray-Rust - pm286@cam.ac.uk}
-     \and 
-         Daniel M Lowe$^7$%
-         \email{Daniel Lowe - dl387@cam.ac.uk}
-     \and
-         Robert Hanson$^8$%
-         \email{Robert Hanson - hansonr@stolaf.edu}
-      \and
-         Dmitry Pavlov$^8$%
-         \email{Dmitry Pavlov - dpavlov@ggasoftware.com}
-      \and
-         Igor V Filippov\correspondingauthor$^{10}$%
-         \email{Igor V Filippov\correspondingauthor - igorf@helix.nih.gov}
-     \and
-         Jane E Doe\correspondingauthor$^2$%
-         \email{Jane E Doe\correspondingauthor - jane.e.doe@cambridge.co.uk}
-      }
-      
+\author{
+  Jonathan Alvarsson$^1$%
+  \email{Jonathan Alvarsson - jonathan.alvarsson@farmbio.uu.se}
+  \and
+  Igor V Filippov\correspondingauthor$^2$%
+  \email{Igor V Filippov\correspondingauthor - igorf@helix.nih.gov}
+  \and
+  Rajarshi Guha$^3$%
+  \email{Rajarshi Guha - guhar@mail.nih.gov}
+  \and
+  Robert Hanson$^4$%
+  \email{Robert Hanson - hansonr@stolaf.edu}
+  \and
+  Geoffrey R Hutchison$^5$%
+  \email{Geoffrey R Hutchison - geoffh@pitt.edu}
+  \and
+  Daniel M Lowe$^6$%
+  \email{Daniel Lowe - dl387@cam.ac.uk}
+  \and
+  Peter Murray-Rust$^7$%
+  \email{Peter Murray-Rust - pm286@cam.ac.uk}
+  \and
+  Noel M O'Boyle$^8$%
+  \email{Noel M O'Boyle - n.oboyle@ucc.ie}
+  \and
+  Dmitry Pavlov$^9$%
+  \email{Dmitry Pavlov - dpavlov@ggasoftware.com}
+  \and
+  Ola Spjuth$^1$%
+  \email{ola.spjuth@farmbio.uu.se}
+  \and
+  Christoph Steinbeck$^{10}$%
+  \email{Christoph Steinbeck - steinbeck@ebi.ac.uk}
+  \and
+  Egon L Willighagen$^{11}$%
+  \email{Egon L Willighagen - egon.willighagen@ki.se}
+    }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -183,10 +178,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \address{%
-    \iid(1)Life Sciences Department, Kings College London, Cornwall House,%
-        Waterloo Road, London, UK\\
-    \iid(2)Department of Zoology, Cambridge, Waterloo Road, London, UK\\
-    \iid(3)Division of Molecular Toxicology, Institute of Environmental Medicine, %
+   \iid(1)Division of Molecular Toxicology, Institute of Environmental Medicine, %
         Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden\\
     \iid(5)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland\\
     \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK\\
@@ -205,28 +197,28 @@
 %%                                          %%
 %% The Section headings here are those for  %%
 %% a Research article submitted to a        %%
-%% BMC-Series journal.                      %%  
+%% BMC-Series journal.                      %%
 %%                                          %%
 %% If your article is not of this type,     %%
 %% then refer to the Instructions for       %%
 %% authors on http://www.biomedcentral.com  %%
 %% and change the section headings          %%
-%% accordingly.                             %%   
+%% accordingly.                             %%
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{abstract}
         % Do not use inserted blank lines (ie \\) until main body of text.
-        \paragraph*{Background:} The Blue Obelisk movement was established in 2005 as a 
+        \paragraph*{Background:} The Blue Obelisk movement was established in 2005 as a
 		response to the lack of open data, open standards and
 		open source (ODOSOS) in chemistry. While other scientific disciplines
 		such as physics, biology and astronomy (to name a few) were embracing
 		new ways of doing science and reaping the benefits of community
 		efforts, there was little if any innovation in the field of chemistry
 		and scientific progress was actively hampered by the lack of access to
-		data and tools. 
-      
+		data and tools.
+
         \paragraph*{Results:} This
 		contribution looks back on the past 5 years and surveys progress and
 		remaining challenges in the areas of Open Source, Open Data and Open
@@ -253,14 +245,14 @@
 %%                                          %%
 %% The Section headings here are those for  %%
 %% a Research article submitted to a        %%
-%% BMC-Series journal.                      %%  
+%% BMC-Series journal.                      %%
 %%                                          %%
 %% If your article is not of this type,     %%
 %% then refer to the instructions for       %%
 %% authors on:                              %%
 %% http://www.biomedcentral.com/info/authors%%
 %% and change the section headings          %%
-%% accordingly.                             %% 
+%% accordingly.                             %%
 %%                                          %%
 %% See the Results and Discussion section   %%
 %% for details on how to create sub-sections%%
@@ -288,13 +280,13 @@ new ways of doing science and reaping the benefits of community
 efforts, there was little if any innovation in the field of chemistry
 and scientific progress was actively hampered by the lack of access to
 data and tools.
-Since 2005 it has become evident that a good amount of development in open 
+Since 2005 it has become evident that a good amount of development in open
 chemical information and information is driven by the demands of neighbouring
-scientific fields. In many areas in biology, for example, the importance of 
+scientific fields. In many areas in biology, for example, the importance of
 small molecules and their interactions and reactions in biological systems
-has been realised. In fact, one of the first free and open databases and ontologies 
+has been realised. In fact, one of the first free and open databases and ontologies
 of small molecules was created as a resource about chemical structure and nomenclature
-by biologists \cite{DeMatos:2009p3839}.
+by biologists.\cite{DeMatos:2009p3839}
 
 The formation of the Blue Obelisk group is somewhat unusual in that it
 is not a funded network, nor does it follow the industry consortium
@@ -302,6 +294,8 @@ model. Rather it is a grassroots organisation, catalysed by an initial
 core of interested scientists, but with membership open to all who
 share one or more of the goals of the group:
 \begin{itemize}
+\item Open Data in Chemistry. One can obtain all scientific data in the public domain when
+wanted and reuse it for whatever purpose.
 \item Open Source in Chemistry. One can use other people's code without further
 permission, including changing it for one's own use and distributing
 it again.
@@ -309,21 +303,19 @@ it again.
 protocols and communicating information. The mechanisms for creating
 and maintaining these standards cover a wide spectrum of human
 organisations, including various degrees of consent.
-\item Open Data in Chemistry. One can obtain all data in the public domain when
-wanted and reuse it for whatever purpose.
 \end{itemize}
 
 Note that while some may advocate also for Open Access to
-publications, the goals focus more on the availability of code (to
+publications, the Blue Obelisk goals (ODOSOS) focus more on the availability of code (to
 reproduce results), standards (to exchange data), and the scientific
-data itself. All three of these goals stem from the basics of the
-scientific method for data sharing and reproducibilty.
+data itself. All three of these goals stem from the fundamental
+tenants of the scientific method for data sharing and reproducibilty.
 
 The Blue Obelisk was first described in the CDK News \cite{CDKNewsBO} and
 later as a formal paper by Guha et al.\cite{Guha2006} in
 2006. This
 contribution looks back on the past 5 years and surveys progress and
-remaining challenges in the areas of Open Source, Open Data and Open
+remaining challenges in the areas of Open Data, Open Source, and Open
 Standards in chemistry.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -342,38 +334,20 @@ established five years ago, the primary toolkits under active development
 were the Chemistry Development Kit (CDK)
 \cite{Steinbeck2003, Steinbeck2006}, Open Babel \cite{WebOpenBabel},
 and JOELib \cite{WebJOELib}. Of these, both the CDK and Open Babel
-continue to be actively developed. [Insert main focus of work on CDK
-in last 5 years] Since 2006, major new features of Open Babel include 3D structure
+continue to be actively developed.
+
+[Insert main focus of work on CDK in last 5 years]
+
+Since 2006, major new features of Open Babel include 3D structure
 generation and 2D structure-diagram generation, UFF and MMFF94
 forcefields, and significantly expanded support for computational
 chemistry calculations. In addition, a major focus of Open Babel development
-has been to fix problems in the areas of stereochemistry, kekulisation
-and canonicalisation.
-
-Some project have also been adopted by other fields, including biology
-and crystallography. A good example
-here is Jmol, which has, in the past five years, gone through two major revisions
-as part of an accelerated development focus. Starting with Jmol 10.2, released in
-April of 2006, Jmol 11.0 added over 100 new features and was released in March of
-2007. Three years later, Jmol 12.0 followed with over 700 new features.
-Based on the outstanding work of Michael (Miguel) Howard and others, this development
-path took Jmol from a ``Rasmol/Chime replacement'' to a fully fledged molecular
-visualisation package, including full support for crystallography~\cite{Hanson2010},
-efficient delivery of surface data using fast solvent-excluded surface
-generation and the highly compressed JVXL format [http://chemapps.stolaf.edu/jmol/docs/misc/JVXL-format.pdf],
- display of molecular orbitals from standard basis set/coefficient data,
-the inclusion of dynamic minimisation using the UFF force field, and
-a full implementation of Daylight SMILES and SMART, with extensions to
-conformational and biomolecular substructure searching in the form of Jmol
-BioSMARTS.[http://jmol.svn.sourceforge.net/viewvc/jmol/trunk/Jmol/src/org/jmol/smiles/package.html]
-Behind the scenes, Jmol has been essentially completely rewritten. A full
-mathematical expression evaluator was added, and the scripting language
-was folded into a versatile JavaScript-like command language, including a
-complete set of program flow commands, several new data types, and
-user-defined variables and functions. An exciting non-chemical application
-of Jmol has been its incorporation into the open source Sage
-Mathematics Project [http://www.sagemath.org/], where Jmol is being used
-to deliver three-dimensional depiction of mathematical functions. 
+has been to provide for accurate conversion and representation in
+areas of stereochemistry, kekulisation, and canonicalisation. The
+project has also grown, in terms of new contributors, new support from
+commercial companies, and second-generation tools applying Open Babel
+to a variety of end-user applications, from molecular editors to
+chemical database systems.
 
 Two new Open Source cheminformatics toolkits have appeared since the
 original paper. In 2006 Rational Discovery, a cheminformatics service
@@ -395,8 +369,6 @@ finding maximum common substructure of $N$ input structures, and
 enumerating reaction products. Indigo also has its rendering plugin,
 which is used in a lot of commercial and open-source projects as the
 main 2D chemical rendering engine.
-
-While desktop software has composed the majority of scientific tools since the computer was introduced, the internet continues to change how applications and content are distributed and presented. As such, there is a growing need to present chemical and scientific information in a web-based medium. Recently, a new version of the HTML specification, HTML5 \cite{html5}, defines a well-developed framework for creating native web applications in JavaScript. This native framework provides a significant benefit to scientists as the web is an open and free medium to distribute scientific knowledge, ideas and education. It also poses significant new problems, as the cost associated with learning and developing tools for new technologies is not trivial. As such, it is an important goal for the Blue Obelisk to provide such tools and encourage the community to utilise these new technologies to improve products and education. A specific example of this initiative is the ChemDoodle Web Components library \cite{ChemDoodleWeb}, produced by iChemLabs. The ChemDoodle Web Components library is open source under the GPL v3 license with a liberal HTML exception. ChemDoodle Web Components allow the scientist to present publication quality 2D and 3D graphics and animations for chemical structures, reactions and spectra. Beyond graphics, this tool provides a framework for user interaction to create dynamic applications through web browsers, desktop platforms and mobile devices such as the iPhone, iPad and Android devices. It is now easier than ever for scientists to create web-based scientific content, without having to master complicated technologies such as Java applets. iChemLabs is dedicated to funding, developing and supporting the library to ensure that the next generation of scientific applications is easily achievable by academia, government and industry. This goal helps to make sure that the cost of education decreases while using the web to further spread science.
 
 \subsubsection*{Second-generation tools}
 
@@ -432,16 +404,85 @@ with the underlying toolkits and this has driven the development of new
 features in the CDK and Open Babel.
 
 CDK-Taverna \cite{Kuhn:2010p4001} as an open-source cheminformatics workflow solution.
-Commonly used in this context are workflow engines for cheminformatics, where numerous recurring tasks can be automated, including tasks for chemical data filtering, transformation, curation and migration workflows, chemical documentation and information retrieval related workflows (structures, reactions, pharmacophores, object relational data etc.) or data analysis workflows (statistics and clustering/ machine learning for QSAR, diversity analysis etc. 
-CDK-Taverna has matured to become a freely available and increasingly powerful tool for the biosciences. It was recently ported to 
+Commonly used in this context are workflow engines for cheminformatics, where numerous recurring tasks can be automated, including tasks for chemical data filtering, transformation, curation and migration workflows, chemical documentation and information retrieval related workflows (structures, reactions, pharmacophores, object relational data etc.) or data analysis workflows (statistics and clustering/ machine learning for QSAR, diversity analysis etc.
+CDK-Taverna has matured to become a freely available and increasingly powerful tool for the biosciences. It was recently ported to
 Taverna version 2.x.
-The combination of CDK-Taverna workers with the multitude of workers already published on myexperiment.org by the large and active user community of Taverna enables scientists to quickly build workflows to process a diverse set of data as typically found in today's systems biology scenarios.
+The combination of CDK-Taverna workers with the multitude of workers
+already published on myexperiment.org by the large and active user
+community of Taverna enables scientists to quickly build workflows to
+process a diverse set of data as typically found in today's systems
+biology scenarios.
 
 Some other recent projects that build on Blue Obelisk software include
 AMBIT (a GUI that facilitates registration of chemicals for the REACH
 EU directive on toxicity, based on the CDK), etc.
 
+\subsubsection*{Web applications}
+
+While desktop software has composed the majority of scientific tools
+since the computer was introduced, the internet continues to change
+how applications and content are distributed and presented. As such,
+there is a growing need to present chemical and scientific information
+in a web-based medium. Recently, a new version of the HTML
+specification, HTML5 \cite{html5}, defines a well-developed framework
+for creating native web applications in JavaScript. This native
+framework provides a significant benefit to scientists as the web is
+an open and free medium to distribute scientific knowledge, ideas and
+education. It also poses significant new problems, as the cost
+associated with learning and developing tools for new technologies is
+not trivial. As such, it is an important goal for the Blue Obelisk to
+provide such tools and encourage the community to utilise these new
+technologies to improve products and education. A specific example of
+this initiative is the ChemDoodle Web Components library
+\cite{ChemDoodleWeb}, produced by iChemLabs. The ChemDoodle Web
+Components library is open source under the GPL v3 license with a
+liberal HTML exception. ChemDoodle Web Components allow the scientist
+to present publication quality 2D and 3D graphics and animations for
+chemical structures, reactions and spectra. Beyond graphics, this tool
+provides a framework for user interaction to create dynamic
+applications through web browsers, desktop platforms and mobile
+devices such as the iPhone, iPad and Android devices. It is now easier
+than ever for scientists to create web-based scientific content,
+without having to master complicated technologies such as Java
+applets. iChemLabs is dedicated to funding, developing and supporting
+the library to ensure that the next generation of scientific
+applications is easily achievable by academia, government and
+industry. This goal helps to make sure that the cost of education
+decreases while using the web to further spread science.
+
+Some projects have also been adopted by other fields, including biology
+and crystallography. A good example
+here is Jmol, which has, in the past five years, gone through two major revisions
+as part of an accelerated development focus. Starting with Jmol 10.2, released in
+April of 2006, Jmol 11.0 added over 100 new features and was released in March of
+2007. Three years later, Jmol 12.0 followed with over 700 new features.
+Based on the outstanding work of Michael (Miguel) Howard and others, this development
+path took Jmol from a ``Rasmol/Chime replacement'' to a fully fledged molecular
+visualisation package, including full support for crystallography~\cite{Hanson2010},
+efficient delivery of surface data using fast solvent-excluded surface
+generation and the highly compressed JVXL format [http://chemapps.stolaf.edu/jmol/docs/misc/JVXL-format.pdf],
+ display of molecular orbitals from standard basis set/coefficient data,
+the inclusion of dynamic minimisation using the UFF force field, and
+a full implementation of Daylight SMILES[ref] and SMARTS[ref], with extensions to
+conformational and biomolecular substructure searching in the form of Jmol
+BioSMARTS.[http://jmol.svn.sourceforge.net/viewvc/jmol/trunk/Jmol/src/org/jmol/smiles/package.html]
+Behind the scenes, Jmol has been essentially completely rewritten. A full
+mathematical expression evaluator was added, and the scripting language
+was folded into a versatile JavaScript-like command language, including a
+complete set of program flow commands, several new data types, and
+user-defined variables and functions. An exciting non-chemical application
+of Jmol has been its incorporation into the open source Sage
+Mathematics Project [http://www.sagemath.org/], where Jmol is being used
+to deliver three-dimensional depiction of mathematical functions.
+
+
 \subsubsection*{The business end}
+
+% We should cite Craig James
+% Care and Feeding of FIOSS: http://www.moonviewscientific.com/essays/software_lifecycle.htm
+% And, of course, the Warren/Matt Stahl debate:
+%Warren L. DeLano. "The case for open-source software in drug discovery" Drug Discovery Today (2005) 10(3) p. 213-217. DOI:10.1016/S1359-6446(04)03363-X
+%Matthew T. Stahl. "Open-source software: not quite endsville" Drug Discovery Today (2005) 10(3) p. 219-222. DOI:10.1016/S1359-6446(04)03364-1
 
 Open Source provides a unique opportunity for commercial organisations to work with the community. As opposed to traditional business models which focus on maximising revenue through monetisation of all aspects of software, working with the community allows a business to maximise profits through greater community adoption and popularity. This is an ideal solution for some commercial organisations because only they can afford the significant investment in funding and time that is required to develop a successful open source project. Regardless, there are always challenges to growing a project, and there are specific issues that complicate making a business out of open source software in the scientific industry. A goal of the Blue Obelisk is to reduce these challenges and bring commercial organisations and the community together to benefit science.
 
@@ -473,6 +514,7 @@ using shape determined by the Gaussian volumes as a descriptor.
 Another example of Open Source
 tools originating from commercial groups is the ChemCraft tool from
 Molecular Networks GmBH, that does XXX.
+% Really? I've only seen commercial software from them -GRH
 
 Rather than releasing new tools, an alternative approach to provide an
 interface to existing tools. hBar Solutions has developed an online
@@ -499,7 +541,7 @@ Open Babel for chemical format
 conversion and molecular property calculations, GraphicsMagick for image
 manipulation, Potrace for vectorization, GOCR and OCRAD for optical
 character recognition. The growing importance of image
-recognition technology can be seen in the fact that 
+recognition technology can be seen in the fact that
 only a few years ago there was only one widely available software
 package for chemical structure recognition -  CLiDE (commercially
 developed at Keymodule, Ltd), but today there are as many as seven
@@ -590,9 +632,9 @@ time is cheap, ....
 Databases? (XXX CS: A couple of database-related paragraphs could go here XXX)
 
 XXX the paragraph below on OrChem needs some work
-Registration, indexing and searching of chemical structures in relational databases is one of the core areas of cheminformatics. 
-A number of structure registration systems have been published in the last five years, exploiting the fact that 
-free cheminformatics toolkits such as OpenBabel and the CDK were available. 
+Registration, indexing and searching of chemical structures in relational databases is one of the core areas of cheminformatics.
+A number of structure registration systems have been published in the last five years, exploiting the fact that
+free cheminformatics toolkits such as OpenBabel and the CDK were available.
 OrChem, for example, is an extension for the Oracle 11G database that adds registration and indexing of chemical structures to support fast substructure and similarity searching. The cheminformatics functionality is provided by the Chemistry Development Kit. OrChem provides similarity searching with response times in the order of seconds for databases with millions of compounds, depending on a given similarity cut-off. For substructure searching, it can make use of multiple processor cores on today's powerful database servers to provide fast response times in equally large data sets.
 OrChem is free software and can be redistributed and/or modified under the terms of the GNU Lesser General Public License as published by the Free Software Foundation. All software is available via http://orchem.sourceforge.net.
 
@@ -663,7 +705,7 @@ Pistoia Alliance (and others?) should be mentioned at this point
 A core requirement for chemical structure databases and chemical
 registration systems in general is the notion of structure
 standardisation.  That is,  for a given input structure, multiple
-representations should be converted to one canonical form. 
+representations should be converted to one canonical form.
 Structure canonicalisation routines partially address this aspect,
 converting multiple alternative topologies to a single canonical
 form. However, the problem of standardisation is broader than just
@@ -703,7 +745,7 @@ in Science \cite{WebPanton}. This formalises the idea that Open Data maximises t
 possibility of reuse and repurposing, the fundamental basis
 of how science works. These principles recommend that published data
 be licensed explicitly, and preferably under CC0 (Creative Commons `No
-Rights Reserved', also known as CCZero) \cite{WebCC0}. This license allows others to use the 
+Rights Reserved', also known as CCZero) \cite{WebCC0}. This license allows others to use the
 data for any purpose whatsoever without any barriers. Other licenses
 compatible with the Panton Principles include the
 Open Data Commons Public Domain Dedication and Licence (PDDL), the
@@ -720,7 +762,7 @@ and the Open Notebook Science Solubility
 data~\cite{ONS2010}. There is also data available using licenses
 not compatible with the Panton Principles, but where the user
 is allows to modify and redistribute the data. A new data
-set in this category is the data from the ChEMBL database, 
+set in this category is the data from the ChEMBL database,
 which is available under the Creative Commons Share-Alike
 Attribution license~\cite{Overington2009}.
 
@@ -777,8 +819,8 @@ investigate related projects or read our blogs.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Authors contributions}
-   Charles Darwin did all the work. The others stole the glory. 
-    
+   Charles Darwin did all the work. The others stole the glory.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgements}
@@ -786,25 +828,25 @@ investigate related projects or read our blogs.
   Thanks to everyone.
 
 
- 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
-%%                                                         %%              
+%%                                                         %%
 %%  Bmc_article.bst  will be used to                       %%
 %%  create a .BBL file for submission, which includes      %%
 %%  XML structured for BMC.                                %%
 %%                                                         %%
 %%                                                         %%
-%%  Note that the displayed Bibliography will not          %% 
+%%  Note that the displayed Bibliography will not          %%
 %%  necessarily be rendered by Latex exactly as specified  %%
-%%  in the online Instructions for Authors.                %% 
+%%  in the online Instructions for Authors.                %%
 %%                                                         %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 {\ifthenelse{\boolean{publ}}{\footnotesize}{\small}
  \bibliographystyle{bmc_article}  % Style BST file
-  \bibliography{websites,paper} }     % Bibliography file (usually '*.bib' ) 
+  \bibliography{websites,paper} }     % Bibliography file (usually '*.bib' )
 
 %%%%%%%%%%%
 
