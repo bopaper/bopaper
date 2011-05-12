@@ -418,18 +418,30 @@ based on the CDK.
 
 While desktop software has composed the majority of scientific tools
 since the computer was introduced, the internet continues to change
-how applications and content are distributed and presented. As such,
-there is a growing need to present chemical and scientific information
-in a web-based medium. Recently, a new version of the HTML
-specification, HTML5 \cite{html5}, defines a well-developed framework
-for creating native web applications in JavaScript. This native
-framework provides a significant benefit to scientists as the web is
+how applications and content are distributed and presented. The web
+presents new opportunities for scientists as it
 an open and free medium to distribute scientific knowledge, ideas and
-education. It also poses significant new problems, as the cost
-associated with learning and developing tools for new technologies is
-not trivial. As such, it is an important goal for the Blue Obelisk to
-provide such tools and encourage the community to utilise these new
-technologies to improve products and education. A specific example of
+education. Web applications are software that runs within the browser,
+typically implemented in Java or JavaScript.
+Recently, a new version of the HTML
+specification, HTML5, defines a well-developed framework
+for creating native web applications in JavaScript and opens up
+new possibilities for visualising chemical data.
+
+Jmol, the interactive 3D molecular viewer, is one of the most widely used
+chemistry applets, and indeed has
+seen widespread use in other fields such as biology and 
+even mathematics (it is used for 3D depiction of mathematical
+functions in the Sage Mathematics Projects~\cite{WebSage}). It is implemented
+in Java, and has gone from being a ``Rasmol/Chime'' replacement to a fully fledged molecular
+visualisation package, including full support for crystallography~\cite{Hanson2010},
+display of molecular orbitals from standard basis set/coefficient data,
+the inclusion of dynamic minimisation using the UFF force field, and
+a full implementation of Daylight SMILES and SMARTS, with extensions to
+conformational and biomolecular substructure searching (Jmol
+BioSMARTS).
+
+A specific example of
 this initiative is the ChemDoodle Web Components library
 \cite{ChemDoodleWeb}, produced by iChemLabs. The ChemDoodle Web
 Components library is open source under the GPL v3 license with a
@@ -446,32 +458,6 @@ the library to ensure that the next generation of scientific
 applications is easily achievable by academia, government and
 industry. This goal helps to make sure that the cost of education
 decreases while using the web to further spread science.
-
-Some projects have also been adopted by other fields, including biology
-and crystallography. A good example
-here is Jmol, which has, in the past five years, gone through two major revisions
-as part of an accelerated development focus. Starting with Jmol 10.2, released in
-April of 2006, Jmol 11.0 added over 100 new features and was released in March of
-2007. Three years later, Jmol 12.0 followed with over 700 new features.
-Based on the outstanding work of Michael (Miguel) Howard and others, this development
-path took Jmol from a ``Rasmol/Chime replacement'' to a fully fledged molecular
-visualisation package, including full support for crystallography~\cite{Hanson2010},
-efficient delivery of surface data using fast solvent-excluded surface
-generation and the highly compressed JVXL format [http://chemapps.stolaf.edu/jmol/docs/misc/JVXL-format.pdf],
- display of molecular orbitals from standard basis set/coefficient data,
-the inclusion of dynamic minimisation using the UFF force field, and
-a full implementation of Daylight SMILES[ref] and SMARTS[ref], with extensions to
-conformational and biomolecular substructure searching in the form of Jmol
-BioSMARTS.[http://jmol.svn.sourceforge.net/viewvc/jmol/trunk/Jmol/src/org/jmol/smiles/package.html]
-Behind the scenes, Jmol has been essentially completely rewritten. A full
-mathematical expression evaluator was added, and the scripting language
-was folded into a versatile JavaScript-like command language, including a
-complete set of program flow commands, several new data types, and
-user-defined variables and functions. An exciting non-chemical application
-of Jmol has been its incorporation into the open source Sage
-Mathematics Project [http://www.sagemath.org/], where Jmol is being used
-to deliver three-dimensional depiction of mathematical functions.
-
 
 \subsubsection*{The business end}
 
