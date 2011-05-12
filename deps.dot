@@ -1,7 +1,10 @@
 digraph g {
   /* license colors:
 
-    ... to be done ...
+    GPL v3 : dark green
+    GPL v2 : light green
+    LGPL v2 : dark blue
+    LGPL v2 : light blue
 
   */
 
@@ -40,6 +43,7 @@ digraph g {
   bioclipse -> jmol ;
   bioclipse -> opsin ;
   bioclipse -> joelib ;
+  bioclipse -> jchempaint ;
   cdk -> cmlxom ;
   jumbo -> cdk ;
   jumbo -> cmlxom ;
@@ -56,6 +60,8 @@ digraph g {
   qsarml -> bodo ;
   opsin -> cml ;
   opsin -> jniinchi ;
+  ambit -> opsin ;
+  cinfony -> opsin ;
 
   /* Inherited code */
 
