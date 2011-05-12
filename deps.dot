@@ -54,7 +54,7 @@ digraph g {
   bioclipse -> qsarml ;
   qsarml -> cml ;
   qsarml -> bodo ;
-  opsin -> cmlxom ;
+  opsin -> cml ;
   opsin -> jniinchi ;
 
   /* Inherited code */
