@@ -352,23 +352,23 @@ chemical database systems.
 Two new Open Source cheminformatics toolkits have appeared since the
 original paper. In 2006 Rational Discovery, a cheminformatics service
 company (since closed down), released RDKit \cite{WebRDKit} under the
-BSD License. RDKit continues to be actively developed and includes
-code donated by Novartis.
-
-More recently, GGA Software Services (a contract programming company)
+BSD License. This is a C++ library with Python and (more recently)
+Java bindings. RDKit is actively developed and includes
+code donated by Novartis. Recent developments include the Java
+bindings, as well as performance improvements for its database
+cartridge. More recently, GGA Software Services
+(a contract programming company)
 released the Indigo toolkit \cite{WebIndigo} and associated software
-in 2009 under the GPL. Indigo is written from scratch in C++ and has
-high-level wrappers for using it in C, Java, Python, or .NET
-environment. Like other toolkits, Indigo provides support for
+in 2009 under the GPL. Indigo is a C++ library with
+high-level wrappers in C, Java, Python, and the .NET
+environment. Like RDKit and other toolkits, Indigo provides support for
 tetrahedral and cis-trans stereochemistry, 2D coordinate generation,
-exact/substructure/SMARTS matching, fingerprint generation (all these
-both for molecules and reactions), and canonical SMILES computation.
+exact/substructure/SMARTS matching, fingerprint generation, and
+canonical SMILES computation.
 It also provides some less common functionality, like matching
 tautomers and resonance substructures, enumeration of subgraphs,
 finding maximum common substructure of $N$ input structures, and
-enumerating reaction products. Indigo also has its rendering plugin,
-which is used in a lot of commercial and open-source projects as the
-main 2D chemical rendering engine.
+enumerating reaction products.
 
 \subsubsection*{Second-generation tools}
 
@@ -391,11 +391,10 @@ graphical editors. All functionality in Bioclipse is completely scriptable
 using an integrated high-level language called Bioclipse Scripting Language
 (BSL), which can be used for scripted research or to automate complex
 tasks~\cite{Bioclipse2}. Bioclipse in turn acts as base for other software
-such as Brunn~\cite{Brunn}, which is a laboratory information system for
+such as Brunn~\cite{WebBrunn}, a laboratory information system for
 microplate based high-throughput screening. Brunn provides a grahical interface
-for handling different plate layouts and dilution series. It can automaticly
-generate dose response curves and calculate IC$_{50}$-values. In this manner
-open source projects empower other open source projects.
+for handling different plate layouts and dilution series and can automaticly
+generate dose response curves and calculate IC$_{50}$-values.
 
 Avogadro is a 3D molecular editor and viewer aimed at preparing
 and analysing computational chemistry calculations. An interesting
