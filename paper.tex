@@ -380,17 +380,22 @@ open source `ecosystem'; their availability lowers the barrier for the
 development of a `second generation' of chemistry software that no
 longer needs to concern itself with the low-level details of
 manipulating chemical structures, and can focus on providing
-additional functionality and ease-of-use.
+additional functionality and ease-of-use. Although a wide range of
+chemistry software has been built using Blue Obelisk
+components (see for example, the ``Related Software'' link on the Open
+Babel website, or ``Software using CDK'' at the CDK website), in this
+section we focus on second-generation tools which themselves have been
+developed by members of the Blue Obelisk. 
 
 Bioclipse~\cite{Spjuth:2007fk} (v2.4 released in Aug 2010) and Avogadro
 \cite{WebAvogadro} (v1.0 in Oct 2009) are two examples of such software, based
 on the CDK and Open Babel, respectively. Bioclipse is an award-winning
 molecular workbench for life sciences
-which wraps cheminformatics functionality behind user-friendly interfaces and
+that wraps cheminformatics functionality behind user-friendly interfaces and
 graphical editors while Avogadro is a 3D molecular editor and viewer aimed at
 preparing and analysing computational chemistry calculations. Both
-projects have are designed to be extended or scripted by users through
-a plugin architective and the provision of scripting support (using
+projects are designed to be extended or scripted by users through
+the provision of a plugin architective and scripting support (using
 Bioclipse Scripting Language~\cite{Bioclipse2}, or Python in the case
 of Avogadro).
 An interesting
@@ -404,19 +409,10 @@ microplate based high-throughput screening. Brunn provides a graphical interface
 for handling different plate layouts and dilution series and can automaticly
 generate dose response curves and calculate IC$_{50}$-values.
 
-CDK-Taverna \cite{Kuhn:2010p4001} as an open-source cheminformatics workflow solution.
-Commonly used in this context are workflow engines for cheminformatics, where numerous recurring tasks can be automated, including tasks for chemical data filtering, transformation, curation and migration workflows, chemical documentation and information retrieval related workflows (structures, reactions, pharmacophores, object relational data etc.) or data analysis workflows (statistics and clustering/ machine learning for QSAR, diversity analysis etc.
-CDK-Taverna has matured to become a freely available and increasingly powerful tool for the biosciences. It was recently ported to
-Taverna version 2.x.
-The combination of CDK-Taverna workers with the multitude of workers
-already published on myexperiment.org by the large and active user
-community of Taverna enables scientists to quickly build workflows to
-process a diverse set of data as typically found in today's systems
-biology scenarios.
-
-Some other recent projects that build on Blue Obelisk software include
-AMBIT (a GUI that facilitates registration of chemicals for the REACH
-EU directive on toxicity, based on the CDK), etc.
+A final example of 2nd-generation Blue Obelisk software is the 
+AMBIT2~\cite{WebAMBIT} software, a GUI that facilitates registration
+of chemicals for the REACH EU directive on toxicity, and which is
+based on the CDK.
 
 \subsubsection*{Web applications}
 
@@ -611,6 +607,19 @@ It is a Python library that enables Open Babel, the CDK, and RDKit to
 be used using the same API; this makes it easy, for example, to read a
 molecule using Open Babel, calculate descriptors using the CDK and
 create a depiction using RDKit.
+
+Another way through which interoperability of Blue Obelisk projects
+has been promoted and developed is through integration into
+workflow software such as Taverna~\cite{Hull:2006p60} and
+KNIME~\cite{WebKNIME} (both open source).
+Such software makes it easy to automate recurring
+tasks, and to combine analyses or data from a variety of different software
+and web services.
+A combination of the Chemistry Development Kit and Taverna, for instance, was
+reported in 2010~\cite{Kuhn:2010p4001}. 
+In the case of KNIME, it comes with built-in basic collection of CDK-based and
+Open Babel-based nodes, while other nodes for the RDKit and Indigo are
+available from KNIME's ``Community Updates'' site.
 
   \subsection*{Remaining challenges}
 
