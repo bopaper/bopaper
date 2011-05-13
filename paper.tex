@@ -326,9 +326,8 @@ Standards in chemistry.
 %% Main section %%
 %%
 \section*{Open Source}
-  \subsection*{Progress}
 
-\subsubsection*{Cheminformatics toolkits}
+\subsection*{Cheminformatics toolkits}
 
 Open Source toolkits for cheminformatics have now existed for nearly
 ten years. During this period, some toolkits were developed from
@@ -374,7 +373,7 @@ tautomers and resonance substructures, enumeration of subgraphs,
 finding maximum common substructure of $N$ input structures, and
 enumerating reaction products.
 
-\subsubsection*{Second-generation tools}
+\subsection*{Second-generation tools}
 
 Although feature-rich and robust cheminformatics toolkits are useful
 in and of themselves, they can also be seen as providing a base layer
@@ -418,7 +417,7 @@ AMBIT2~\cite{WebAMBIT} software, a GUI that facilitates registration
 of chemicals for the REACH EU directive on toxicity, and which is
 based on the CDK.
 
-\subsubsection*{Web applications}
+\subsection*{Web applications}
 
 While desktop software has composed the majority of scientific tools
 since the computer was introduced, the internet continues to change
@@ -455,7 +454,7 @@ provides a framework for user interaction to create dynamic
 applications through web browsers, desktop platforms and mobile
 devices such as the iPhone, iPad and Android devices.
 
-\subsubsection*{The business end}
+\subsection*{The business end}
 
 % We should cite Craig James
 % Care and Feeding of FIOSS: http://www.moonviewscientific.com/essays/software_lifecycle.htm
@@ -502,7 +501,7 @@ calculations in the cloud. To do so it leverages two Blue Obelisk
 projects, Jmol and Open Babel, as well as the open source quantum
 mechanics package MPQC.
 
-\subsubsection*{Converting chemical names and images to structures}
+\subsection*{Converting chemical names and images to structures}
 
 The majority of chemical information is not stored in machine-readable
 formats, but rather as chemical names or depictions. The OSRA and OPSIN
@@ -545,7 +544,7 @@ fast and precise conversions for the majority of names using IUPAC
 organic nomenclature, and is available as a web service, Java
 library and standalone application for maximum interoperability.
 
-  \subsubsection*{Collaboration and interoperability}
+  \subsection*{Collaboration and interoperability}
 
 One of the effects of the Blue Obelisk has been to bring developers
 together from different Open Source chemistry projects so that they
@@ -605,20 +604,12 @@ available from KNIME's ``Community Updates'' site.
 
   \subsection*{Remaining challenges}
 
-Accuracy. Very often software work at the 95\% to 98\% level. The
-variety of chemical structures is such that with a large enough
-dataset, 'unusual' structures are always found which may be mishandled
-by software. Given that much of the development of open source
-software is unfunded, and relies heavily on developer motivation, it
-is understandable that working on the final N\% of problem structures
-(which may require substantial work) is not the most exciting of
-tasks. Putting a bounty system in place may be useful for these
-situations where a researcher needs a problem to be fixed because it
-affects a particular dataset of interest.
+(Say something here about benchmarks to measure accuracy. Clear examples
+ of performance on open datasets are required. Otherwise there is
+ nothing to counter anecdotal evidence or FUD spread by others.)
 
-Performance. There is a famous quote by Knuth that "Premature
-optimisation is the root of all evil (or something)". Given that compute
-time is cheap, ....
+(Better engagement with industry...make it clear what and how industry
+ members can engage with projects.)
 
 \section*{Chemical Structure Registration Systems, Databases}
 Databases? (XXX CS: A couple of database-related paragraphs could go here XXX)
@@ -631,7 +622,7 @@ OrChem, for example, is an extension for the Oracle 11G database that adds regis
 OrChem is free software and can be redistributed and/or modified under the terms of the GNU Lesser General Public License as published by the Free Software Foundation. All software is available via http://orchem.sourceforge.net.
 
 \section*{Open Standards}
-  \subsection*{Progress}
+  \subsection*{InChI}
 
 The IUPAC InChI identifier is a non-proprietary and unique identifier
 for chemical substances designed to enable linking of diverse data
@@ -650,7 +641,7 @@ calculate InChI and InChIKey-s within Python and .NET projects (not to
 mention Java), eliminating the trouble of compiling and using binary
 modules directly.
 
-    \subsubsection*{OpenSMILES}
+    \subsection*{OpenSMILES}
 
 One of the most widely used ways to store chemical structures is the
 SMILES format (or SMILES string). This is a linear notation depicted
@@ -680,19 +671,13 @@ features absent in the initial SMILES specification. There has been
 discussions about including parts of the CurlySMILES notation into
 OpenSMILES, especially polymers.
 
-\subsubsection*{CML}
+\subsection*{CML}
 ?
 
-
-\subsubsection*{QSAR-ML}
+\subsection*{QSAR-ML}
 The field of QSAR has long been hampered by the lack of open standards, which makes it difficult to share and reproduce descriptor calculations and analyses. QSAR-ML was recently proposed as an open standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset in QSAR-ML includes the chemical structures (preferably described in CML) with InChI to protect integrity, chemical descriptors by linking to the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values, units, and versioned descriptor implementations to allow for integrating several descriptor software in the same calculation. Hence, a dataset described in QSAR-ML is completely reproducible. To allow for easy setup of QSAR-ML compliant datasets, a plugin for Bioclipse was created with graphical interfaces that can be used to set up QSAR datasets and perform calculations. Descriptor implementations were initially available from CDK and JOELib, as well as via remote web services such as XMPP~\cite{Wagener:2009uq}.
 
-
-\subsubsection*{Others...?}
-
-Pistoia Alliance (and others?) should be mentioned at this point
-
-  \subsection*{Remaining challenges}
+\subsection*{Remaining challenges}
 
 A core requirement for chemical structure databases and chemical
 registration systems in general is the notion of structure
@@ -728,7 +713,6 @@ for the SMARTS language, the extension to SMILES that specifies
 patterns that match chemical substructures.
 
 \section*{Open Data}
-  \subsection*{Progress}
 
 A considerable stumbling block in advocating the release of scientific
 data as Open Data has been how exactly to define Open. A major step
@@ -766,8 +750,6 @@ can be hosted, and Dryad (http://datadryad.org/) where data
 behind publications can be hosted. Initiatives like this make
 it possible to host small amounts of data, and those combined
 are expected to become soon a substantial knowledge base.
-
-  \subsection*{Remaining challenges}
 
 \section*{Other areas of activity}
 
