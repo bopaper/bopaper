@@ -627,19 +627,16 @@ OrChem is free software and can be redistributed and/or modified under the terms
 The IUPAC InChI identifier is a non-proprietary and unique identifier
 for chemical substances designed to enable linking of diverse data
 compilations. Although its development predates the Blue Obelisk,
-software such as Open Babel has included InChI support since 2005.
+software such as Open Babel has included InChI support since 2005,
+and support for InChI in Indigo is due in 2011.
+
 Since the official InChI implementation is in C, it is difficult to
 access from the other widely used language for cheminformatics
-toolkits, Java. The Blue Obelisk project JNI-InChI has been set up to
+toolkits, Java. The Blue Obelisk project JNI-InChI~\cite{WebJNIInChI}
+was established in 2006 to
 solve this problem by using the Java Native Interface to link the
 InChI binary to Java. In this way, it promotes the wider adoption of
 this standard identifier by the chemistry community.
-
-Also, Indigo is going to provide its own plugin with an interface to
-the InChI implementation in May 2011. This will enable developers to
-calculate InChI and InChIKey-s within Python and .NET projects (not to
-mention Java), eliminating the trouble of compiling and using binary
-modules directly.
 
     \subsection*{OpenSMILES}
 
