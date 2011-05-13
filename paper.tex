@@ -116,7 +116,7 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Open Data, Open Source and Open Standards in chemistry - The Blue Obelisk five years on}
+\title{Open Data, Open Source and Open Standards in chemistry: \\ The Blue Obelisk five years on}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -139,20 +139,20 @@
   Igor V Filippov$^2$%
   \email{Igor V Filippov - igorf@helix.nih.gov}
   \and
-  Rajarshi Guha$^3$%
+  Rajarshi Guha$^2$%
   \email{Rajarshi Guha - guhar@mail.nih.gov}
   \and
-  Robert Hanson$^4$%
+  Robert Hanson$^3$%
   \email{Robert Hanson - hansonr@stolaf.edu}
   \and
-  Geoffrey R Hutchison$^5$%
+  Geoffrey R Hutchison$^4$%
   \email{Geoffrey R Hutchison - geoffh@pitt.edu}
   \and
-  Karol M Langner$^{13}$%
+ Karol M Langner$^5$%
   \email{Karol M Langner - langnerkm@chem.leidenuniv.nl}
   \and
   Daniel M Lowe$^6$%
-  \email{Daniel Lowe - dl387@cam.ac.uk}
+ \email{Daniel Lowe - dl387@cam.ac.uk}
   \and
   Peter Murray-Rust$^7$%
   \email{Peter Murray-Rust - pm286@cam.ac.uk}
@@ -169,13 +169,13 @@
   Christoph Steinbeck$^{10}$%
   \email{Christoph Steinbeck - steinbeck@ebi.ac.uk}
   \and
-  Adam L Tenderholt$^{14}$%
+ Adam L Tenderholt$^{11}$%
   \email{Adam L Tenderholt - adamlt82@u.washington.edu}
   \and
   Kevin J Theisen$^{12}$%
-  \email{Kevin J Theisen - kevin@ichemlabs.com}
+ \email{Kevin J Theisen - kevin@ichemlabs.com}
   \and
-  Egon L Willighagen$^{11}$%
+  Egon L Willighagen$^{13}$%
   \email{Egon L Willighagen - egon.willighagen@ki.se}
     }
 
@@ -187,17 +187,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \address{%
-   \iid(11)Division of Molecular Toxicology, Institute of Environmental Medicine, %
+   \iid(1)Division of Molecular Toxicology, Institute of Environmental Medicine, %
         Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden\\
+    \iid(2)National Institute of Health, Somewhere in the US, USA\\
     \iid(5)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland\\
     \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK\\
     \iid(7)Unilever Centre for Molecular Sciences Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK\\
     \iid(8)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia\\
     \iid(1)Department of Pharmaceutical Biosciences, Uppsala University, Box 591, 751 24 Uppsala, Sweden \\
     \iid(10)Department of Chemistry, University of Pittsburgh, 219 Parkman Avenue, Pittsburgh, PA 15260, USA\\
-    \iid(3)NIH, Somewhere in the US, USA\\
-    \iid(12)iChemLabs, 200 Centennial Ave., Suite 200, Piscataway, NJ 08854, USA
-    \iid(13)Gorlaeus Laboratories, Leiden University, 2333 CC Leiden, The Netherlands
+   \iid(3)NIH, Somewhere in the US, USA\\
+    \iid(12)iChemLabs, 200 Centennial Ave., Suite 200, Piscataway, NJ    08854, USA \\
+    \iid(13)Gorlaeus Laboratories, Leiden University, 2333 CC Leiden,    The Netherlands \\
     \iid(14)Department of Chemistry, University of Washington, Seattle, WA 98195
 }%
 
@@ -233,8 +234,8 @@
 
         \paragraph*{Results:} This
 		contribution looks back on the past 5 years and surveys progress and
-		remaining challenges in the areas of Open Source, Open Data and Open
-		Standards in chemistry.
+		remaining challenges in the areas of Open Data, Open Standards, and
+    Open Source in chemistry.
 
         \paragraph*{Conclusions:} Here we show that the Blue Obelisk has been very successful
 		in bringing together researchers and developers with common interests
@@ -306,29 +307,29 @@ model. Rather it is a grassroots organisation, catalysed by an initial
 core of interested scientists, but with membership open to all who
 share one or more of the goals of the group:
 \begin{itemize}
-\item Open Data in Chemistry. One can obtain all scientific data in the public domain when
+\item {\bf Open Data in Chemistry.} One can obtain all scientific data in the public domain when
 wanted and reuse it for whatever purpose.
-\item Open Source in Chemistry. One can use other people's code without further
-permission, including changing it for one's own use and distributing
-it again.
-\item Open Standards in Chemistry. One can find visible community mechanisms for
+\item {\bf Open Standards in Chemistry.} One can find visible community mechanisms for
 protocols and communicating information. The mechanisms for creating
 and maintaining these standards cover a wide spectrum of human
 organisations, including various degrees of consent.
+\item {\bf Open Source in Chemistry.} One can use other people's code without further
+permission, including changing it for one's own use and distributing
+it again.
 \end{itemize}
 
 Note that while some may advocate also for Open Access to
-publications, the Blue Obelisk goals (ODOSOS) focus more on the availability of code (to
-reproduce results), standards (to exchange data), and the scientific
-data itself. All three of these goals stem from the fundamental
-tenants of the scientific method for data sharing and reproducibilty.
+publications, the Blue Obelisk goals (ODOSOS) focus more on the
+availability of the underlying scientific data, standards (to exchange
+data), and code (to reproduce results). All three of these goals stem
+from the fundamental tenants of the scientific method for data sharing
+and reproducibilty.
 
 The Blue Obelisk was first described in the CDK News \cite{CDKNewsBO} and
 later as a formal paper by Guha et al.\cite{Guha2006} in
-2006. This
-contribution looks back on the past 5 years and surveys progress and
-remaining challenges in the areas of Open Data, Open Source, and Open
-Standards in chemistry.
+2006. This contribution looks back on the past 5 years and surveys
+progress and remaining challenges in the areas of Open Data, Open
+Source, and Open Standards in chemistry.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Main section %%
@@ -394,7 +395,8 @@ manipulating chemical structures, and can focus on providing
 additional functionality and ease-of-use. Although a wide range of
 chemistry software has been built using Blue Obelisk
 components (see for example, the ``Related Software'' link on the Open
-Babel website, or ``Software using CDK'' at the CDK website), in this
+Babel website,\cite{WebOBRelated} listing over 40 projects as of this writing, 
+or ``Software using CDK'' at the CDK website), in this
 section we focus on second-generation tools which themselves have been
 developed by members of the Blue Obelisk. 
 
@@ -408,17 +410,20 @@ preparing and analysing computational chemistry calculations. Both
 projects are designed to be extended or scripted by users through
 the provision of a plugin architective and scripting support (using
 Bioclipse Scripting Language~\cite{Bioclipse2}, or Python in the case
-of Avogadro).
-An interesting
-aspect of both Avogadro and Bioclipse is that they share some developers
-with the underlying toolkits and this has driven the development of new
-features in the CDK and Open Babel.
+of Avogadro). An interesting aspect of both Avogadro and Bioclipse is
+that they share some developers with the underlying toolkits and this
+has driven the development of new features in the CDK and Open Babel.
 
-Bioclipse in turn acts as base for other software
+Both products in turn act as extensible platforms for other
+software. Bioclipse, for example is used by software
 such as Brunn~\cite{Alvarsson:2011fk}, a laboratory information system for
 microplate based high-throughput screening. Brunn provides a graphical interface
 for handling different plate layouts and dilution series and can automaticly
-generate dose response curves and calculate IC$_{50}$-values.
+generate dose response curves and calculate IC$_{50}$-values. Avogadro
+is used by XtalOpt~\cite{WebXtalOpt}\cite{Lonie2011}, an evolutionary
+algorithm for crystal structure prediction. XtalOpt provides a
+graphical interface using Avogadro and submits calculations using a
+range of solid-state simulation software to predict stable polymorphs.
 
 A final example of 2nd-generation Blue Obelisk software is the 
 AMBIT2~\cite{WebAMBIT} software, a GUI that facilitates registration
@@ -505,18 +510,19 @@ devices such as the iPhone, iPad and Android devices.
 
 % We should cite Craig James
 % Care and Feeding of FIOSS: http://www.moonviewscientific.com/essays/software_lifecycle.htm
-% And, of course, the Warren/Matt Stahl debate:
-%Warren L. DeLano. "The case for open-source software in drug discovery" Drug Discovery Today (2005) 10(3) p. 213-217. DOI:10.1016/S1359-6446(04)03363-X
-%Matthew T. Stahl. "Open-source software: not quite endsville" Drug Discovery Today (2005) 10(3) p. 219-222. DOI:10.1016/S1359-6446(04)03364-1
 
 Open Source provides a unique opportunity for commercial organisations to work with the
-cheminformatics community. Traditional business models rely on monetisation the source
+cheminformatics community. Traditional business models rely on monetisation of source
 code, causing every company to repeat the development by other companies, often combined
 with a free (gratis) model for people working at academic institutes, to increase adoption
 and allow contributions from academics. This solution defines the IP on the software
 return on investment, but has the downside of investment losses due to duplication of
 software and method development, which becomes visible when proprietary companies
-merge.
+merge. Some authors have rationalized that in the chemistry field, the
+data has value, and few contributors are available to volunteer time
+to improve codes.\cite{Stahl:2005fk} If true, this would hamper
+adoption of Open Source and Open Data in chemistry, and greatly slow
+the growth of projects such as those in the Blue Obelisk.
 
 The Blue Obelisk community, however, takes advantage that much of the investments needed
 for development are either payed by academic institutes and funding schemes, and by
@@ -528,7 +534,9 @@ this approach shares the burden of the high investment in having to develop chem
 software from scratch, allowing researchers and commercial partners alike to focus
 on their core business, rather than the development of prerequisites. As such, the rich
 collection of Open Source cheminformatics tools provided by the Blue Obelisk
-greatly reduces investment up front for new companies in the cheminformatics market.
+greatly reduces investment up front for new companies in the
+cheminformatics market. Such advantages have also been noted in the
+drug discovery field.\cite{DeLano:2005uq}\cite{Munos:2006vn}\cite{Geldenhuys:2006kx}
 
 The use of Open Standards allows everyone to select those Blue Obelisk components
 they find most useful, as they can easily replace one component with another providing
@@ -616,19 +624,15 @@ Registration, indexing and searching of chemical structures in
 relational databases is one of the core areas of cheminformatics.
 A number of structure registration systems have been published in the last five years, exploiting the fact that
 free cheminformatics toolkits such as OpenBabel and the CDK were available.
-OrChem, for example, is an extension for the Oracle 11G database that
+OrChem,\cite{WebOrChem} for example, is an open source extension for the Oracle 11G database that
 adds registration and indexing of chemical structures to support fast
 substructure and similarity searching. The cheminformatics
-functionality is provided by the Chemistry Development Kit. OrChem
+functionality is provided by the CDK. OrChem
 provides similarity searching with response times in the order of
 seconds for databases with millions of compounds, depending on a given
 similarity cut-off. For substructure searching, it can make use of
 multiple processor cores on today's powerful database servers to
 provide fast response times in equally large data sets.
-OrChem is free software and can be redistributed and/or modified under
-the terms of the GNU Lesser General Public License as published by the
-Free Software Foundation. All software is available via
-http://orchem.sourceforge.net.
 
   \subsection*{Collaboration and interoperability}
 
@@ -638,7 +642,7 @@ look for opportunities to collaborate rather than compete, and to
 leverage work done by other projects to avoid duplication of effort.
 As an example of this, when in March 2008 the Jmol development team
 were looking to add support for energy minimisation, rather than
-implement a forcefield from scratch they ported the UFF forcefield
+implement a forcefield from scratch they ported the UFF forcefield\cite{Rappe:1992um}
 implementation from Open Babel to Jmol. This code has allowed Jmol to
 support 2D to 3D conversion of structures (through energy
 minimisation). Similarly, efficient Jmol code for atom-atom rebonding
@@ -646,8 +650,8 @@ has been ported to the CDK.
 
 Another collaborative initiative between Blue Obelisk projects was the establishment in May 2008 of
 the ChemiSQL project. This brought together the developers of several
-open source chemistry database cartridges (PgChem, MyChem, OrChem and
-more recently Bingo) with a view to making their database APIs more
+open source chemistry database cartridges (PgChem,\cite{WebPgChem} MyChem,\cite{WebMyChem} OrChem\cite{WebOrChem} and
+more recently Bingo\cite{WebBingo}) with a view to making their database APIs more
 similar and collaborating on benchmark datasets for assessing
 performance. For two of these projects, PgChem and MyChem, which are both based on
 Open Babel, there is the additional possibility of working together on a shared
@@ -788,7 +792,7 @@ patterns that match chemical substructures.
 \section*{Open Data}
 
 A considerable stumbling block in advocating the release of scientific
-data as Open Data has been how exactly to define Open. A major step
+data as Open Data has been how exactly to define ``Open.'' A major step
 forward was the launch in 2010 of the Panton Principles for Open Data
 in Science \cite{WebPanton}. This formalises the idea that Open Data maximises the
 possibility of reuse and repurposing, the fundamental basis
@@ -799,14 +803,13 @@ data for any purpose whatsoever without any barriers. Other licenses
 compatible with the Panton Principles include the
 Open Data Commons Public Domain Dedication and Licence (PDDL), the
 Open Data Commons Attribution License, and the
-Open Data Commons Open Database License (ODbL) (see
-http://www.opendefinition.org/licenses/\#Data).
+Open Data Commons Open Database License (ODbL).\cite{WebOpenData}
 
 Despite this positive news, little chemical data has become
 available from the traditional chemical fields of organic,
 inorganic, solid state chemistry. Table~2 lists a few notable
 exceptions: ChemPedia (a now discontinued crowd-sourcing project),
-CrystalEye (http://wwmm.ch.cam.ac.uk/crystaleye/),
+CrystalEye,\cite{WebCrystalEye}
 and the Open Notebook Science Solubility
 data~\cite{ONS2010}. There is also data available using licenses
 not compatible with the Panton Principles, but where the user
@@ -817,12 +820,12 @@ Attribution license~\cite{Overington2009}.
 
 Importantly, publishing data as CC0 is becoming easier now that
 websites are becoming available to simplify publishing data. Two
-projects that can be mentioned in this context are FigShare
-(http://figshare.com/), where the data behind unpublished figures
-can be hosted, and Dryad (http://datadryad.org/) where data
-behind publications can be hosted. Initiatives like this make
-it possible to host small amounts of data, and those combined
-are expected to become soon a substantial knowledge base.
+projects that can be mentioned in this context are
+FigShare\cite{WebFigShare}, where the data behind unpublished figures
+can be hosted, and Dryad\cite{WebDryad} where data behind publications
+can be hosted. Initiatives like this make it possible to host small
+amounts of data, and those combined are expected to become soon a
+substantial knowledge base. 
 
 \section*{Other areas of activity}
 
@@ -831,20 +834,18 @@ contact (typically a mailing list), because of the breadth of BO
 projects it can be difficult for a newcomer to understand which of
 them, if any, can best address a particular problem. To address this
 issue, members of the Blue Obelisk established a Question \& Answer
-website at http://blueobelisk.shapado.com (see Figure~3). 
-This is a website in the
-style of Stack Overflow that encourages high quality answers (and
+website\cite{WebBOShapado} (see Figure~3).  This is a website in the
+style of Stack Overflow\cite{WebStackOverflow} that encourages high quality answers (and
 questions) through the use of a voting system. In the year since it
-was established, over
-200 users have registered, many of whom had no previous involvement
-with the Blue Obelisk, showing that the Q\&A website complements
-earlier existing channels of communication.
+was established, over 200 users have registered, many of whom had no
+previous involvement with the Blue Obelisk, showing that the Q\&A
+website complements earlier existing channels of communication.
 
 The rise of self-publishing and print-on-demand services has meant
 that publishing a book is now as straightforward as uploading to an
 appropriate website. Unlike the traditional publishing route where
 books with projected low sales volume would be expensive,
-websites such as Lulu allow the sale of low-priced books on
+websites such as Lulu\cite{WebLulu} allow the sale of low-priced books on
 chemistry software, and books are now available for purchase
 on Jmol~\cite{JmolBook}, the Chemistry Development Kit~\cite{CDKBook}
 and Open Babel~\cite{OpenBabelBook}.
@@ -864,7 +865,7 @@ BO mailing list and blogs of members.
 
 We hope to see this involvement between the Blue Obelisk and the wider
 community grow in the future. To this end, we encourage the reader to
-visit http://blueobelisk.org, send a message to our mailing list,
+visit the Blue Obelisk website\cite{WebBlueObelisk}, send a message to our mailing list,
 investigate related projects or read our blogs.
 
 
@@ -940,33 +941,41 @@ investigate related projects or read our blogs.
 \section*{Tables}
   \subsection*{Table 1 - Blue Obelisk Open Source software projects}
     (Description if necessary XXXXXXXXXXXXXXX. Add citations to project names.)
+      %% GeoffH - I think we should do this as multi-line, with the
+      %% website below the Name
     \par \mbox{}
     \par
     \mbox{
-      \begin{tabular}{|c|c|c|}
-        %% \hline \multicolumn{3}{|c|}{My Table}\\ \hline
-        \hline Name & Website & Description? or Lead Developer? \\ \hline
-        \multicolumn{3}{|c|}{Cheminformatics toolkits} \\ \hline
-        Chemistry Development Kit (CDK) \cite{Steinbeck2003, Steinbeck2006} & http://cdk.sf.net & XXXX  \\ \hline
-        Cinfony & http://cinfony.googlecode.com & Noel O'Boyle, Python interface to toolkits \\ \hline
-        Indigo & http://ggasoftware.com/opensource/indigo & GGA Software \\ \hline
-        Open Babel & http://openbabel.org & Geoffrey Hutchison et al \\ \hline
-        RDKit & http://rdkit.org & Greg Landrum \\ \hline
-        ChemDoodle Web Components & http://web.chemdoodle.com & iChemLabs \\ \hline
-        \multicolumn{3}{|c|}{Integration} \\ \hline
-        CDK-Taverna \cite{Kuhn:2010p4001} & http://cdk-taverna.blah.XXX & Christoph Steinbeck, Workflow \\ \hline
-        A3 & ..  & .  \\ \hline
-        \multicolumn{3}{|c|}{Interconversion} \\ \hline
-        OSRA & http://osra.sf.net & Igor Filippov, Image to structure \\ \hline
-        OPSIN & http://opsin.ch.cam.ac.uk & Daniel Lowe, Name to structure \\ \hline
-        A3 & ..  & .  \\ \hline
-        \multicolumn{3}{|c|}{Structure Databases} \\ \hline
-        OrChem \cite{RijnbeekS10} & http://orchem.sourceforge.net & Christoph Steinbeck, Oracle-based Chemical Database Engine \\ \hline
-        MyChem  & http://XXX.sourceforge.net & Jerome Pansanel, MySQL-based Chemical Database Engine \\ \hline
-        PGChem  & http://XXX.sourceforge.net & Ernst-Georg Schmid, PostgreSQL-based Chemical Database Engine \\ \hline
-        Bingo  & http://XXX.XXX.XXX & Dmitry Pavlov, Oracle-based Chemical Database Engine \\ \hline
-        cclib  & http://cclib.sourceforge.net & Python library for parsing and interpreting computational chemistry results \\ \hline
-        \end{tabular}
+     \begin{tabular}{|c|c|c|}
+       \hline \textbf{Name} & \textbf{Website} & \textbf{Description} \\ \hline
+        \multicolumn{3}{|c|}{\textbf{Cheminformatics Toolkits}} \\ \hline
+        \textbf{Chemistry Development Kit (CDK)} \cite{Steinbeck2003, Steinbeck2006} & http://cdk.sf.net & XXXX  \\ \hline
+        \textbf{Cinfony} & http://cinfony.googlecode.com & Noel O'Boyle, Python interface to toolkits \\ \hline
+        \textbf{Indigo} & http://ggasoftware.com/opensource/indigo & GGA Software \\ \hline
+        \textbf{Open Babel} & http://openbabel.org & Geoffrey Hutchison et al \\ \hline
+        \textbf{RDKit} & http://rdkit.org & Greg Landrum \\ \hline
+        \multicolumn{3}{|c|}{\textbf{Second Generation}} \\ \hline
+        \textbf{Avogadro} & http://avogadro.openmolecules.net & XXX \\ \hline
+        \multicolumn{3}{|c|}{\textbf{Web Applications}} \\ \hline
+        \textbf{ChemDoodle Web Components} & http://web.chemdoodle.com & iChemLabs \\ \hline
+        \textbf{Jmol} & http://jmol.org & Hanson \\ \hline
+       \multicolumn{3}{|c|}{\textbf{Integration}} \\ \hline
+        \textbf{CDK-Taverna} \cite{Kuhn:2010p4001} & http://cdk-taverna.blah.XXX & Christoph Steinbeck, Workflow \\        \hline
+       \textbf{A3} & ..  & .  \\ \hline
+        \multicolumn{3}{|c|}{\textbf{Interconversion}} \\ \hline
+        \textbf{OSRA} & http://osra.sf.net & Igor Filippov, Image to structure \\ \hline
+        \textbf{OPSIN} & http://opsin.ch.cam.ac.uk & Daniel Lowe, Name to structure \\ \hline
+        \textbf{A3} & ..  & .  \\ \hline
+        \multicolumn{3}{|c|}{\textbf{Structure Databases}} \\ \hline
+        \textbf{Bingo}  & http://XXX.XXX.XXX & Dmitry Pavlov, Oracle-based Chemical Database Engine \\ \hline
+        \textbf{MyChem}  & http://XXX.sf.net & Jerome Pansanel, MySQL-based Chemical Database Engine \\ \hline
+        \textbf{OrChem} \cite{RijnbeekS10} & http://orchem.sf.net & Christoph Steinbeck, Oracle-based Chemical Database Engine \\ \hline
+       \textbf{PGChem}  & http://XXX.sf.net & Ernst-Georg Schmid, PostgreSQL-based Chemical Database Engine \\ \hline
+       \multicolumn{3}{|c|}{\textbf{Other}} \\ \hline
+        \textbf{cclib}  & http://cclib.sf.net & Python library for parsing and interpreting computational chemistry results \\
+        \hline
+%% GaussSum, QMForge
+       \end{tabular}
       }
   \subsection*{Table 2 - Open Data in chemistry.}
     Overview of major open chemical data available under a license or waiver
@@ -974,12 +983,12 @@ investigate related projects or read our blogs.
     \par \mbox{}
     \par
     \mbox{
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|l|c|l|}
   %% \hline \multicolumn{3}{|c|}{My Table}\\ \hline
-  \hline Name & License/Waiver & Description \\ \hline
-  ChemPedia & CC0 & Crowd-sourced chemical names. Project discontinued. \\ \hline
-  CrystalEye     & PPDL & Crystal structures from primary literature. \\ \hline
-  ONS Solubility & CC0 & Solubility data for various solvents. \\ \hline
+  \hline \textbf{Name} & \textbf{License/Waiver} & \textbf{Description} \\ \hline
+  \textbf{ChemPedia} & CC0 & Crowd-sourced chemical names. Project discontinued. \\ \hline
+  \textbf{CrystalEye}     & PPDL & Crystal structures from primary literature. \\ \hline
+  \textbf{ONS Solubility} & CC0 & Solubility data for various solvents. \\ \hline
 \end{tabular}
       }
 
