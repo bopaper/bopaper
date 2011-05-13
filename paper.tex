@@ -417,41 +417,39 @@ AMBIT2~\cite{WebAMBIT} software, a GUI that facilitates registration
 of chemicals for the REACH EU directive on toxicity, and which is
 based on the CDK.
 
-\subsection*{Facilitating chemical computations}
+\subsection*{Computational chemistry analysis}
 
-An area where cheminformatic tools can make a signficant impact is supporting
-chemical computations and interpreting their results.
-This is especially true for electronic structure calculations since many
-quantum chemistry methods already have a long tradition in the scientific
-community -- most prominently the Hartree-Fock method and density functional theory,
-as well as more accurate variations of these.
-Many methods have been implemented and reimplemented in a variety of software
-packages over the last 30 years.
-When a computational chemist performs calculations using several programs,
-he/she will find that the format of their input files and outputs
-differ enourmously.
-Sometimes even different version of the same program implement different input
-syntax and output formats.
-Furthermore, some of these programs provide additional algorithms such as
-populations analyses, which in general are applicable to all packages.
+Another area where the Blue Obelisk has had a signficant impact in the
+past five years is in supporting
+quantum chemistry calculations and in interpreting their results.
+Electronic structure calculations have a long tradition in the
+chemistry community and a variety of programs exist, mostly
+proprietary software with the notable exception of NWChem.
+However, since each program uses different input formats, and the
+results are output differently even varying between different versions
+of the software, preparing calculations and extracting the results in
+an automated way is problematic. 
 
-Obtaining electronic structure is often the first step in a research pipeline,
-after which data can be further analyzed or visualized.
-Preparing inputs and some basic analyses, usually with the
-goal of visualization, are often a part of graphical molecular editors.
-Avogadro for example is capable of generating input files for several
-electronic structure packages, and visualizes molecular orbitals.
+Avogadro has already been mentioned as a GUI for preparing
+computational chemistry calculations. It uses Open Babel to read the
+output of several electronic structure packages, and also to write the
+input files for each. Jmol (see below) can also depict computational
+chemistry results including molecular orbitals.
 
-The Blue Obelisk project  cclib\cite{cclib} is dedicated to parsing output
-from computational chemistry programs.
-It's main goal is to read as many different kinds of results from as
-many different packages as possible.
-After parsing, cclib provides all results in standardized form as attributes
-of a python object Python.
-This means that if a developer implements an algorithm based on such an API,
-they can feed it output files from any of the supported computational software.
-The current version of cclib (1.0.1) supports 8 different computational chemistry
-codes and extracts over 30 different calculations results.
+In 2006, the Blue Obelisk project cclib~\cite{cclib} was established
+with the goal of parsing the output from computational chemistry
+programs and presenting it in a standard way so that further analyses
+could be carried out independently of the quantum package used to
+obtain the results. cclib is a Python library, and
+the current version (version 1.0.1)
+supports 8 different computational chemistry codes and extracts over
+30 different calculated attributes. A related BO project,
+GaussSum~\cite{WebGaussSum},
+is a GUI that builds on top of cclib to allow predicted properties to
+be compared to experimental properties (for example, the calculated
+vibrational frequencies and the IR spectrum).
+
+[Few lines on Quixote here]
 
 \subsection*{Web applications}
 
