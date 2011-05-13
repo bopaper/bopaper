@@ -417,6 +417,42 @@ AMBIT2~\cite{WebAMBIT} software, a GUI that facilitates registration
 of chemicals for the REACH EU directive on toxicity, and which is
 based on the CDK.
 
+\subsection*{Facilitating chemical computations}
+
+An area where cheminformatic tools can make a signficant impact is supporting
+chemical computations and interpreting their results.
+This is especially true for electronic structure calculations since many
+quantum chemistry methods already have a long tradition in the scientific
+community -- most prominently the Hartree-Fock method and density functional theory,
+as well as more accurate variations of these.
+Many methods have been implemented and reimplemented in a variety of software
+packages over the last 30 years.
+When a computational chemist performs calculations using several programs,
+he/she will find that the format of their input files and outputs
+differ enourmously.
+Sometimes even different version of the same program implement different input
+syntax and output formats.
+Furthermore, some of these programs provide additional algorithms such as
+populations analyses, which in general are applicable to all packages.
+
+Obtaining electronic structure is often the first step in a research pipeline,
+after which data can be further analyzed or visualized.
+Preparing inputs and some basic analyses, usually with the
+goal of visualization, are often a part of graphical molecular editors.
+Avogadro for example is capable of generating input files for several
+electronic structure packages, and visualizes molecular orbitals.
+
+The Blue Obelisk project  cclib\cite{cclib} is dedicated to parsing output
+from computational chemistry programs.
+It's main goal is to read as many different kinds of results from as
+many different packages as possible.
+After parsing, cclib provides all results in standardized form as attributes
+of a python object Python.
+This means that if a developer implements an algorithm based on such an API,
+they can feed it output files from any of the supported computational software.
+The current version of cclib (1.0.1) supports 8 different computational chemistry
+codes and extracts over 30 different calculations results.
+
 \subsection*{Web applications}
 
 While desktop software has composed the majority of scientific tools
@@ -911,8 +947,8 @@ investigate related projects or read our blogs.
         MyChem  & http://XXX.sourceforge.net & Jerome Pansanel, MySQL-based Chemical Database Engine \\ \hline
         PGChem  & http://XXX.sourceforge.net & Ernst-Georg Schmid, PostgreSQL-based Chemical Database Engine \\ \hline
         Bingo  & http://XXX.XXX.XXX & Dmitry Pavlov, Oracle-based Chemical Database Engine \\ \hline
-
-      \end{tabular}
+        cclib  & http://cclib.sourceforge.net & Python library for parsing and interpreting computational chemistry results \\ \hline
+        \end{tabular}
       }
   \subsection*{Table 2 - Open Data in chemistry.}
     Overview of major open chemical data available under a license or waiver
