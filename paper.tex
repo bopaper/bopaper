@@ -443,11 +443,16 @@ could be carried out independently of the quantum package used to
 obtain the results. cclib is a Python library, and
 the current version (version 1.0.1)
 supports 8 different computational chemistry codes and extracts over
-30 different calculated attributes. A related BO project,
-GaussSum~\cite{WebGaussSum},
-is a GUI that builds on top of cclib to allow predicted properties to
-be compared to experimental properties (for example, the calculated
-vibrational frequencies and the IR spectrum).
+30 different calculated attributes. Two related BO projects build upon 
+cclib. GaussSum~\cite{WebGaussSum},
+is a GUI that can monitors the progress of SCF and geometry convergences, 
+and can plot predicted UV/Vis absorption and infrared spectra from 
+appropriate logfiles containing energies and oscillator strengths for easy 
+comparison to experimental data. QMForge~\cite{WebQMForge} provides 
+a GUI for various electronic structure analyses such as Frenking's charge 
+decomposition analysis~\cite{Frenking} and Mulliken or C-squared analyses
+on user-defined molecular fragments. QMForge also provides a rudamentary
+Cartesian coordinate editor allowing molecular structures to be saved via OpenBabel.
 
 [Few lines on Quixote here]
 
