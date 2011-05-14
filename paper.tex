@@ -148,7 +148,7 @@
   Geoffrey R Hutchison$^4$%
   \email{Geoffrey R Hutchison - geoffh@pitt.edu}
   \and
- Karol M Langner$^5$%
+  Karol M Langner$^5$%
   \email{Karol M Langner - langnerkm@chem.leidenuniv.nl}
   \and
   Daniel M Lowe$^6$%
@@ -169,15 +169,15 @@
   Christoph Steinbeck$^{10}$%
   \email{Christoph Steinbeck - steinbeck@ebi.ac.uk}
   \and
- Adam L Tenderholt$^{11}$%
+  Adam L Tenderholt$^{11}$%
   \email{Adam L Tenderholt - adamlt82@u.washington.edu}
   \and
   Kevin J Theisen$^{12}$%
- \email{Kevin J Theisen - kevin@ichemlabs.com}
+  \email{Kevin J Theisen - kevin@ichemlabs.com}
   \and
   Egon L Willighagen$^{13}$%
   \email{Egon L Willighagen - egon.willighagen@ki.se}
-    }
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,19 +187,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \address{%
-   \iid(1)Division of Molecular Toxicology, Institute of Environmental Medicine, %
-        Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden\\
-    \iid(2)National Institute of Health, Somewhere in the US, USA\\
-    \iid(5)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland\\
-    \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK\\
-    \iid(7)Unilever Centre for Molecular Sciences Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK\\
-    \iid(8)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia\\
     \iid(1)Department of Pharmaceutical Biosciences, Uppsala University, Box 591, 751 24 Uppsala, Sweden \\
-    \iid(10)Department of Chemistry, University of Pittsburgh, 219 Parkman Avenue, Pittsburgh, PA 15260, USA\\
-   \iid(3)NIH, Somewhere in the US, USA\\
-    \iid(12)iChemLabs, 200 Centennial Ave., Suite 200, Piscataway, NJ    08854, USA \\
-    \iid(13)Gorlaeus Laboratories, Leiden University, 2333 CC Leiden,    The Netherlands \\
-    \iid(14)Department of Chemistry, University of Washington, Seattle, WA 98195
+    \iid(2)National Institute of Health, Somewhere in the US, USA \\
+    \iid(3)... \\
+    \iid(4)Department of Chemistry, University of Pittsburgh, 219 Parkman Avenue, Pittsburgh, PA 15260, USA \\
+    \iid(5)Gorlaeus Laboratories, Leiden University, 2333 CC Leiden, The Netherlands \\
+    \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK \\
+    \iid(7)Unilever Centre for Molecular Sciences Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK \\
+    \iid(8)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland \\
+    \iid(9)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia \\
+    \iid(10)... \\
+    \iid(11)Department of Chemistry, University of Washington, Seattle, WA 98195 \\
+    \iid(12)iChemLabs, 200 Centennial Ave., Suite 200, Piscataway, NJ 08854, USA \\
+    \iid(13)Division of Molecular Toxicology, Institute of Environmental Medicine, %
+        Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden
 }%
 
 \maketitle
@@ -437,24 +438,22 @@ past five years is in supporting
 quantum chemistry calculations and in interpreting their results.
 Electronic structure calculations have a long tradition in the
 chemistry community and a variety of programs exist, mostly
-proprietary software with the notable exception of NWChem.
+proprietary software with the notable exception of NWChem.\cite{NWChem}
 However, since each program uses different input formats, and the
 results are output differently even varying between different versions
-of the software, preparing calculations and extracting the results in
-an automated way is problematic. 
+of the software, preparing calculations and automatically extracting
+the results is problematic. 
 
-Avogadro has already been mentioned as a GUI for preparing
-computational chemistry calculations. It uses Open Babel to read the
-output of several electronic structure packages, and also to write the
-input files for each. Jmol (see below) can also depict computational
-chemistry results including molecular orbitals.
+Avogadro has already been mentioned as a GUI for preparing calculations.
+It uses Open Babel to read the output of several electronic structure
+packages, and also to write the input files for each. Jmol (see below)
+can also depict computational chemistry results including molecular orbitals.
 
 In 2006, the Blue Obelisk project cclib~\cite{cclib} was established
 with the goal of parsing the output from computational chemistry
 programs and presenting it in a standard way so that further analyses
-could be carried out independently of the quantum package used to
-obtain the results. cclib is a Python library, and
-the current version (version 1.0.1)
+could be carried out independently of the quantum package used.
+cclib is a Python library, and the current version (version 1.0.1)
 supports 8 different computational chemistry codes and extracts over
 30 different calculated attributes. Two related BO projects build upon 
 cclib. GaussSum~\cite{WebGaussSum},
