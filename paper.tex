@@ -441,21 +441,19 @@ chemistry community and a variety of programs exist, mostly
 proprietary software with the notable exception of NWChem.\cite{NWChem}
 However, since each program uses different input formats, and the
 results are output differently even varying between different versions
-of the software, preparing calculations and extracting the results in
-an automated way is problematic. 
+of the software, preparing calculations and automatically extracting
+the results is problematic. 
 
-Avogadro has already been mentioned as a GUI for preparing
-computational chemistry calculations. It uses Open Babel to read the
-output of several electronic structure packages, and also to write the
-input files for each. Jmol (see below) can also depict computational
-chemistry results including molecular orbitals.
+Avogadro has already been mentioned as a GUI for preparing calculations.
+It uses Open Babel to read the output of several electronic structure
+packages, and also to write the input files for each. Jmol (see below)
+can also depict computational chemistry results including molecular orbitals.
 
 In 2006, the Blue Obelisk project cclib~\cite{cclib} was established
 with the goal of parsing the output from computational chemistry
 programs and presenting it in a standard way so that further analyses
-could be carried out independently of the quantum package used to
-obtain the results. cclib is a Python library, and
-the current version (version 1.0.1)
+could be carried out independently of the quantum package used.
+cclib is a Python library, and the current version (version 1.0.1)
 supports 8 different computational chemistry codes and extracts over
 30 different calculated attributes. Two related BO projects build upon 
 cclib. GaussSum~\cite{WebGaussSum},
