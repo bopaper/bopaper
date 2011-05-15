@@ -145,37 +145,40 @@
   Robert Hanson$^3$%
   \email{Robert Hanson - hansonr@stolaf.edu}
   \and
-  Geoffrey R Hutchison$^4$%
+  Marcus D Hanwell$^{4}$%
+  \email{Marcus D Hanwell - marcus.hanwell@kitware.com}
+  \and
+  Geoffrey R Hutchison$^5$%
   \email{Geoffrey R Hutchison - geoffh@pitt.edu}
   \and
-  Karol M Langner$^5$%
+  Karol M Langner$^6$%
   \email{Karol M Langner - langnerkm@chem.leidenuniv.nl}
   \and
-  Daniel M Lowe$^6$%
+  Daniel M Lowe$^7$%
  \email{Daniel Lowe - dl387@cam.ac.uk}
   \and
-  Peter Murray-Rust$^7$%
+  Peter Murray-Rust$^8$%
   \email{Peter Murray-Rust - pm286@cam.ac.uk}
   \and
-  Noel M O'Boyle\correspondingauthor$^8$%
+  Noel M O'Boyle\correspondingauthor$^9$%
   \email{Noel M O'Boyle\correspondingauthor - n.oboyle@ucc.ie}
   \and
-  Dmitry Pavlov$^9$%
+  Dmitry Pavlov$^{10}$%
   \email{Dmitry Pavlov - dpavlov@ggasoftware.com}
   \and
   Ola Spjuth$^1$%
   \email{ola.spjuth@farmbio.uu.se}
   \and
-  Christoph Steinbeck$^{10}$%
+  Christoph Steinbeck$^{11}$%
   \email{Christoph Steinbeck - steinbeck@ebi.ac.uk}
   \and
-  Adam L Tenderholt$^{11}$%
+  Adam L Tenderholt$^{12}$%
   \email{Adam L Tenderholt - adamlt82@u.washington.edu}
   \and
-  Kevin J Theisen$^{12}$%
+  Kevin J Theisen$^{13}$%
   \email{Kevin J Theisen - kevin@ichemlabs.com}
   \and
-  Egon L Willighagen$^{13}$%
+  Egon L Willighagen$^{14}$%
   \email{Egon L Willighagen - egon.willighagen@ki.se}
 }
 
@@ -190,16 +193,17 @@
     \iid(1)Department of Pharmaceutical Biosciences, Uppsala University, Box 591, 751 24 Uppsala, Sweden \\
     \iid(2)NIH Center for Translational Therapeutics, 9800 Medical  Center Drive, Rockville, MD 20878 \\
     \iid(3)... \\
-    \iid(4)Department of Chemistry, University of Pittsburgh, 219 Parkman Avenue, Pittsburgh, PA 15260, USA \\
-    \iid(5)Gorlaeus Laboratories, Leiden University, 2333 CC Leiden, The Netherlands \\
-    \iid(6)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK \\
-    \iid(7)Unilever Centre for Molecular Sciences Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK \\
-    \iid(8)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland \\
-    \iid(9)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia \\
-    \iid(10)... \\
-    \iid(11)Department of Chemistry, University of Washington, Seattle, WA 98195 \\
-    \iid(12)iChemLabs, 200 Centennial Ave., Suite 200, Piscataway, NJ 08854, USA \\
-    \iid(13)Division of Molecular Toxicology, Institute of Environmental Medicine, %
+    \iid(4)Kitware, Inc., 28 Corporate Drive, Clifton Park, NY 12065, USA \\
+    \iid(5)Department of Chemistry, University of Pittsburgh, 219 Parkman Avenue, Pittsburgh, PA 15260, USA \\
+    \iid(6)Gorlaeus Laboratories, Leiden University, 2333 CC Leiden, The Netherlands \\
+    \iid(7)Cheminformatics and Metabolism Team, European Bioinformatics Institute (EBI), Wellcome Trust Genome Campus, Hinxton, Cambridge, UK \\
+    \iid(8)Unilever Centre for Molecular Sciences Informatics, Department of Chemistry, University of Cambridge, Lensfield Road, CB2 1EW, UK \\
+    \iid(9)Analytical and Biological Chemistry Research Facility, Cavanagh Pharmacy Building, University College Cork, College Road, Cork, Co. Cork, Ireland \\
+    \iid(10)GGA Software Services LLC, 41 Nab. Chernoi rechki 194342, Saint Petersburg, Russia \\
+    \iid(11)... \\
+    \iid(12)Department of Chemistry, University of Washington, Seattle, WA 98195 \\
+    \iid(13)iChemLabs, 200 Centennial Ave., Suite 200, Piscataway, NJ 08854, USA \\
+    \iid(14)Division of Molecular Toxicology, Institute of Environmental Medicine, %
         Nobels vaeg 13, Karolinska Institutet, 171 77 Stockholm, Sweden
 }%
 
@@ -419,9 +423,10 @@ Both products in turn act as extensible platforms for other
 software. Bioclipse, for example is used by software
 such as Brunn~\cite{Alvarsson:2011fk}, a laboratory information system for
 microplate based high-throughput screening. Brunn provides a graphical interface
-for handling different plate layouts and dilution series and can automaticly
+for handling different plate layouts and dilution series and can automatically
 generate dose response curves and calculate IC$_{50}$-values. Avogadro
-is used by XtalOpt~\cite{WebXtalOpt}\cite{Lonie2011}, an evolutionary
+is used by Kalzium~\cite{WebKalzium}, a periodic table and chemical editor in KDE,
+and XtalOpt~\cite{WebXtalOpt}\cite{Lonie2011}, an evolutionary
 algorithm for crystal structure prediction. XtalOpt provides a
 graphical interface using Avogadro and submits calculations using a
 range of solid-state simulation software to predict stable polymorphs.
@@ -446,7 +451,20 @@ the results is problematic.
 
 Avogadro has already been mentioned as a GUI for preparing calculations.
 It uses Open Babel to read the output of several electronic structure
-packages, and also to write the input files for each. Jmol (see below)
+packages. Avogadro generates input files on the fly in response to user
+input on forms, as well as allowing inline editing of the files before
+they are saved to disk. It also features intuitive syntax highlighting
+for GAMESS input files, allowing expert users to easily spot mistakes
+before saving an input file to disk.
+
+In addition to this, significant development of new parsing routines took
+place in an Avogadro plugin to read in basis sets, and electronic structure
+output in order to calculate molecular orbital and electron density grids.
+This code was written to be parallel, using desktop shared memory parallelism
+and high level APIs in order to significantly speed up analysis. Most of this
+code was recently separated from the plugin, and released as a BSD licensed
+library, that is now used by the latest version of Avogadro, called OpenQube.
+Jmol (see below)
 can also depict computational chemistry results including molecular orbitals.
 
 In 2006, the Blue Obelisk project cclib~\cite{cclib} was established
