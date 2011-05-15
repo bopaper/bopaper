@@ -451,7 +451,20 @@ the results is problematic.
 
 Avogadro has already been mentioned as a GUI for preparing calculations.
 It uses Open Babel to read the output of several electronic structure
-packages, and also to write the input files for each. Jmol (see below)
+packages. Avogadro generates input files on the fly in response to user
+input on forms, as well as allowing inline editing of the files before
+they are saved to disk. It also features intuitive syntax highlighting
+for GAMESS input files, allowing expert users to easily spot mistakes
+before saving an input file to disk.
+
+In addition to this, significant development of new parsing routines took
+place in an Avogadro plugin to read in basis sets, and electronic structure
+output in order to calculate molecular orbital and electron density grids.
+This code was written to be parallel, using desktop shared memory parallelism
+and high level APIs in order to significantly speed up analysis. Most of this
+code was recently separated from the plugin, and released as a BSD licensed
+library, that is now used by the latest version of Avogadro, called OpenQube.
+Jmol (see below)
 can also depict computational chemistry results including molecular orbitals.
 
 In 2006, the Blue Obelisk project cclib~\cite{cclib} was established
