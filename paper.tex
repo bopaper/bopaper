@@ -133,6 +133,9 @@
 
 
 \author{
+  Samuel E Adams$^8$%
+  \email{Samuel E Adams - sea36@cam.ac.uk}
+  \and
   Jonathan Alvarsson$^1$%
   \email{Jonathan Alvarsson - jonathan.alvarsson@farmbio.uu.se}
   \and
@@ -154,7 +157,7 @@
   Karol M Langner$^6$%
   \email{Karol M Langner - langnerkm@chem.leidenuniv.nl}
   \and
-  Daniel M Lowe$^7$%
+  Daniel M Lowe$^8$%
  \email{Daniel Lowe - dl387@cam.ac.uk}
   \and
   Peter Murray-Rust$^8$%
@@ -733,17 +736,51 @@ available from KNIME's ``Community Updates'' site.
 
 The IUPAC InChI identifier is a non-proprietary and unique identifier
 for chemical substances designed to enable linking of diverse data
-compilations. Although its development predates the Blue Obelisk,
-software such as Open Babel has included InChI support since 2005,
-and support for InChI in Indigo is due in 2011.
+compilations. Prior to the development of the InChI identifier chemical
+information systems and databases used a wide variety of (generally
+proprietary) identifiers, greatly limiting their interoperability.
+Although its development predates the Blue Obelisk, software such as Open
+Babel has included InChI support since 2005, and support for InChI in
+Indigo is due in 2011.
 
 Since the official InChI implementation is in C, it is difficult to
 access from the other widely used language for cheminformatics
-toolkits, Java. The Blue Obelisk project JNI-InChI~\cite{WebJNIInChI}
-was established in 2006 to
-solve this problem by using the Java Native Interface to link the
-InChI binary to Java. In this way, it promotes the wider adoption of
+toolkits, Java. Early attempts to generate InChI identifiers from
+within Java involved programatically launching the InChI executable
+and capturing the output, an approach that was found to be fairly
+unreliable and broke the 'write once, run anywhere' philosophy
+of Java.  The Blue Obelisk project JNI-InChI~\cite{WebJNIInChI}
+was established in 2006 to solve this problem by using the Java Native
+Interface framework to provide transparent access to the InChI
+library from within Java, and other Java Virtual Machine (JVM) based
+languages, supporting the wider adoption of
 this standard identifier by the chemistry community.
+
+The Java Native Interface framework provides a mechanism for code
+running inside the JVM to place calls to libraries written in languages
+such as C, C++ and Fortran, and compiled into native, machine specific,
+code. JNI-InChI provides a thin C wrapper, with corresponding Java code,
+around the IUPAC InChI library, exposing the InChI library's functionality
+to the JVM.  To overcome the need to have the correct InChI library pre-installed
+on a system, JNI-InChI comes with a variety of precompiled native binaries and
+automatically extracts and deploys the correct one for the detected operating
+system and architecture. The JNI-InChI library comes with native binaries
+supporting a range of operating systems and architectures; the current version
+has binaries for 32- and 64-bit Windows, Linux and Solaris, 64-bit FreeBSD
+and 64-bit Intel-based Mac OS X - a number of which are not supported by the
+original IUPAC distribution of InChI.
+
+The JNI-InChI project has matured to support the full range of
+functionality of the InChI C library: structure-to-InChI, InChI-to-structure,
+AuxInfo-to-structure, InChIKey generation, and InChI and InChIKey validation.
+JNI-InChI provides the InChI functionality for a number of Open Source projects,
+including the Chemistry Development Kit, Bioclipse and CMLXOM/JUMBO, and is
+also used by commercial applications and internally in a number of companies.
+Through its widespread use and Open Source development model, a number of
+issues in earlier versions of the software have been identified and resolved,
+and JNI-InChI now offers a robust, and defacto standard tool for working with
+InChIs in the JVM.
+
 
     \subsection*{OpenSMILES}
 
