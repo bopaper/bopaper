@@ -342,6 +342,81 @@ Source, and Open Standards in chemistry.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Main section %%
 %%
+
+\section*{Scope}
+The Blue Obelisk covers many areas of chemistry and chemical resources
+used by neighbouring disciplines ({\it e.g.} biochemistry, materials
+science). Many of the efforts relate to cheminformatics (the scope of
+this journal) and we believe that many of the publications in {\it J.
+Cheminf.} could be completely carried out using Blue Obelisk resources
+and other OS chemical tools. The importance of this is that for the
+first time it would allow reviewers, editors and readers to validate
+assertions in the journal and also to re-run and re-analyse parts of
+the calculation.
+
+However, Blue Obelisk software and data is used outside
+cheminformatics and certainly in the five main areas that, for
+example, chemical markup language (CML) supports:
+
+\begin{itemize}
+\item{1.}{\bf Molecules:} This is probably the largest area for Blue
+Obelisk software and data, and is reflected by many programs that
+visualise, transform, convert formats and calculate properties. It is
+almost certain that any file format in use can be processed by Blue
+Obelisk software and properties can be calculated for most (organic
+compounds).
+\item{2.}{\bf Reactions:} Blue Obelisk software can describe the
+semantics of reactions and provide atom-atom matching and analyse
+stoichiometric balance in reactions.
+\item{3.}{\bf Computational chemistry:} Blue Obelisk software can
+interpret many of the current output files from calculations and
+create input for jobs. The Quixote project (see later and elsewhere in
+this issue) shows that Open Source approaches based on Blue Obelisk
+resources and principles are increasing the availability and
+re-usability of computational chemistry.
+\item{4.}{\bf Spectra:} 1-D spectra (NMR, IR, UV etc.) are fully
+supported in Blue Obelisk offerings for conversion and display. There
+is a limited amount of spectral analysis but the software gives a
+platform on which it should be straightforward to develop spectral
+annotation and manipulation. Currently the Blue Obelisk does not
+support much in multi-dimensional NMR and multi-equipment spectra
+({\it e.g.} GC-MS).
+\item{5.}{\bf Crystallography:} The Blue Obelisk software supports the
+bi-directional processing of crystal structure files (CIF) and also
+solid-state calculations such as plane-waves with periodic boundary
+conditions. There is considerable support for the visualisation of
+both periodic and aperiodic condensed objects.
+\end{itemize}
+
+Many of the current operations in installing and running chemical
+computations and using the data are integration and customisation
+rather than fundamental algorithms. It is very difficult to create
+universal platforms that can be distributed and run by a wide range of
+different users, and in general, the Blue Obelisk deliberately does
+not address these. Our approach is to produce components that can be
+embedded in chemists. environments, including databases and workflows.
+We believe that a chemical laboratory with reasonable access to common
+software engineering should be able to build customised applications
+using Blue Obelisk components and standard infrastructure such as
+workflows (KNIME or Taverna) and databases (MySQL, CouchDB etc.).
+Where the Blue Obelisk itself produces data resources (NMRShiftDB,
+CrystalEye, Quixote etc.) they are normally done with Open components
+so that the community can, if necessary, replicate them but not
+necessarily without additional effort.
+
+Much of the impetus behind Blue Obelisk software is to create an
+environment for chemical computation (including cheminformatics) where
+all of the components, data, specifications, semantics, ontology and
+software are Openly visible and discussable. The largest current uses
+by the general chemical community are in authoring, visualisation and
+cheminformatics calculations but we anticipate that this will shortly
+extend into mainstream computational chemistry and solid-state.
+Although many of the authors are employed as research scientists,
+there are also several people who contribute in their spare time and
+we anticipate an increasing value and use of the Blue Obelisk in
+education at all levels.
+
+
 \section*{Open Source}
 
 \subsection*{Cheminformatics toolkits}
@@ -732,6 +807,37 @@ available from KNIME's ``Community Updates'' site.
  members can engage with projects.)
 
 \section*{Open Standards}
+
+\subsection*{Chemical Markup Language, CML}
+
+Chemical Markup Language (CML) is discussed in several places in this
+issue, and a brief summary here re-iterates that it is designed
+primarily to create a validatable semantic representation for chemical
+objects. The five main areas (molecules, reactions, computational
+chemistry, spectra and solid-state (see above)) have now all been
+extensively deployed and tested. CML can therefore be used as a
+reference for input and output for Blue Obelisk software and a means
+of representing data in Blue Obelisk resources.
+
+CML, being an XML application, can inter-operate with other markup
+languages and in particular XHTML, SVG, MathML, docx and more
+specialised applications such as UnitsML and GML (geosciences). We
+believe that it would be possible using these languages to encode
+large parts of, say, first year chemistry text books in XML.
+Similarly, it is possible to create compound documents with word
+processing or spreadsheet software that has inter-operating text,
+graphics and chemistry (as in Chem4Word). Being a markup language, CML
+is designed for re-purposing, including styling, and therefore a
+mixture of these languages can be used for chemical catalogues,
+general publications, logbooks and many other types of document in the
+scientific process.
+
+CML describes much of its semantics through conventions and
+dictionaries, and the emerging ecosystem (especially in computational
+chemistry) is available as a semantic resource for many of the
+applications and specifications in this article.
+
+
   \subsection*{InChI}
 
 The IUPAC InChI identifier is a non-proprietary and unique identifier
@@ -812,8 +918,6 @@ features absent in the initial SMILES specification. There has been
 discussions about including parts of the CurlySMILES notation into
 OpenSMILES, especially polymers.
 
-\subsection*{CML}
-?
 
 \subsection*{QSAR-ML}
 The field of QSAR has long been hampered by the lack of open standards, which makes it difficult to share and reproduce descriptor calculations and analyses. QSAR-ML was recently proposed as an open standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset in QSAR-ML includes the chemical structures (preferably described in CML) with InChI to protect integrity, chemical descriptors by linking to the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values, units, and versioned descriptor implementations to allow for integrating several descriptor software in the same calculation. Hence, a dataset described in QSAR-ML is completely reproducible. To allow for easy setup of QSAR-ML compliant datasets, a plugin for Bioclipse was created with graphical interfaces that can be used to set up QSAR datasets and perform calculations. Descriptor implementations were initially available from CDK and JOELib, as well as via remote web services such as XMPP~\cite{Wagener:2009uq}.
