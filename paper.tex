@@ -572,7 +572,33 @@ decomposition analysis~\cite{Frenking} and Mulliken or C-squared analyses
 on user-defined molecular fragments. QMForge also provides a rudamentary
 Cartesian coordinate editor allowing molecular structures to be saved via OpenBabel.
 
-[Few lines on Quixote here]
+The Quixote project epitomises the full use of the Blue Obelisk
+software and is described in detail in a sibling
+article. Here we observe that it is possible to convert legacy files
+of all sorts into semantic chemistry and extract
+those parts which are suitable for input to computational chemistry
+programs. This chemistry is then combined with
+generic concepts of computational chemistry ({\it e.g.} strategy,
+machine resources, timing, accuracy etc.) into the
+legacy inputs for a wide range of programs. Quixote itself follows
+Blue Obelisk principles in that it does not manage
+the submission and monitoring of jobs but resumes action when the jobs
+have been completed, and then applies a range
+of parsing and transformation tools to create standardised semantic
+chemical content. A major feature of Quixote is
+that it requires all concepts to validate against dictionaries and the
+process of parsing files necessarily generates
+communally-agreed dictionaries, which represent an important step
+forward in the Open specifications for Blue Obelisk.
+When widely-deployed, Quixote will advertise the value of Open
+community standards for semantics to the world.
+
+The Quixote project is not dependent on any particular technology,
+other than the representation of computational
+chemistry in CML and the management of semantics through CML
+dictionaries. At present, we use JUMBO-Converters for most
+ of the semantic conversion, Lensfield2 for the workflow and Chempound
+(chem\#) to store and disseminate the results.
 
 \subsection*{Web applications}
 
@@ -680,6 +706,33 @@ signatures. This is just a very minor selection, and the author
 is encouraged to contact the individual Blue Obelisk projects
 for an elaborate list.
 
+In May 2011, the EBI ran an industry-oriented workshop (MIOSS -
+Molecular Informatics Open Source Software). This explored the role of
+Open Source in industrial laboratories and companies, and several of
+the presenters are among the authors of this paper.
+The meeting identified that Open Source was extremely valuable to
+industry, not just because it is 'free as in beer'
+but because it allows the validation of source code, data and
+computational procedures. A phrase from the meeting
+summed it up: "The ice is beginning to melt", signifiying that we can
+expect a rapid increase in industry's interest
+in Open Source.
+
+Some of the discussion was on business models. There are difficulties
+for software for which there is no formal
+transaction, other than downloasding and agreeing to license terms.
+COmpanies are concerened about training and support
+and in some cases, product liability. One anecdote was of a company
+which wished to donate money to an Open Source
+project but could not find a mechanism to do so.
+
+There is a considerable amount of contribution-in-kind, both from
+enhancements to software and also completely new
+systems and toolkits, and companies are finding it easier to create
+mechanisms for releasing Open Source software
+without violating confidentiality or incurring liability.
+
+
 \subsection*{Converting chemical names and images to structures}
 
 The majority of chemical information is not stored in machine-readable
@@ -723,7 +776,7 @@ fast and precise conversions for the majority of names using IUPAC
 organic nomenclature, and is available as a web service, Java
 library and standalone application for maximum interoperability.
 
-\subsection*{Chemical Databases}
+\subsection*{Chemical database software}
 
 Registration, indexing and searching of chemical structures in
 relational databases is one of the core areas of cheminformatics.
@@ -738,6 +791,24 @@ seconds for databases with millions of compounds, depending on a given
 similarity cut-off. For substructure searching, it can make use of
 multiple processor cores on today's powerful database servers to
 provide fast response times in equally large data sets.
+
+Besides the traditional and proven relational databse approach, with
+added chemical features ('cartridges'), there is growing
+interest in tools and approaches based on the web philosophy and
+practice. Several groups are experimenting with RDF
+on the assumption that generic high-performance solutions are
+appearing. RDF allows everything to be described by
+URIs (data, molecules, dictionaries, relations). The Chempound system,
+as deployed in
+Quixote and elsewhere, is an RDF-based approach to chemical structures
+and compounds and their properties. For small
+to medium-sized collections (such as an individual's calculations or
+literature retrieval), there are many RDF tools
+(e.g. SIMILE, Apache Jena) which can operate in machine memory and provide
+the flexibility that RDF offers. For larger
+systems, it is unclear whtether complete RDF solutions (e.g. Virtuoso)
+will be satisfactory or whether a hybrid system
+based on name-value pairs (e.g. CouchDB, MongoDB) will be sufficient.
 
   \subsection*{Collaboration and interoperability}
 
@@ -797,14 +868,6 @@ In the case of KNIME, it comes with built-in basic collection of CDK-based and
 Open Babel-based nodes, while other nodes for the RDKit and Indigo are
 available from KNIME's ``Community Updates'' site.
 
-  \subsection*{Remaining challenges}
-
-(Say something here about benchmarks to measure accuracy. Clear examples
- of performance on open datasets are required. Otherwise there is
- nothing to counter anecdotal evidence or FUD spread by others.)
-
-(Better engagement with industry...make it clear what and how industry
- members can engage with projects.)
 
 \section*{Open Standards}
 
@@ -994,6 +1057,47 @@ can be hosted, and Dryad\cite{WebDryad} where data behind publications
 can be hosted. Initiatives like this make it possible to host small
 amounts of data, and those combined are expected to become soon a
 substantial knowledge base. 
+
+\subsection*{The Blue Obelisk Data Repository, BODR;
+http://sourceforge.net/projects/bodr/}
+
+From the beginning, the Blue Obelisk created a repository of key data,
+particularly that which would be used in
+algorithms and where there was a need to ensure that the values were
+standard between codes. Examples are atomic
+masses and conversion between physical constants. In principle, this
+material can be copied between sites such as IUPAC and
+wikipedia and continued practice in this area should lead to a
+enhancement in the quality of community reference data.
+
+\subsection*{NMRShiftDB}
+
+NMRShiftDB represents one of the earliest (2002?) resources for Open
+community-contributed data. Groups which
+measure NMR spectra or extract it from the literature contribute to
+NMRShiftDB which provides an Open resource where
+entries can be searched by chemical structure or properties
+(especially peaks). It is, not surprisingly, difficult to
+extract large amounts of altruistic contribution (as happens in
+wikipedia) but it is increasingly possible to link
+data capture with data publication. For example, the Blue Obelisk has
+enough software that it is possible to create
+a seamless chain for converting NMR structures in-house into
+NMRShiftDB entries. If and when the chemistry community
+encourages or requires semantic publication of spectra, rather than
+PDFs, it would be possible to populate NMRShiftDB rapidaly
+along the the lines of CrystalEye.
+
+\subsection*{CrystalEye}
+
+CrystalEye represents the cost-effective extraction of data from the
+literature where this is published both
+Openly and semantically. The cost is extremely low and software can be
+run every night, updating the entries
+(currently at about 250,000 structures). CrystalEye serves as a model
+for a high-value, high-quality Open data
+resource, including the licensing of each component as
+Panton-compatible Open data.
 
 \section*{Other areas of activity}
 
