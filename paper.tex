@@ -232,20 +232,19 @@
 \begin{abstract}
         % Do not use inserted blank lines (ie \\) until main body of text.
         \paragraph*{Background:} The Blue Obelisk movement was established in 2005 as a
-		response to the lack of open data, open standards and
-		open source (ODOSOS) in chemistry. While other scientific disciplines
-		such as physics, biology and astronomy (to name a few) were embracing
-		new ways of doing science and reaping the benefits of community
-		efforts, there was little if any innovation in the field of chemistry
-		and scientific progress was actively hampered by the lack of access to
-		data and tools.
+		response to the lack of Open Data, Open Standards and
+		Open Source (ODOSOS) in chemistry. It aims to
+make it easier to carry out chemistry research by
+promoting interoperability between chemistry software, encouraging cooperation
+between Open Source developers, and developing community resources and
+Open Standards.
 
         \paragraph*{Results:} This
 		contribution looks back on the past 5 years and surveys progress and
 		remaining challenges in the areas of Open Data, Open Standards, and
     Open Source in chemistry.
 
-        \paragraph*{Conclusions:} Here we show that the Blue Obelisk has been very successful
+        \paragraph*{Conclusions:} We show that the Blue Obelisk has been very successful
 		in bringing together researchers and developers with common interests
 		in ODOSOS, leading to development of many useful resources freely
 		available to the chemistry community. But how best to engage with the
@@ -294,8 +293,8 @@
 \section*{Background}
 The Blue Obelisk movement was established in 2005 at the
 229\textsuperscript{th} National Meeting of the American Chemistry
-Society as a response to the lack of open data, open standards and
-open source (ODOSOS) in chemistry. While other scientific disciplines
+Society as a response to the lack of Open Data, Open Standards and
+Open Source (ODOSOS) in chemistry. While other scientific disciplines
 such as physics, biology and astronomy (to name a few) were embracing
 new ways of doing science and reaping the benefits of community
 efforts, there was little if any innovation in the field of chemistry
@@ -349,28 +348,28 @@ used by neighbouring disciplines ({\it e.g.} biochemistry, materials
 science). Many of the efforts relate to cheminformatics (the scope of
 this journal) and we believe that many of the publications in {\it J.
 Cheminf.} could be completely carried out using Blue Obelisk resources
-and other OS chemical tools. The importance of this is that for the
+and other Open Source chemical tools. The importance of this is that for the
 first time it would allow reviewers, editors and readers to validate
 assertions in the journal and also to re-run and re-analyse parts of
 the calculation.
 
 However, Blue Obelisk software and data is used outside
 cheminformatics and certainly in the five main areas that, for
-example, chemical markup language (CML) supports:
+example, Chemical Markup Language (CML) \cite{murray-rust_chemical_1999} supports:
 
 \begin{itemize}
 \item{1.}{\bf Molecules:} This is probably the largest area for Blue
 Obelisk software and data, and is reflected by many programs that
 visualise, transform, convert formats and calculate properties. It is
-almost certain that any file format in use can be processed by Blue
-Obelisk software and properties can be calculated for most (organic
+almost certain that any file format currently in use can be processed by Blue
+Obelisk software and that properties can be calculated for most (organic
 compounds).
 \item{2.}{\bf Reactions:} Blue Obelisk software can describe the
 semantics of reactions and provide atom-atom matching and analyse
 stoichiometric balance in reactions.
 \item{3.}{\bf Computational chemistry:} Blue Obelisk software can
 interpret many of the current output files from calculations and
-create input for jobs. The Quixote project (see later and elsewhere in
+create input for jobs. The Quixote project (see below and elsewhere in
 this issue) shows that Open Source approaches based on Blue Obelisk
 resources and principles are increasing the availability and
 re-usability of computational chemistry.
@@ -378,8 +377,8 @@ re-usability of computational chemistry.
 supported in Blue Obelisk offerings for conversion and display. There
 is a limited amount of spectral analysis but the software gives a
 platform on which it should be straightforward to develop spectral
-annotation and manipulation. Currently the Blue Obelisk does not
-support much in multi-dimensional NMR and multi-equipment spectra
+annotation and manipulation. However, currently the Blue Obelisk lacks
+support for multi-dimensional NMR and multi-equipment spectra
 ({\it e.g.} GC-MS).
 \item{5.}{\bf Crystallography:} The Blue Obelisk software supports the
 bi-directional processing of crystal structure files (CIF) and also
@@ -394,15 +393,15 @@ rather than fundamental algorithms. It is very difficult to create
 universal platforms that can be distributed and run by a wide range of
 different users, and in general, the Blue Obelisk deliberately does
 not address these. Our approach is to produce components that can be
-embedded in chemists. environments, including databases and workflows.
+embedded in many environments, from stand-alone applications to web
+applications, databases and workflows.
 We believe that a chemical laboratory with reasonable access to common
-software engineering should be able to build customised applications
+software engineering techniques should be able to build customised applications
 using Blue Obelisk components and standard infrastructure such as
 workflows (KNIME or Taverna) and databases (MySQL, CouchDB etc.).
 Where the Blue Obelisk itself produces data resources (NMRShiftDB,
 CrystalEye, Quixote etc.) they are normally done with Open components
-so that the community can, if necessary, replicate them but not
-necessarily without additional effort.
+so that the community can, if necessary, replicate them.
 
 Much of the impetus behind Blue Obelisk software is to create an
 environment for chemical computation (including cheminformatics) where
@@ -427,19 +426,19 @@ scratch in academia, whereas others were made Open Source by releasing in-house
 codebases under liberal licenses. When the Blue Obelisk was
 established five years ago, the primary toolkits under active development
 were the Chemistry Development Kit (CDK)
-\cite{Steinbeck2003, Steinbeck2006}, Open Babel \cite{WebOpenBabel},
+\cite{Steinbeck2003, Steinbeck2006}, Open Babel \cite{WebOpen Babel},
 and JOELib \cite{WebJOELib}. Of these, both the CDK and Open Babel
 continue to be actively developed.
 
 The CDK project has been under regular development over the last five
 years. Several feature have been implemented ranging from core
-components such as an extensible SMARTS matching system, new graph (\&
-subgraph) isomorphism method \cite{smsd} to more application oriented
-components such as 3D pharmacophore searching and matching, a variety
-of structural key and hashed fingerprints. In addition, there have
+components such as an extensible SMARTS matching system and a new graph
+(and
+subgraph) isomorphism method \cite{smsd}, to more application oriented
+components such as 3D pharmacophore searching and matching, and a variety
+of structural-key and hashed fingerprints. In addition, there have
 been a number of second generation tools developed on top of the CDK
-such as OrChem \cite{orchem} and PaDEL \cite{padel}. In addition to
-the use of the CDK in various applications, it has been deployed in
+(see below). As well as the use of the CDK in various tools, it has been deployed in
 the form of web services \cite{Dong:2007aa} and has formed the basis
 of a variety of web applications.
 
@@ -461,7 +460,9 @@ BSD License. This is a C++ library with Python and (more recently)
 Java bindings. RDKit is actively developed and includes
 code donated by Novartis. Recent developments include the Java
 bindings, as well as performance improvements for its database
-cartridge. More recently, GGA Software Services
+cartridge.
+
+More recently, GGA Software Services
 (a contract programming company)
 released the Indigo toolkit \cite{WebIndigo} and associated software
 in 2009 under the GPL. Indigo is a C++ library with
@@ -519,7 +520,7 @@ algorithm for crystal structure prediction. XtalOpt provides a
 graphical interface using Avogadro and submits calculations using a
 range of solid-state simulation software to predict stable polymorphs.
 
-A final example of 2nd-generation Blue Obelisk software is the 
+A final example of second-generation Blue Obelisk software is the 
 AMBIT2~\cite{WebAMBIT} software, a GUI that facilitates registration
 of chemicals for the REACH EU directive on toxicity, and which is
 based on the CDK.
@@ -531,10 +532,11 @@ past five years is in supporting
 quantum chemistry calculations and in interpreting their results.
 Electronic structure calculations have a long tradition in the
 chemistry community and a variety of programs exist, mostly
-proprietary software with the notable exception of NWChem.\cite{NWChem}
+proprietary software with the notable exception of
+NWChem~\cite{NWChem}.
 However, since each program uses different input formats, and the
-results are output differently even varying between different versions
-of the software, preparing calculations and automatically extracting
+the output formats vary widely (sometimes even varying between different versions
+of the same software), preparing calculations and automatically extracting
 the results is problematic. 
 
 Avogadro has already been mentioned as a GUI for preparing calculations.
@@ -546,12 +548,13 @@ for GAMESS input files, allowing expert users to easily spot mistakes
 before saving an input file to disk.
 
 In addition to this, significant development of new parsing routines took
-place in an Avogadro plugin to read in basis sets, and electronic structure
+place in an Avogadro plugin to read in basis sets and electronic structure
 output in order to calculate molecular orbital and electron density grids.
 This code was written to be parallel, using desktop shared memory parallelism
 and high level APIs in order to significantly speed up analysis. Most of this
 code was recently separated from the plugin, and released as a BSD licensed
-library, that is now used by the latest version of Avogadro, called OpenQube.
+library, OpenQube, which is now used by the latest version of
+Avogadro.
 Jmol (see below)
 can also depict computational chemistry results including molecular orbitals.
 
@@ -570,11 +573,12 @@ comparison to experimental data. QMForge~\cite{WebQMForge} provides
 a GUI for various electronic structure analyses such as Frenking's charge 
 decomposition analysis~\cite{Frenking} and Mulliken or C-squared analyses
 on user-defined molecular fragments. QMForge also provides a rudamentary
-Cartesian coordinate editor allowing molecular structures to be saved via OpenBabel.
+Cartesian coordinate editor allowing molecular structures to be saved via Open Babel.
 
 The Quixote project epitomises the full use of the Blue Obelisk
 software and is described in detail in a sibling
-article. Here we observe that it is possible to convert legacy files
+article~\cite{QuixoteSameIssue}. Here we observe that it is possible
+to convert legacy chemistry file formats
 of all sorts into semantic chemistry and extract
 those parts which are suitable for input to computational chemistry
 programs. This chemistry is then combined with
@@ -649,7 +653,7 @@ with a free (gratis) model for people working at academic institutes, to increas
 and allow contributions from academics. This solution defines the IP on the software
 return on investment, but has the downside of investment losses due to duplication of
 software and method development, which becomes visible when proprietary companies
-merge. Some authors have rationalized that in the chemistry field, the
+merge. Some authors have rationalised that in the chemistry field, the
 data has value, and few contributors are available to volunteer time
 to improve codes.\cite{Stahl:2005fk} If true, this would hamper
 adoption of Open Source and Open Data in chemistry, and greatly slow
@@ -691,17 +695,17 @@ including iBabel by Chris Swain\cite{iBabel}, ChemSpotlight by
 Geoffrey Hutchison\cite{chemspotlight} and the RSC ChemSpider\cite{chemspider_chemdoodle}.
 
 Silicos has release several Open Source utilities based on
-OpenBabel, such as Pharao, a tool for pharmacophore searching,
+Open Babel, such as Pharao, a tool for pharmacophore searching,
 Sieve for filtering molecular structure by molecular property,
 Stripper for removing core scaffold structures from a molecule
 set, and Piramid for molecular alignment using shape determined
 by the Gaussian volumes as a descriptor. Additionally,
-contributions have been made to the OpenBabel project itself.
+contributions have been made to the Open Babel project itself.
 
 Other companies use Blue Obelisk components and contribute patches,
-smaller and larger. For example, IXELES donated the isomorphism
+smaller and larger. For example, IXELIS donated the isomorphism
 code in the CDK, eMolecules donated canonicalisation code to
-OpenBabel, and AstraZeneca contributed code to the CDK for
+Open Babel, and AstraZeneca contributed code to the CDK for
 signatures. This is just a very minor selection, and the author
 is encouraged to contact the individual Blue Obelisk projects
 for an elaborate list.
@@ -749,7 +753,7 @@ existing open source libraries and to avoid ``reinventing the wheel''
 wherever possible. OSRA relies on a variety of open source components:
 Open Babel for chemical format
 conversion and molecular property calculations, GraphicsMagick for image
-manipulation, Potrace for vectorization, GOCR and OCRAD for optical
+manipulation, Potrace for vectorisation, GOCR and OCRAD for optical
 character recognition. The growing importance of image
 recognition technology can be seen in the fact that
 only a few years ago there was only one widely available software
@@ -781,7 +785,7 @@ library and standalone application for maximum interoperability.
 Registration, indexing and searching of chemical structures in
 relational databases is one of the core areas of cheminformatics.
 A number of structure registration systems have been published in the last five years, exploiting the fact that
-free cheminformatics toolkits such as OpenBabel and the CDK were available.
+free cheminformatics toolkits such as Open Babel and the CDK were available.
 OrChem,\cite{WebOrChem} for example, is an open source extension for the Oracle 11G database that
 adds registration and indexing of chemical structures to support fast
 substructure and similarity searching. The cheminformatics
@@ -1120,7 +1124,7 @@ books with projected low sales volume would be expensive,
 websites such as Lulu\cite{WebLulu} allow the sale of low-priced books on
 chemistry software, and books are now available for purchase
 on Jmol~\cite{JmolBook}, the Chemistry Development Kit~\cite{CDKBook}
-and Open Babel~\cite{OpenBabelBook}.
+and Open Babel~\cite{Open BabelBook}.
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section*{Conclusions}
