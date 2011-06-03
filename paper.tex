@@ -651,9 +651,9 @@ cheminformatics community. Traditional business models rely on monetisation of s
 code, causing companies to repeat work done by other companies. This
 model is sometimes combined
 with a free (gratis) model for people working at academic institutes, to increase adoption
-and encourage contributions from academics. This solution defines the IP on the software
-return on investment, but has the downside of investment losses due to duplication of
-software and method development, which becomes visible when proprietary companies
+and encourage contributions from academics. This solution defines the return on investment as the IP on the software,
+but has the downside of investment losses due to duplication of
+software and method development, which become visible when proprietary companies
 merge. Some authors have argued that in the chemistry field
 few contributors are available to volunteer time
 to improve codes and IP considerations may prevent contributions from
@@ -668,7 +668,7 @@ volunteers investing time and effort. In return, contributors get full
 access to the source code, and the Open Source licensing ensures
 that they will have access any time in the future. In this way, the
 license functions as a social
-contract between everyone to arrange the immediate return on investment. Effectively,
+contract between everyone to arrange an immediate return on investment. Effectively,
 this approach shares the burden of the high investment in having to develop cheminformatics
 software from scratch, allowing researchers and commercial partners alike to focus
 on their core business, rather than the development of prerequisites.
@@ -713,34 +713,38 @@ code in the CDK, eMolecules donated canonicalisation code to
 Open Babel, and AstraZeneca contributed code to the CDK for
 signatures. This is just a very minor selection, and the author
 is encouraged to contact the individual Blue Obelisk projects
-for an elaborate list.
+for a detailed list.
 
-In May 2011, the EBI ran an industry-oriented workshop (MIOSS -
-Molecular Informatics Open Source Software). This explored the role of
-Open Source in industrial laboratories and companies, and several of
-the presenters are among the authors of this paper.
-The meeting identified that Open Source was extremely valuable to
-industry, not just because it is 'free as in beer'
+In May 2011, a Wellcome Trust Workshop on
+Molecular Informatics Open Source Software (MIOSS) explored the role of
+Open Source in industrial laboratories and companies as well as
+academia (several of
+the presenters are among the authors of this paper).
+The meeting identified that Open Source software was extremely valuable to
+industry not just because it is available for free,
 but because it allows the validation of source code, data and
-computational procedures. A phrase from the meeting
-summed it up: "The ice is beginning to melt", signifiying that we can
-expect a rapid increase in industry's interest
-in Open Source.
-
-Some of the discussion was on business models. There are difficulties
+computational procedures. Some 
+of the discussion was on business models or other ways to maintain 
+development of Open Source software on which a business relied.
+Companies are concerned about training and support
+and, in some cases, product liability.  There are difficulties
 for software for which there is no formal
-transaction, other than downloasding and agreeing to license terms.
-COmpanies are concerened about training and support
-and in some cases, product liability. One anecdote was of a company
-which wished to donate money to an Open Source
+transaction other than downloading and agreeing to license terms.
+One anecdote concerned a company
+that wished to donate money to an Open Source
 project but could not find a mechanism to do so.
 
-There is a considerable amount of contribution-in-kind, both from
-enhancements to software and also completely new
-systems and toolkits, and companies are finding it easier to create
+Industry participants also pointed out that 
+there is a considerable amount of
+contribution-in-kind from industry, both from
+enhancements to software and also the development of completely new
+software and toolkits. Companies are now finding it easier to create
 mechanisms for releasing Open Source software
 without violating confidentiality or incurring liability.
-
+A phrase from the meeting
+summed it up: ``The ice is beginning to melt'', signifiying that we can
+expect a rapid increase in industry's interest
+in Open Source.
 
 \subsection*{Converting chemical names and images to structures}
 
@@ -790,8 +794,9 @@ library and standalone application for maximum interoperability.
 Registration, indexing and searching of chemical structures in
 relational databases is one of the core areas of cheminformatics.
 A number of structure registration systems have been published in the last five years, exploiting the fact that
-free cheminformatics toolkits such as Open Babel and the CDK were available.
-OrChem,\cite{WebOrChem} for example, is an open source extension for the Oracle 11G database that
+Open Source cheminformatics toolkits such as Open Babel and the CDK
+are available.
+OrChem~\cite{RijnbeekS10}, for example, is an open source extension for the Oracle 11G database that
 adds registration and indexing of chemical structures to support fast
 substructure and similarity searching. The cheminformatics
 functionality is provided by the CDK. OrChem
@@ -801,13 +806,15 @@ similarity cut-off. For substructure searching, it can make use of
 multiple processor cores on today's powerful database servers to
 provide fast response times in equally large data sets.
 
-Besides the traditional and proven relational databse approach, with
-added chemical features ('cartridges'), there is growing
+Besides the traditional and proven relational database approach with
+added chemical features (`cartridges'), there is growing
 interest in tools and approaches based on the web philosophy and
-practice. Several groups are experimenting with RDF
-on the assumption that generic high-performance solutions are
-appearing. RDF allows everything to be described by
-URIs (data, molecules, dictionaries, relations). The Chempound system,
+practice. Several groups are experimenting with 
+the Resource Description Framework (RDF) language
+on the assumption that generic high-performance solutions will appear.
+RDF allows everything to be described by
+URIs (data, molecules, dictionaries, relations). The Chempound
+system~\cite{Chempound},
 as deployed in
 Quixote and elsewhere, is an RDF-based approach to chemical structures
 and compounds and their properties. For small
@@ -821,22 +828,25 @@ based on name-value pairs (e.g. CouchDB, MongoDB) will be sufficient.
 
   \subsection*{Collaboration and interoperability}
 
-One of the effects of the Blue Obelisk has been to bring developers
+One of the successes of the Blue Obelisk has been to bring developers
 together from different Open Source chemistry projects so that they
 look for opportunities to collaborate rather than compete, and to
 leverage work done by other projects to avoid duplication of effort.
 As an example of this, when in March 2008 the Jmol development team
 were looking to add support for energy minimisation, rather than
-implement a forcefield from scratch they ported the UFF forcefield\cite{Rappe:1992um}
-implementation from Open Babel to Jmol. This code has allowed Jmol to
+implement a forcefield from scratch they ported the UFF forcefield~\cite{Rappe:1992um}
+implementation from Open Babel to Jmol. This code enables Jmol to
 support 2D to 3D conversion of structures (through energy
-minimisation). Similarly, efficient Jmol code for atom-atom rebonding
-has been ported to the CDK.
+minimisation). In a similar manner, efficient Jmol code for atom-atom rebonding
+has been ported to the CDK. Figure 2 shows the collaborative nature of
+software developed in the Blue Obelisk, as one project builds on
+functionality provided by another project.
 
 Another collaborative initiative between Blue Obelisk projects was the establishment in May 2008 of
 the ChemiSQL project. This brought together the developers of several
-open source chemistry database cartridges (PgChem,\cite{WebPgChem} MyChem,\cite{WebMyChem} OrChem\cite{WebOrChem} and
-more recently Bingo\cite{WebBingo}) with a view to making their database APIs more
+open source chemistry database cartridges (PgChem~\cite{WebPgChem},
+MyChem~\cite{WebMyChem}, OrChem~\cite{RijnbeekS10} and
+more recently Bingo~\cite{WebBingo}) with a view to making their database APIs more
 similar and collaborating on benchmark datasets for assessing
 performance. For two of these projects, PgChem and MyChem, which are both based on
 Open Babel, there is the additional possibility of working together on a shared
@@ -859,7 +869,8 @@ disadvantage). This applies as much to Open Source software as to
 proprietary software. Cinfony is a project (first release in May 2008)
 whose goal is to tackle this problem in the area of cheminformatics
 toolkits \cite{OBoyleCinfony2008}.
-It is a Python library that enables Open Babel, the CDK, and RDKit to
+It is a Python library that enables Open Babel, the CDK, and RDKit
+(and shortly, Indigo and OPSIN) to
 be used using the same API; this makes it easy, for example, to read a
 molecule using Open Babel, calculate descriptors using the CDK and
 create a depiction using RDKit.
@@ -882,7 +893,7 @@ available from KNIME's ``Community Updates'' site.
 
 \subsection*{Chemical Markup Language, CML}
 
-Chemical Markup Language (CML) is discussed in several places in this
+Chemical Markup Language (CML) is discussed in several articles in this
 issue, and a brief summary here re-iterates that it is designed
 primarily to create a validatable semantic representation for chemical
 objects. The five main areas (molecules, reactions, computational
@@ -897,7 +908,7 @@ specialised applications such as UnitsML and GML (geosciences). We
 believe that it would be possible using these languages to encode
 large parts of, say, first year chemistry text books in XML.
 Similarly, it is possible to create compound documents with word
-processing or spreadsheet software that has inter-operating text,
+processing or spreadsheet software that have inter-operating text,
 graphics and chemistry (as in Chem4Word). Being a markup language, CML
 is designed for re-purposing, including styling, and therefore a
 mixture of these languages can be used for chemical catalogues,
@@ -930,12 +941,12 @@ unreliable and broke the 'write once, run anywhere' philosophy
 of Java.  The Blue Obelisk project JNI-InChI~\cite{WebJNIInChI}
 was established in 2006 to solve this problem by using the Java Native
 Interface framework to provide transparent access to the InChI
-library from within Java, and other Java Virtual Machine (JVM) based
+library from within Java and other Java Virtual Machine (JVM) based
 languages, supporting the wider adoption of
 this standard identifier by the chemistry community.
 
 The Java Native Interface framework provides a mechanism for code
-running inside the JVM to place calls to libraries written in languages
+running inside the JVM, to place calls to libraries written in languages
 such as C, C++ and Fortran, and compiled into native, machine specific,
 code. JNI-InChI provides a thin C wrapper, with corresponding Java code,
 around the IUPAC InChI library, exposing the InChI library's functionality
@@ -956,20 +967,20 @@ including the Chemistry Development Kit, Bioclipse and CMLXOM/JUMBO, and is
 also used by commercial applications and internally in a number of companies.
 Through its widespread use and Open Source development model, a number of
 issues in earlier versions of the software have been identified and resolved,
-and JNI-InChI now offers a robust, and defacto standard tool for working with
+and JNI-InChI now offers a robust tool for working with
 InChIs in the JVM.
 
 
     \subsection*{OpenSMILES}
 
 One of the most widely used ways to store chemical structures is the
-SMILES format (or SMILES string). This is a linear notation depicted
+SMILES format (or SMILES string). This is a linear notation developed
 by Daylight Information Systems that describes the connection table
 of a molecule and may optionally encode chirality. Its popularity
 stems from the fact that it is a compact representation of the
 chemical structure that is human readable and writable, and is
 convenient to manipulate (e.g. to include in spreadsheets, or copy
-from a Wikipedia article).
+from a web page).
 
 Despite its widespread use, a formal
 definition of the language did not exist beyond Daylight's SMILES
@@ -983,16 +994,22 @@ complete and contains guidelines on reading SMILES, a formal
 grammar, recommendations on standard forms when writing SMILES, as
 well as proposed extensions.
 
-Recently proposed CurlySMILES\cite{CurlySMILES} is an extension of the
-SMILES notation, which allows to define crystals structures, polymers,
-electron delocalisation charges, molecule interactions, and many other
-features absent in the initial SMILES specification. There has been
-discussions about including parts of the CurlySMILES notation into
-OpenSMILES, especially polymers.
-
-
 \subsection*{QSAR-ML}
-The field of QSAR has long been hampered by the lack of open standards, which makes it difficult to share and reproduce descriptor calculations and analyses. QSAR-ML was recently proposed as an open standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset in QSAR-ML includes the chemical structures (preferably described in CML) with InChI to protect integrity, chemical descriptors by linking to the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values, units, and versioned descriptor implementations to allow for integrating several descriptor software in the same calculation. Hence, a dataset described in QSAR-ML is completely reproducible. To allow for easy setup of QSAR-ML compliant datasets, a plugin for Bioclipse was created with graphical interfaces that can be used to set up QSAR datasets and perform calculations. Descriptor implementations were initially available from CDK and JOELib, as well as via remote web services such as XMPP~\cite{Wagener:2009uq}.
+The field of QSAR has long been hampered by the lack of open
+standards, which makes it difficult to share and reproduce descriptor
+calculations and analyses. QSAR-ML was recently proposed as an open
+standard for exchanging QSAR datasets~\cite{Spjuth:2010uq}. A dataset
+in QSAR-ML includes the chemical structures (preferably described in
+CML) with InChI to protect integrity, chemical descriptors linked to
+the Blue Obelisk Descriptor Ontology~\cite{bodo}, response values,
+units, and versioned descriptor implementations to allow for
+integrating several descriptor software in the same calculation.
+Hence, a dataset described in QSAR-ML is completely reproducible. To
+allow for easy setup of QSAR-ML compliant datasets, a plugin for
+Bioclipse was created with a graphical interface for
+setting up QSAR datasets and performing calculations. Descriptor
+implementations are available from the CDK and JOELib, as well
+as via remote web services such as XMPP~\cite{Wagener:2009uq}.
 
 \subsection*{Remaining challenges}
 
@@ -1014,9 +1031,11 @@ Currently, most of the individual components of a `standardisation
 pipeline' can be implemented using BO tools. The larger problem is
 that there is no agreed upon list of steps for a standardisation
 process. While some specifications have been published (e.g., PubChem)
-and some standardisation services and tools are available (PubChem
-provides an online service to standardise molecules and the NCGC
-provides a stand alone tool) each group has their own set of rules. A
+and some standardisation services and tools are available (for
+example, PubChem
+provides an online service to standardise
+molecules~\cite{WebPubChemStandardizer})
+each group has their own set of rules. A
 common reference specification for standardisation would be of immense
 value in interoperability between structure repositories as well as
 between toolkits (though the latter is still confounded by differences
@@ -1049,7 +1068,7 @@ Despite this positive news, little chemical data has become
 available from the traditional chemical fields of organic,
 inorganic, solid state chemistry. Table~2 lists a few notable
 exceptions: ChemPedia (a now discontinued crowd-sourcing project),
-CrystalEye,\cite{WebCrystalEye}
+CrystalEye~\cite{WebCrystalEye},
 and the Open Notebook Science Solubility
 data~\cite{ONS2010}. There is also data available using licenses
 not compatible with the Panton Principles, but where the user
@@ -1067,43 +1086,46 @@ can be hosted. Initiatives like this make it possible to host small
 amounts of data, and those combined are expected to become soon a
 substantial knowledge base. 
 
-\subsection*{The Blue Obelisk Data Repository, BODR;
-http://sourceforge.net/projects/bodr/}
+\subsection*{The Blue Obelisk Data Repository (BODR)}
 
-From the beginning, the Blue Obelisk created a repository of key data,
-particularly that which would be used in
-algorithms and where there was a need to ensure that the values were
-standard between codes. Examples are atomic
-masses and conversion between physical constants. In principle, this
-material can be copied between sites such as IUPAC and
-wikipedia and continued practice in this area should lead to a
-enhancement in the quality of community reference data.
+The Blue Obelisk has created a repository of key chemical
+data in a machine-readable format~\cite{BODR}.
+The BODR focuses on data that is commonly required for
+chemistry software, and where there is a need to ensure that values
+are standard between codes. Examples are atomic
+masses and conversions between physical constants. These data
+can be used by others for any purpose (for example, for entry into
+Wikipedia or use in in-house software), and should lead
+to an enhancement in the quality of community reference data.
 
 \subsection*{NMRShiftDB}
 
-NMRShiftDB represents one of the earliest (2002?) resources for Open
-community-contributed data. Groups which
-measure NMR spectra or extract it from the literature contribute to
+NMRShiftDB represents one of the earliest resources for Open
+community-contributed data (first released in 2003). Research groups that 
+measure NMR spectra or extract it from the literature can contribute that
+information to
 NMRShiftDB which provides an Open resource where
 entries can be searched by chemical structure or properties
-(especially peaks). It is, not surprisingly, difficult to
-extract large amounts of altruistic contribution (as happens in
-wikipedia) but it is increasingly possible to link
+(especially peaks). Although it is difficult to
+encourage large amounts of altruistic contribution (as happens with
+Wikipedia), an alternative possible source of data could come from
+linking
 data capture with data publication. For example, the Blue Obelisk has
 enough software that it is possible to create
 a seamless chain for converting NMR structures in-house into
 NMRShiftDB entries. If and when the chemistry community
-encourages or requires semantic publication of spectra, rather than
-PDFs, it would be possible to populate NMRShiftDB rapidaly
-along the the lines of CrystalEye.
+encourages or requires semantic publication of spectra rather than
+PDFs, it would be possible to populate NMRShiftDB rapidly
+along the the lines of CrystalEye (see below).
 
 \subsection*{CrystalEye}
 
-CrystalEye represents the cost-effective extraction of data from the
+CrystalEye~\cite{WebCrystalEye} is an example of cost-effective extraction of data from the
 literature where this is published both
-Openly and semantically. The cost is extremely low and software can be
-run every night, updating the entries
-(currently at about 250,000 structures). CrystalEye serves as a model
+Openly and semantically. Software extracts Openly-published crystal
+structures from a variety of scholarly journals, processes
+them and then makes them available through a web interface.
+It currently contains about 250,000 structures. CrystalEye serves as a model
 for a high-value, high-quality Open data
 resource, including the licensing of each component as
 Panton-compatible Open data.
@@ -1137,8 +1159,7 @@ and Open Babel~\cite{Open BabelBook}.
 We have shown that the Blue Obelisk has been very successful
 in bringing together researchers and developers with common interests
 in ODOSOS, leading to development of many useful resources freely
-available to the chemistry community. Figure 2 shows how the various
-Blue Obelisk projects collaborate. But how best to engage with the
+available to the chemistry community. But how best to engage with the
 wider chemistry community outside of the Blue Obelisk remains an open
 question. If the Blue Obelisk is truly to make an impact,
 then an attempt must be made to reach beyond the subscribers to the
@@ -1200,12 +1221,11 @@ investigate related projects or read our blogs.
 %% Do not use \listoffigures as most will included as separate files
 
 \section*{Figures}
-  \subsection*{Figure 1 - Blue Obelisk logo}
 
-  \subsection*{Figure 2 - Dependency diagram of Blue Obelisk projects.}
+  \subsection*{Figure 1 - Dependency diagram of some Blue Obelisk projects.}
       Each block represents a project. Square blocks show Open Data, ovals are Open Source,
-      and diamonds are Open Standards. Colors represent license: LGPL is green, GPL is orange,
-      and BSD is blue.
+      and diamonds are Open Standards. %%Colors represent license: LGPL is green, GPL is orange,
+      %%and BSD is blue.
 
   \subsection*{Figure 3 - Screenshot of the Blue Obelisk eXchange Question
     and Answer website.}
