@@ -52,7 +52,7 @@
 
 % Address
 \def\address#1{ \def\@address{\begin{hi}\footnotesize#1\end{hi}}}
-\def\iid(#1){\hi$^#1$}
+\def\iid(#1){\hi$^{#1}$}
 
 % Thanks
 \def\thempfootnote{\normalfont\@arabic\c@mpfootnote}
