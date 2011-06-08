@@ -51,7 +51,6 @@
 \usepackage{ifthen}  % Conditional
 \usepackage{multicol}   %Columns
 \usepackage[utf8]{inputenc} %unicode support
-\usepackage{lscape} % Landscape orientation for tables
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
 \urlstyle{rm}
@@ -1249,54 +1248,50 @@ and diamonds are Open Standards.
 %% Use of \listoftables is discouraged.
 %%
 \section*{Tables}
-%%\begin{landscape}
-  \subsection*{Table 1 - Blue Obelisk Open Source software projects}
-    (Description if necessary XXXXXXXXXXXXXXX. Add citations to project names.)
-      %% GeoffH - I think we should do this as multi-line, with the
-      %% website below the Name
+  \subsection*{Table 1 - Blue Obelisk Open Source Software projects}
     \par \mbox{}
     \par
     \mbox{
      \begin{tabular}{|c|c|c|}
        \hline \textbf{Name} & \textbf{Website}  \\ \hline
         \multicolumn{2}{|c|}{\textbf{CML Tools}} \\ \hline
-		\textbf{JUMBO} & http://sourceforge.net/projects/cml/ \\ \hline
-		\textbf{CMLXOM} & https://bitbucket.org/wwmm/cmlxom/ \\ \hline
-		\multicolumn{2}{|c|}{\textbf{Cheminformatics Toolkits}} \\ \hline
+        \textbf{CMLXOM} & https://bitbucket.org/wwmm/cmlxom/ \\ \hline
+        \textbf{JUMBO} & http://sourceforge.net/projects/cml/ \\ \hline
+        \multicolumn{2}{|c|}{\textbf{Cheminformatics Toolkits}} \\ \hline
         \textbf{Chemistry Development Kit (CDK)} \cite{Steinbeck2003, Steinbeck2006} & http://cdk.sf.net \\ \hline
         \textbf{Cinfony} & http://cinfony.googlecode.com \\ \hline
         \textbf{Indigo} & http://ggasoftware.com/opensource/indigo \\ \hline
         \textbf{Open Babel} & http://openbabel.org \\ \hline
         \textbf{RDKit} & http://rdkit.org \\ \hline
-        \multicolumn{2}{|c|}{\textbf{Second Generation}} \\ \hline
-        \textbf{Avogadro} & http://avogadro.openmolecules.net \\ \hline
         \multicolumn{2}{|c|}{\textbf{Web Applications}} \\ \hline
         \textbf{ChemDoodle Web Components} & http://web.chemdoodle.com \\ \hline
         \textbf{Jmol} & http://jmol.org \\ \hline
-       \multicolumn{2}{|c|}{\textbf{Integration}} \\ \hline
+        \multicolumn{2}{|c|}{\textbf{Integration}} \\ \hline
+        \textbf{Bioclipse} & http://www.bioclipse.net \\ \hline
         \textbf{CDK-Taverna} \cite{Kuhn:2010p4001} & http://cdktaverna.wordpress.com \\ \hline
-		\textbf{Lensfield2} & https://bitbucket.org/sea36/lensfield2/ \\ \hline
+        \textbf{Lensfield2} & https://bitbucket.org/sea36/lensfield2/ \\ \hline
         \multicolumn{2}{|c|}{\textbf{Interconversion}} \\ \hline
-        \textbf{OSRA} & http://osra.sf.net \\ \hline
+        \textbf{CIFXOM} \cite{DayEtAl2011} & https://bitbucket.org/wwmm/cifxom/  \\ \hline
+        \textbf{JUMBO-Converters} & https://bitbucket.org/wwmm/jumbo-converters/ \\ \hline
         \textbf{OPSIN} & http://opsin.ch.cam.ac.uk \\ \hline
-		\textbf{JUMBO-Converters} & https://bitbucket.org/wwmm/jumbo-converters/ \\ \hline
-		\textbf{CIFXOM} \cite{DayEtAl2011} & https://bitbucket.org/wwmm/cifxom/  \\ \hline
+        \textbf{OSRA} & http://osra.sf.net \\ \hline
         \multicolumn{2}{|c|}{\textbf{Structure Databases}} \\ \hline
-        \textbf{Bingo}  & http://XXX.XXX.XXX \\ \hline
-        \textbf{MyChem}  & http://XXX.sf.net \\ \hline
+        \textbf{Bingo}  & http://ggasoftware.com/opensource/bingo \\ \hline
+        \textbf{Chempound (Chem\#)} & https://bitbucket.org/chempound \\ \hline
+        \textbf{MyChem}  & http://mychem.sf.net \\ \hline
         \textbf{OrChem} \cite{RijnbeekS10} & http://orchem.sf.net \\ \hline
-        \textbf{PGChem}  & http://XXX.sf.net \\ \hline
- 	    \textbf{Chempound (Chem\#)} & https://bitbucket.org/chempound \\ \hline
-	   \multicolumn{2}{|c|}{\textbf{Text mining}} \\ \hline
-	    \textbf{OSCAR4} & https://bitbucket.org/wwmm/oscar4/ \\ \hline
-		\textbf{ChemicalTagger} \cite{HawizyEtAl2011} & http://chemicaltagger.ch.cam.ac.uk/ \\ \hline
-       \multicolumn{2}{|c|}{\textbf{Other}} \\ \hline
-        \textbf{cclib}  & http://cclib.sf.net \\
+        \textbf{pgchem}  & http://pgfoundry.org/projects/pgchem/ \\ \hline
+        \multicolumn{2}{|c|}{\textbf{Text mining}} \\ \hline
+        \textbf{ChemicalTagger} \cite{HawizyEtAl2011} & http://chemicaltagger.ch.cam.ac.uk/ \\ \hline
+        \textbf{OSCAR4} & https://bitbucket.org/wwmm/oscar4/ \\ \hline
+        \multicolumn{2}{|c|}{\textbf{Computational Chemistry}} \\ \hline
+        \textbf{Avogadro} & http://avogadro.openmolecules.net \\ \hline
+        \textbf{cclib}  & http://cclib.sf.net \\ \hline
+        \textbf{GaussSum}  & http://gausssum.sf.net \\ \hline
+        \textbf{QMForge}  & http://qmforge.sf.net \\ \hline
         \hline
-%% GaussSum, QMForge
        \end{tabular}
       }
-%%\end{landscape}
 
   \subsection*{Table 2 - Open Data in chemistry.}
     Overview of major open chemical data available under a license or waiver
