@@ -641,6 +641,17 @@ provides a framework for user interaction to create dynamic
 applications through web browsers, desktop platforms and mobile
 devices such as the iPhone, iPad and Android devices.
 
+\subsection*{Web services}
+
+Web services offer a potentially powerful application of Open Source software,
+particularly when combined with Open Data. For example, Metamolecular~\cite{Metamolecular}Metamolecular have released
+gChem~\cite{gChem}, an Open Source library for Google Spreadsheets that enables
+non-programmers to build and maintain chemically-aware spreadsheet documents
+that can be easily shared and published. gChem makes use of the National Cancer Institute's
+Chemical Identifier Resolver~\cite{ChemicalIdentifierResolver} to interconvert
+substance names, database identifiers, SMILES and InChI codes, and to generate
+embedded chemical structure images.
+
 \subsection*{The business end}
 
 % We should cite Craig James
@@ -690,7 +701,7 @@ reduced cost and effort.
 At the time of writing there are many commercial companies development chemistry
 solutions around Open Source cheminformatics components provided by the Blue Obelisk
 community. Examples of such companies include iChemLabs, IdeaConsult, Wingu, Silicos,
-GenettaSoft, hBar, and Inkspot Science. Some of these merely use components, but several
+GenettaSoft, hBar, Metamolecular, and Inkspot Science. Some of these merely use components, but several
 actively contribute back to the Blue Obelisk project they use, or donate new
 Open Source cheminformatics projects to the community.
 
@@ -699,7 +710,7 @@ license, based on the upcoming HTML5 Open Standard. It allows making web and mob
 interfaces for chemical content. The project is already being adopted by others,
 including iBabel~\cite{iBabel}, ChemSpotlight~\cite{chemspotlight} and the RSC ChemSpider~\cite{chemspider_chemdoodle}.
 
-Silicos has release several Open Source utilities based on
+Silicos has released several Open Source utilities based on
 Open Babel, such as Pharao, a tool for pharmacophore searching,
 Sieve for filtering molecular structure by molecular property,
 Stripper for removing core scaffold structures from a molecule
@@ -710,8 +721,9 @@ contributions have been made to the Open Babel project itself.
 Other companies use Blue Obelisk components and contribute patches,
 smaller and larger. For example, IXELIS donated the isomorphism
 code in the CDK, eMolecules donated canonicalisation code to
-Open Babel, and AstraZeneca contributed code to the CDK for
-signatures. This is just a very minor selection, and the author
+Open Babel, Metamolecular improved the extensibility and unit testing suite of OPSIN,
+and AstraZeneca contributed code to the CDK for
+signatures. This is just a very minor selection, and the reader
 is encouraged to contact the individual Blue Obelisk projects
 for a detailed list.
 
@@ -1067,7 +1079,8 @@ Open Data Commons Open Database License (ODbL).\cite{WebOpenData}
 Despite this positive news, little chemical data has become
 available from the traditional chemical fields of organic,
 inorganic, solid state chemistry. Table~2 lists a few notable
-exceptions: ChemPedia (a now discontinued crowd-sourcing project),
+exceptions: Metamolecular's Chempedia~\cite{Chempedia} (a discontinued substance registration
+and naming service whose raw data can still be accessed),
 CrystalEye~\cite{WebCrystalEye},
 and the Open Notebook Science Solubility
 data~\cite{ONS2010}. There is also data available using licenses
