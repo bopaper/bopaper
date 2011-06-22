@@ -98,10 +98,10 @@
 
 
 %Review style settings
-%\newenvironment{bmcformat}{\begin{raggedright}\baselineskip20pt\sloppy\setboolean{publ}{false}}{\end{raggedright}\baselineskip20pt\sloppy}
+\newenvironment{bmcformat}{\begin{raggedright}\baselineskip20pt\sloppy\setboolean{publ}{false}}{\end{raggedright}\baselineskip20pt\sloppy}
 
 %Publication style settings
-\newenvironment{bmcformat}{\fussy\setboolean{publ}{true}}{\fussy}
+%\newenvironment{bmcformat}{\fussy\setboolean{publ}{true}}{\fussy}
 
 
 
@@ -737,7 +737,7 @@ Open Source cheminformatics projects to the community.
 For example, iChemLabs released the ChemDoodle Web Components library under the GPL v3
 license, based on the upcoming HTML5 Open Standard. It allows making web and mobile
 interfaces for chemical content. The project is already being adopted by others,
-including iBabel~\cite{iBabel}, ChemSpotlight~\cite{chemspotlight} and the RSC ChemSpider~\cite{chemspider_chemdoodle}.
+including iBabel~\cite{iBabel}, ChemSpotlight~\cite{chemspotlight} and the RSC ChemSpider~\cite{chemspider,chemspider_chemdoodle}.
 
 Silicos has released several Open Source utilities~\cite{SilicosDownloads} based on
 Open Babel, such as Pharao, a tool for pharmacophore searching,
@@ -1117,7 +1117,9 @@ not compatible with the Panton Principles, but where the user
 is allowed to modify and redistribute the data. A new data
 set in this category is the data from the ChEMBL database,
 which is available under the Creative Commons Share-Alike
-Attribution license~\cite{Overington2009}.
+Attribution license~\cite{Overington2009}. The RSC ChemSpider database~\cite{chemspider}, although
+not fully Open, also hosts Open Data; for example, spectral data when deposited
+can be marked as Open.
 
 Importantly, publishing data as CC0 is becoming easier now that
 websites are becoming available to simplify publishing data. Two
@@ -1126,7 +1128,7 @@ FigShare\cite{WebFigShare}, where the data behind unpublished figures
 can be hosted, and Dryad\cite{WebDryad} where data behind publications
 can be hosted. Initiatives like this make it possible to host small
 amounts of data, and those combined are expected to become soon a
-substantial knowledge base. 
+substantial knowledge base.
 
 \subsection*{Reaction Attempts}
 Although there are existing databases that allow for searching reactions, those
@@ -1273,10 +1275,8 @@ investigate related projects or read our blogs.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Authors contributions}
-   The inital layout of the manuscript grew from discussions between
-NMOB, RG and ELW. All of the authors contributed sections to this
-article, and approved the final manuscript.
+\section*{Authors' contributions}
+The overall layout of the manuscript grew from discussions between NMOB, RG and ELW. The authorship of the paper is drawn from those people connected with fully Open Data/Standards/Source (OSI-compliant or OKF-compliant) projects associated with the Blue Obelisk. There are a large number of people contributing to these projects and because those projects are published in their own right it is not appropriate to include all their developers by default. We invited a number of `project gurus' who have been active in promoting the Blue Obelisk, to be authors on this paper and most have accepted and contributed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Acknowledgements}
