@@ -11,7 +11,7 @@ digraph g {
   /* Project labels */
 
   ambit [label="AMBIT"] ;
-  avogadro [label="Avodagro"] ;
+  avogadro [label="Avogadro"] ;
   bioclipse [label="Bioclipse"] ;
   bodo [label="BODO",shape=diamond] ;
   bodr [label="BODR",shape=box] ;
