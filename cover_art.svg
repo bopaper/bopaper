@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.48.0 r9654"
    sodipodi:docname="cover_art.svg"
-   inkscape:export-filename="C:\Tools\BO_Paper\newer_repo\cover_art.png"
-   inkscape:export-xdpi="144.71562"
-   inkscape:export-ydpi="144.71562">
+   inkscape:export-filename="C:\Users\Noel\Desktop\cover_art.png"
+   inkscape:export-xdpi="46.879559"
+   inkscape:export-ydpi="46.879559">
   <defs
      id="defs4">
     <linearGradient
@@ -453,7 +453,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="2.7793598"
-     inkscape:cx="209.2977"
+     inkscape:cx="212.2275"
      inkscape:cy="56.494613"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -558,13 +558,13 @@
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Segoe Print;-inkscape-font-specification:Segoe Print"
        x="248.8985"
-       y="286.94907"
+       y="280.94907"
        id="text3044"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3046"
          x="248.8985"
-         y="286.94907"
+         y="280.94907"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sans;-inkscape-font-specification:Sans">Blue Obelisk</tspan></text>
     <g
        transform="translate(316.57642,-1.8801504)"
@@ -638,21 +638,16 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Segoe Print;-inkscape-font-specification:Segoe Print"
-       x="371.28571"
-       y="311.5441"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Segoe Print;-inkscape-font-specification:Segoe Print"
+       x="439.05148"
+       y="329.71146"
        id="text3469"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan3471"
-         x="371.28571"
-         y="311.5441"
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">Open Data, Open Standards, Open Source</tspan><tspan
-         sodipodi:role="line"
-         x="371.28571"
-         y="329.0441"
+         x="439.05148"
+         y="329.71146"
          id="tspan3473"
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">in Chemistry</tspan></text>
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">for Chemistry</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3475"
@@ -663,5 +658,53 @@
            height="42.455822"
            x="278.12161"
            y="328.09467" /></flowRegion><flowPara
-         id="flowPara3481"></flowPara></flowRoot>  </g>
+         id="flowPara3481" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ec1f1f;fill-opacity:1;stroke:none;font-family:Segoe Print;-inkscape-font-specification:Segoe Print"
+       x="303.9075"
+       y="329.92239"
+       id="text3469-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="303.9075"
+         y="329.92239"
+         id="tspan3473-3"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans;fill:#ec1f1f;fill-opacity:1"><tspan
+   style="font-weight:bold"
+   id="tspan3917">O</tspan>pen <tspan
+   style="font-weight:bold"
+   id="tspan3919">S</tspan>ource</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ec1f1f;fill-opacity:1;stroke:none;font-family:Segoe Print;-inkscape-font-specification:Segoe Print"
+       x="427.5466"
+       y="304.1759"
+       id="text3469-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="427.5466"
+         y="304.1759"
+         id="tspan3473-8"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans;fill:#ec1f1f;fill-opacity:1"><tspan
+   style="font-weight:bold"
+   id="tspan3913">O</tspan>pen <tspan
+   style="font-weight:bold"
+   id="tspan3915">S</tspan>tandards</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ec1f1f;fill-opacity:1;stroke:none;font-family:Segoe Print;-inkscape-font-specification:Segoe Print"
+       x="294.38016"
+       y="304.1759"
+       id="text3469-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="294.38016"
+         y="304.1759"
+         id="tspan3473-2"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans;fill:#ec1f1f;fill-opacity:1"><tspan
+   style="font-weight:bold"
+   id="tspan3909">O</tspan>pen <tspan
+   style="font-weight:bold"
+   id="tspan3911">D</tspan>ata</tspan></text>
+  </g>
 </svg>
