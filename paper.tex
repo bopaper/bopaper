@@ -53,6 +53,7 @@
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\usepackage{longtable}
 \urlstyle{rm}
 
 
@@ -253,7 +254,7 @@ Inc., NCI-Frederick, Frederick, MD 21702, USA \\
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\newpage
 \begin{abstract}
         % Do not use inserted blank lines (ie \\) until main body of text.
         \paragraph*{Background:} The Blue Obelisk movement was established in 2005 as a
@@ -330,7 +331,7 @@ scientific fields. In many areas in biology, for example, the importance of
 small molecules and their interactions and reactions in biological systems
 has been realised. In fact, one of the first free and open databases and ontologies
 of small molecules was created as a resource about chemical structure and nomenclature
-by biologists.\cite{DeMatos:2009p3839}
+by biologists \cite{DeMatos:2009p3839}.
 
 The formation of the Blue Obelisk group is somewhat unusual in that it
 is not a funded network, nor does it follow the industry consortium
@@ -1091,7 +1092,7 @@ data for any purpose whatsoever without any barriers. Other licenses
 compatible with the Panton Principles include the
 Open Data Commons Public Domain Dedication and Licence (PDDL), the
 Open Data Commons Attribution License, and the
-Open Data Commons Open Database License (ODbL).\cite{WebOpenData}
+Open Data Commons Open Database License (ODbL) \cite{WebOpenData}.
 
 Despite this positive news, little chemical data compatible
 with these principles has become
@@ -1259,6 +1260,8 @@ community grow in the future. To this end, we encourage the reader to
 visit the Blue Obelisk website\cite{WebBlueObelisk}, send a message to our mailing list,
 investigate related projects or read our blogs.
 
+\section*{Competing interests}
+Please include your completing interests statement here.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Authors' contributions}
@@ -1340,12 +1343,14 @@ and diamonds are Open Standards.
 
 %% Use of \listoftables is discouraged.
 %%
+\bigskip
 \section*{Tables}
   \subsection*{Table 1 - Blue Obelisk Open Source Software projects discussed in the text}
-    \par \mbox{}
-    \par
-    \mbox{
-     \begin{tabular}{|c|c|c|}
+   % \par \mbox{}
+   % \par
+   % \mbox{
+\begin{longtable}{|c|c|c|}
+   %  \begin{tabular}{|c|c|c|}
        \hline \textbf{Name} & \textbf{Website}  \\ \hline
         \multicolumn{2}{|c|}{\textbf{CML Tools}} \\ \hline
         \textbf{CMLXOM} & https://bitbucket.org/wwmm/cmlxom/ \\ \hline
@@ -1395,16 +1400,16 @@ and diamonds are Open Standards.
         \textbf{Toxtree}  & http://toxtree.sf.net \\ \hline
         \textbf{XtalOpt}  & http://xtalopt.openmolecules.net \\ \hline
         \hline
-       \end{tabular}
-      }
+   %    \end{tabular}
+     % }
+\end{longtable}
 
+\bigskip
   \subsection*{Table 2 - Open Data in chemistry.}
-    Overview of major open chemical data available under a license or waiver
-    compatible with the Panton Principles.
     \par \mbox{}
     \par
     \mbox{
-\begin{tabular}{|l|c|l|}
+\begin{tabular}{|l|c|p{9cm}|}
   %% \hline \multicolumn{3}{|c|}{My Table}\\ \hline
   \hline \textbf{Name} & \textbf{License/Waiver} & \textbf{Description} \\ \hline
   \textbf{Chempedia}~\cite{Chempedia} & CC0 & Crowd-sourced chemical
@@ -1414,6 +1419,8 @@ names (project discontinued but data still available) \\ \hline
   \textbf{Reaction Attempts} & CC0 & Data on successful and unsuccessful reactions \\ \hline
 \end{tabular}
       }
+\\
+\bigskip Overview of major open chemical data available under a license or waiver compatible with the Panton Principles.
 
 \end{bmcformat}
 \end{document}
